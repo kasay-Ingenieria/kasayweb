@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Electrónica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #1db954;
+            text-align: center;
+        }
+        .song-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .song {
+            background-color: #282828;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .song:hover {
+            transform: scale(1.02);
+            background-color: #383838;
+        }
+        .song-info {
+            flex-grow: 1;
+        }
+        .song-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .song-artist {
+            color: #b3b3b3;
+            font-size: 0.9em;
+        }
+        .play-btn {
+            background-color: #1db954;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .play-btn:hover {
+            background-color: #1ed760;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #search {
+            padding: 10px;
+            width: 300px;
+            border-radius: 20px;
+            border: none;
+            background-color: #282828;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎵 Música Electrónica 🎵</h1>
+    
+    <div class="controls">
+        <input type="text" id="search" placeholder="Buscar canciones..." onkeyup="filterSongs()">
+    </div>
+    
+    <div class="song-list" id="songList">
+        <!-- Las canciones se agregarán aquí con JavaScript -->
+    </div>
+
+    <script>
+        // Lista de canciones de electrónica
+        const songs = [
+            { title: "Strobe", artist: "Deadmau5", year: 2009 },
+            { title: "Animals", artist: "Martin Garrix", year: 2013 },
+            { title: "One More Time", artist: "Daft Punk", year: 2000 },
+            { title: "Titanium", artist: "David Guetta ft. Sia", year: 2011 },
+            { title: "Levels", artist: "Avicii", year: 2011 },
+            { title: "Sandstorm", artist: "Darude", year: 1999 },
+            { title: "Don't Let Me Down", artist: "The Chainsmokers ft. Daya", year: 2016 },
+            { title: "Clarity", artist: "Zedd ft. Foxes", year: 2012 },
+            { title: "Faded", artist: "Alan Walker", year: 2015 },
+            { title: "Summer", artist: "Calvin Harris", year: 2014 }
+        ];
+
+        // Función para mostrar las canciones
+        function displaySongs(songArray) {
+            const songList = document.getElementById('songList');
+            songList.innerHTML = '';
+            
+            songArray.forEach(song => {
+                const songElement = document.createElement('div');
+                songElement.className = 'song';
+                songElement.innerHTML = `
+                    <div class="song-info">
+                        <div class="song-title">${song.title}</div>
+                        <div class="song-artist">${song.artist} • ${song.year}</div>
+                    </div>
+                    <button class="play-btn" onclick="playSong('${song.title}')">▶</button>
+                `;
+                songList.appendChild(songElement);
+            });
+        }
+
+        // Función para filtrar canciones
+        function filterSongs() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const filteredSongs = songs.filter(song => 
+                song.title.toLowerCase().includes(searchTerm) || 
+                song.artist.toLowerCase().includes(searchTerm)
+            );
+            displaySongs(filteredSongs);
+        }
+
+        // Función para simular la reproducción de una canción
+        function playSong(title) {
+            alert(`Reproduciendo: ${title}`);
+            // En una aplicación real, aquí iría el código para reproducir la canción
+        }
+
+        // Mostrar todas las canciones al cargar la página
+        window.onload = function() {
+            displaySongs(songs);
+        };
+    </script>
+</body>
+</html>
