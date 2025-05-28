@@ -8,6 +8,7 @@
   margin-top: 5rem; /*Espaciado para no usar BR tantas veces*/
 }
 
+
 .banner{
 
     width: 100vw;
@@ -32,7 +33,7 @@
     outline: none; border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: -2s linear;
+   
 }
 
 html{
@@ -175,7 +176,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 5vh;
-    background: url(curvasfondo.png);
+    background: #ffffff;
     background-size: cover;
     background-position: center;
 
@@ -195,7 +196,7 @@ header .fa-bars{
   font-family: 'Montserrat', sans-serif;
   color: #005ce6;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  background: linear-gradient(9deg, #007cf0, #00dfd8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeIn 2s ease-in;
@@ -208,6 +209,31 @@ header .fa-bars{
   }
 }
 
+.titulos {
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #005ce6;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in;
+  text-align: center;
+}
+
+.parrafo {
+
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #005ce6;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in;
+  text-align: center;
+
+}
 .about .row {
 
     display: flex;
@@ -252,29 +278,39 @@ header .fa-bars{
 
 }
 
-.swiper-container {
+.swiper {
 
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 150px;
+  width: 65%;
+  padding-top: 0px;
+  padding-bottom: 0px;
 
 }
 
 .swiper-slide {
 
     background-position: center;
-    background-size: cover;
-    width: 370px;
-    background-color: #eee;
-    overflow: hidden;
-    border-radius: 8px;
-    color: rgb(9, 9, 9)
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.swiper-slide img{
+
+  display: block;
+  width: 90%;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
 }
 
 .picture{
 
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 220px;
     overflow: hidden;
 
 }
