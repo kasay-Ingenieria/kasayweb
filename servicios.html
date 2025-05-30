@@ -7,100 +7,150 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.tailwindcss.com/2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Aplicar la fuente Inter globalmente */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Estilos adicionales para Swiper */
+        /* Text Gradient from old CSS */
+        .text-gradient-kasay {
+            background: linear-gradient(90deg, #007cf0, #00ABE4);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            text-fill-color: transparent;
+            /* text-shadow: 1px 1px 2px rgba(0,0,0,0.1); */ /* Optional: softer shadow */
+        }
+        .text-shadow-kasay { /* For elements that don't use gradient but need the shadow */
+             text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Header specific background from old CSS */
+        .header-bg-kasay {
+            background-color: #E9F1FA;
+        }
+
+        /* Section heading background from old CSS */
+        .section-heading-bg-kasay {
+            background-color: #E9F1FA;
+            border-radius: 1rem; /* Corresponds to rounded-xl in Tailwind */
+            color: #333; /* From old .heading */
+        }
+        .section-heading-bg-kasay span { /* For the span inside .heading */
+            color: #00ABE4;
+        }
+        
+        /* Custom button style from old CSS */
+        .btn-kasay-custom {
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: 700; /* font-bold */
+            border-radius: 9999px; /* rounded-full */
+            background-color: #E9F1FA;
+            color: #007cf0; 
+            padding: 0.7rem 1.5rem; /* py-2.5 px-6 */
+            cursor: pointer;
+            font-size: 1.1rem; /* text-lg */
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #cce0ff; /* Light blue border */
+        }
+        .btn-kasay-custom:hover {
+            background-color: #d0eaff;
+            color: #005ce6;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Swiper Styles */
         .swiper-container {
             width: 100%;
-            padding-top: 20px; /* Espacio para el título de la sección */
-            padding-bottom: 50px; /* Espacio para la paginación */
+            padding-top: 20px;
+            padding-bottom: 50px;
         }
         .swiper-slide .picture {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 280px; /* Altura ajustada para las imágenes del carrusel */
+            height: 250px; /* Slightly adjusted height */
             overflow: hidden;
-            border-radius: 0.75rem; /* Esquinas redondeadas consistentes */
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+            border-radius: 0.75rem; 
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         .swiper-slide .picture img {
-            width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
-            height: 100%;/* Hacer que la imagen ocupe toda la altura del contenedor */
-            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+            width: 100%; 
+            height: 100%;
+            object-fit: cover; 
         }
-        /* Estilo para el banner principal con imagen de fondo */
-        .banner-bg {
-            background-image: url('https://placehold.co/1920x800/3B82F6/FFFFFF?text=Ingenier%C3%ADa+Innovadora'); /* Imagen de placeholder más descriptiva y con colores de marca */
-            /* Considera usar una imagen real: background-image: url('assets/images/banner_principal.jpg'); */
-        }
-        /* Estilos para la paginación de Swiper */
         .swiper-pagination-bullet {
-            background-color: #3B82F6; /* Color primario para los bullets */
+            background-color: #007cf0; /* Kasay blue */
             opacity: 0.7;
         }
         .swiper-pagination-bullet-active {
-            background-color: #2563EB; /* Color primario más oscuro para el bullet activo */
+            background-color: #005ce6; /* Darker Kasay blue */
             opacity: 1;
         }
-        /* Efecto de zoom sutil en el video al pasar el mouse */
+
+        /* Banner background */
+        .banner-bg {
+            /* background-image: url('assets/images/banner.png'); */ /* Use your actual banner image */
+            background-image: url('https://placehold.co/1920x800/007CF0/FFFFFF?text=Banner+Kasay+Ingenieria'); /* Placeholder with Kasay blue */
+        }
+        /* Video hover effect */
         .video-container-hover:hover video {
             transform: scale(1.03);
         }
         .video-container-hover video {
             transition: transform 0.3s ease-in-out;
         }
+        /* Fallback for text color if gradient isn't supported or for non-gradient text */
+        .text-kasay-primary { color: #007cf0; }
+        .text-kasay-secondary { color: #005ce6; }
+        .text-kasay-accent { color: #00ABE4; }
+
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="bg-gray-100 text-gray-800 antialiased">
 
-    <header class="bg-white shadow-lg py-4 sticky top-0 z-50 transition-all duration-300">
+    <header class="header-bg-kasay shadow-md py-4 sticky top-0 z-50 transition-all duration-300">
         <div class="container mx-auto flex justify-between items-center px-6">
             <div class="flex items-center">
                 <input type="checkbox" name="nav-toggle" id="toggler" class="hidden">
-                <label for="toggler" class="fas fa-bars text-3xl text-blue-600 cursor-pointer lg:hidden mr-5"></label>
-                <a href="#inicio" class="text-3xl font-extrabold text-blue-600 hover:text-blue-700 transition-colors">
-                    Kasay<span class="text-gray-700">Ingenieria</span>
+                <label for="toggler" class="fas fa-bars text-3xl text-kasay-primary cursor-pointer lg:hidden mr-5"></label>
+                <a href="#inicio" class="text-3xl font-extrabold text-gradient-kasay">
+                    KasayIngenieria
                 </a>
-                </div>
+            </div>
 
             <nav class="hidden lg:flex space-x-8 items-center">
-                <a href="#inicio" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Inicio</a>
-                <a href="#servicios" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Servicios</a>
-                <a href="#info" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Acerca de</a>
-                <a href="#proyectos" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Proyectos</a>
-                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">Contacto</a>
+                <a href="#inicio" class="text-lg font-medium text-kasay-secondary hover:text-kasay-accent pb-1 border-b-2 border-transparent hover:border-kasay-accent transition-all duration-300">Inicio</a>
+                <a href="#servicios" class="text-lg font-medium text-kasay-secondary hover:text-kasay-accent pb-1 border-b-2 border-transparent hover:border-kasay-accent transition-all duration-300">Servicios</a>
+                <a href="#info" class="text-lg font-medium text-kasay-secondary hover:text-kasay-accent pb-1 border-b-2 border-transparent hover:border-kasay-accent transition-all duration-300">Acerca de</a>
+                <a href="#proyectos" class="text-lg font-medium text-kasay-secondary hover:text-kasay-accent pb-1 border-b-2 border-transparent hover:border-kasay-accent transition-all duration-300">Proyectos</a>
+                <a href="#contacto" class="btn-kasay-custom text-base">Contacto</a>
             </nav>
 
-            <!-- <div class="hidden lg:flex items-center space-x-5">
-                <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fas fa-heart text-2xl"></i></a>
-                <a href="#" class="text-gray-500 hover:text-blue-500 transition duration-300"><i class="fas fa-user text-2xl"></i></a>
-            </div> -->
-
-            <nav id="mobile-nav" class="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-5 px-6 hidden border-t border-gray-200">
-                <a href="#inicio" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Inicio</a>
-                <a href="#servicios" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Servicios</a>
-                <a href="#info" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Acerca de</a>
-                <a href="#proyectos" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Proyectos</a>
-                <a href="#contacto" class="block py-3 mt-2 text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300">Contacto</a>
+            <nav id="mobile-nav" class="lg:hidden absolute top-full left-0 right-0 header-bg-kasay shadow-xl py-5 px-6 hidden border-t border-gray-200">
+                <a href="#inicio" class="block py-3 text-kasay-secondary hover:text-kasay-accent hover:bg-blue-100 rounded-md px-3 font-medium transition-all duration-200">Inicio</a>
+                <a href="#servicios" class="block py-3 text-kasay-secondary hover:text-kasay-accent hover:bg-blue-100 rounded-md px-3 font-medium transition-all duration-200">Servicios</a>
+                <a href="#info" class="block py-3 text-kasay-secondary hover:text-kasay-accent hover:bg-blue-100 rounded-md px-3 font-medium transition-all duration-200">Acerca de</a>
+                <a href="#proyectos" class="block py-3 text-kasay-secondary hover:text-kasay-accent hover:bg-blue-100 rounded-md px-3 font-medium transition-all duration-200">Proyectos</a>
+                <a href="#contacto" class="block py-3 mt-2 text-center btn-kasay-custom w-full">Contacto</a>
             </nav>
         </div>
     </header>
     <section id="inicio" class="banner-bg bg-cover bg-center min-h-screen flex items-center justify-center text-white pt-16">
         <div class="text-center bg-black bg-opacity-60 p-10 md:p-16 rounded-xl shadow-2xl max-w-3xl mx-auto">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 font-montserrat text-gradient-kasay" style="-webkit-text-fill-color: white; text-fill-color: white; background: linear-gradient(90deg, #ffffff, #e0e0e0);">
                 Kasay Ingenieria
             </h1>
             <p class="text-xl md:text-2xl font-light mb-8">
                 Transformando ideas en realidades con soluciones de ingeniería innovadoras y sostenibles.
             </p>
-            <a href="#servicios" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <a href="#servicios" class="btn-kasay-custom bg-white text-kasay-primary hover:bg-gray-200 hover:text-kasay-secondary text-lg py-3 px-8">
                 Descubre Nuestros Servicios
             </a>
         </div>
@@ -108,34 +158,35 @@
 
     <section class="py-20 bg-white" id="servicios">
         <div class="container mx-auto px-6 text-center">
-            <div class="mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Experiencia y Colaboraciones</h2>
-                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-                    Una trayectoria sólida colaborando con líderes de la industria y entidades gubernamentales, aportando soluciones de ingeniería de vanguardia y construyendo un futuro mejor.
-                </p>
+            <div class="mb-16 section-heading-bg-kasay py-6 px-4 inline-block">
+                <h2 class="text-4xl md:text-5xl font-bold text-gradient-kasay font-montserrat">Experiencia y <span>Colaboraciones</span></h2>
             </div>
+            <p class="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">
+                Una trayectoria sólida colaborando con líderes de la industria y entidades gubernamentales, aportando soluciones de ingeniería de vanguardia y construyendo un futuro mejor.
+            </p>
         </div>
 
         <div class="swiper-container container mx-auto px-6">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_1.jpeg" alt="Logo Alianza 1" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+1';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_2.png" alt="Logo Alianza 2" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+2';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_3.png" alt="Logo Alianza 3" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+3';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_4.png" alt="Logo Alianza 4" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+4';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_5.png" alt="Logo Alianza 5" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+5';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_6.png" alt="Logo Alianza 6" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+6';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_7.png" alt="Logo Alianza 7" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+7';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_8.png" alt="Logo Alianza 8" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+8';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_9.jpg" alt="Logo Alianza 9" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+9';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_1.jpeg" alt="Logo Alianza 1" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+1';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_2.png" alt="Logo Alianza 2" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+2';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_3.png" alt="Logo Alianza 3" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+3';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_4.png" alt="Logo Alianza 4" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+4';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_5.png" alt="Logo Alianza 5" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+5';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_6.png" alt="Logo Alianza 6" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+6';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_7.png" alt="Logo Alianza 7" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+7';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_8.png" alt="Logo Alianza 8" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+8';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_9.jpg" alt="Logo Alianza 9" onerror="this.onerror=null;this.src='https://placehold.co/400x280/E9F1FA/007CF0?text=Cliente+9';"></div></div>
             </div>
             <div class="swiper-pagination mt-10"></div>
         </div>
     </section>
 
-    <section class="py-20 bg-gray-50" id="info">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <section class="py-20 bg-gray-100" id="info"> <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div class="text-left">
-                <h2 class="text-4xl font-bold text-blue-600 mb-6">Soluciones Geolocalizadas a su Medida</h2>
+                <div class="mb-6 section-heading-bg-kasay py-4 px-6 inline-block">
+                     <h2 class="text-3xl font-bold text-gradient-kasay font-montserrat">Soluciones <span>Geolocalizadas</span></h2>
+                </div>
                 <p class="text-gray-700 leading-relaxed text-lg mb-4">
                     Ofrecemos servicios de Consultoría en Gestión Catastral, comprometidos en proporcionar a
                     los entes territoriales las capacidades técnicas, tecnológicas, administrativas y financieras necesarias
@@ -146,21 +197,21 @@
                     trabajando en estrecha colaboración con empresas para definir soluciones tecnológicas y realizar análisis
                     geográficos y cartografía de calidad.
                 </p>
-                <a href="#contacto" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                <a href="#contacto" class="mt-8 btn-kasay-custom">
                     Más Información
                 </a>
             </div>
             <div class="flex justify-center items-center">
-                <img src="assets/images/logo.jpg" alt="Logo Kasay Ingenieria en sección informativa" class="max-w-md rounded-xl shadow-2xl" onerror="this.onerror=null;this.src='https://placehold.co/500x500/3B82F6/FFFFFF?text=Kasay+Logo';">
+                <img src="assets/images/logo.jpg" alt="Logo Kasay Ingenieria en sección informativa" class="max-w-md rounded-xl shadow-2xl" onerror="this.onerror=null;this.src='https://placehold.co/500x500/007CF0/FFFFFF?text=Kasay+Logo';">
             </div>
         </div>
     </section>
 
     <section class="py-20 bg-white" id="proyectos">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
-                <span class="text-blue-600">Visor</span> Panorámico Interactivo
-            </h2>
+             <div class="mb-16 section-heading-bg-kasay py-6 px-4 inline-block mx-auto block text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gradient-kasay font-montserrat">Visor Panorámico <span>Interactivo</span></h2>
+            </div>
             <div class="relative overflow-hidden rounded-xl shadow-2xl aspect-w-16 aspect-h-9 border-4 border-gray-200">
                 <iframe
                     class="absolute top-0 left-0 w-full h-full"
@@ -174,11 +225,10 @@
         </div>
     </section>
 
-    <section class="py-20 bg-gray-50" id="acerca-video">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
-                Conoce <span class="text-blue-600">Kasay</span> Ingenieria
-            </h2>
+    <section class="py-20 bg-gray-100" id="acerca-video"> <div class="container mx-auto px-6">
+            <div class="mb-16 section-heading-bg-kasay py-6 px-4 inline-block mx-auto block text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gradient-kasay font-montserrat">Conoce <span>Kasay Ingenieria</span></h2>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div class="relative rounded-xl overflow-hidden shadow-2xl group video-container-hover">
                     <video src="assets/videos/kasayvideo.mp4" loop autoplay muted class="w-full h-auto" poster="https://placehold.co/800x450/374151/FFFFFF?text=Video+Institucional+Kasay">
@@ -187,18 +237,18 @@
                     <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <i class="fas fa-play-circle text-white text-7xl"></i>
                     </div>
-                    <h3 class="absolute bottom-5 left-5 text-xl font-semibold text-white bg-blue-600 bg-opacity-80 py-2 px-5 rounded-lg shadow-md">Nuestros Trabajos</h3>
+                    <h3 class="absolute bottom-5 left-5 text-xl font-semibold text-white bg-kasay-primary bg-opacity-80 py-2 px-5 rounded-lg shadow-md">Nuestros Trabajos</h3>
                 </div>
                 <div class="space-y-6 text-left">
                     <div>
-                        <h3 class="text-3xl font-bold text-blue-600 mb-4">¿Por Qué Elegirnos?</h3>
+                        <h3 class="text-3xl font-bold text-kasay-primary mb-4 font-montserrat">¿Por Qué Elegirnos?</h3>
                         <p class="text-gray-700 leading-relaxed text-lg mb-3">
                             En Kasay Ingenieria, fusionamos experiencia probada, innovación constante y un compromiso inquebrantable con la calidad. Nos dedicamos a comprender profundamente las necesidades de cada cliente para ofrecer soluciones efectivas, eficientes y sostenibles que no solo cumplan, sino que superen sus expectativas.
                         </p>
                         <p class="text-gray-700 leading-relaxed text-lg">
                             Nuestro equipo de profesionales altamente cualificados y apasionados está preparado para afrontar los desafíos más complejos, garantizando resultados óptimos, cumplimiento de plazos y un servicio al cliente excepcional en cada etapa del proyecto.
                         </p>
-                        <a href="#contacto" class="mt-8 inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 px-10 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg">
+                        <a href="#contacto" class="mt-8 btn-kasay-custom text-lg py-3 px-8">
                             Hablemos de tu Proyecto
                         </a>
                     </div>
@@ -207,21 +257,20 @@
         </div>
     </section>
     
-    <footer class="bg-gray-900 text-gray-300 py-16" id="contacto">
-        <div class="container mx-auto px-6 text-center">
-            <a href="#inicio" class="text-3xl font-extrabold text-white hover:text-blue-400 transition-colors mb-6 inline-block">
-                Kasay<span class="text-blue-400">Ingenieria</span>
+    <footer class="bg-gray-800 text-gray-300 py-16" id="contacto"> <div class="container mx-auto px-6 text-center">
+            <a href="#inicio" class="text-3xl font-extrabold text-gradient-kasay mb-6 inline-block">
+                KasayIngenieria
             </a>
             <p class="text-lg mb-3">&copy; <span id="currentYear"></span> Kasay Ingenieria. Todos los derechos reservados.</p>
             <p class="mb-6 text-gray-400">Comprometidos con la excelencia y la innovación en ingeniería.</p>
             <div class="mb-8 space-x-6">
-                <a href="#" aria-label="Facebook Kasay Ingenieria" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-facebook-f text-3xl"></i></a>
-                <a href="#" aria-label="Twitter Kasay Ingenieria" class="text-gray-400 hover:text-blue-400 transition-colors duration-300"><i class="fab fa-twitter text-3xl"></i></a>
-                <a href="#" aria-label="LinkedIn Kasay Ingenieria" class="text-gray-400 hover:text-blue-600 transition-colors duration-300"><i class="fab fa-linkedin-in text-3xl"></i></a>
-                <a href="#" aria-label="Instagram Kasay Ingenieria" class="text-gray-400 hover:text-pink-500 transition-colors duration-300"><i class="fab fa-instagram text-3xl"></i></a>
+                <a href="#" aria-label="Facebook Kasay Ingenieria" class="text-gray-400 hover:text-kasay-accent transition-colors duration-300"><i class="fab fa-facebook-f text-3xl"></i></a>
+                <a href="#" aria-label="Twitter Kasay Ingenieria" class="text-gray-400 hover:text-kasay-accent transition-colors duration-300"><i class="fab fa-twitter text-3xl"></i></a>
+                <a href="#" aria-label="LinkedIn Kasay Ingenieria" class="text-gray-400 hover:text-kasay-accent transition-colors duration-300"><i class="fab fa-linkedin-in text-3xl"></i></a>
+                <a href="#" aria-label="Instagram Kasay Ingenieria" class="text-gray-400 hover:text-kasay-accent transition-colors duration-300"><i class="fab fa-instagram text-3xl"></i></a>
             </div>
             <p class="text-sm text-gray-500">
-                Diseñado con <i class="fas fa-heart text-red-500 animate-pulse"></i> y potenciado por Tailwind CSS.
+                Diseñado con <i class="fas fa-heart text-red-400 animate-pulse"></i> y potenciado por Tailwind CSS.
             </p>
         </div>
     </footer>
@@ -241,7 +290,7 @@
 
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    if (window.innerWidth < 1024) { // Cierra solo en vistas móviles/tablets
+                    if (window.innerWidth < 1024) { 
                         toggler.checked = false; 
                         mobileNav.classList.add('hidden'); 
                     }
@@ -257,7 +306,7 @@
           slidesPerView: 2, 
           spaceBetween: 20,
           autoplay: {
-            delay: 3000, // Reducido para un carrusel más dinámico
+            delay: 3000, 
             disableOnInteraction: false,
           },
           pagination: {
@@ -265,16 +314,16 @@
             clickable: true,
           },
           breakpoints: {
-            640: { // sm
+            640: { 
               slidesPerView: 3,
               spaceBetween: 20
             },
-            768: { // md
+            768: { 
               slidesPerView: 4,
               spaceBetween: 30
             },
-            1024: { // lg
-              slidesPerView: 5, // Mostrar más logos en pantallas grandes
+            1024: { 
+              slidesPerView: 5, 
               spaceBetween: 40
             }
           }
@@ -286,27 +335,22 @@
             currentYearElement.textContent = new Date().getFullYear();
         }
 
-
-        // Smooth scroll para los enlaces del navbar y otros enlaces internos
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
-                // Asegurarse de que no es solo un enlace "#" (que podría ser usado para otros fines)
                 if (href.length > 1) {
                     const targetElement = document.querySelector(href);
                     if (targetElement) {
                         e.preventDefault();
-                        // Calcular la posición del elemento de destino
                         const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
-                        // Considerar la altura del header fijo si existe y es relevante
                         const headerOffset = document.querySelector('header.sticky') ? document.querySelector('header.sticky').offsetHeight : 0;
                         
                         window.scrollTo({
-                            top: offsetTop - headerOffset - 20, // Ajuste de 20px para más espacio
+                            top: offsetTop - headerOffset - 20, 
                             behavior: 'smooth'
                         });
                         
-                        // Si es un enlace del menú móvil y el menú está abierto, cerrarlo
                         if (mobileNav && !mobileNav.classList.contains('hidden') && window.innerWidth < 1024) {
                            if(toggler) toggler.checked = false;
                            mobileNav.classList.add('hidden');
