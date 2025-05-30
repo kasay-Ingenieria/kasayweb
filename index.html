@@ -1,165 +1,173 @@
-<<!DOCTYPE html>
-
-<html lang="es">
-
+<!DOCTYPE html>
+<html>
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Futuristic Landing Page</title>
-
-  <style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
-
-
-    body, html {
-
-      margin: 0;
-
-      padding: 0;
-
-      font-family: 'Orbitron', sans-serif;
-
-      height: 100%;
-
-      overflow: hidden;
-
-      background: #000;
-
-      color: #00ffe7;
-
-    }
-
-
-    .background {
-
-      position: absolute;
-
-      width: 100%;
-
-      height: 100%;
-
-      background: radial-gradient(circle at center, #0ff2, #000 70%);
-
-      animation: pulse 5s infinite ease-in-out;
-
-      z-index: 0;
-
-    }
-
-
-    @keyframes pulse {
-
-      0%, 100% { opacity: 0.9; }
-
-      50% { opacity: 1; }
-
-    }
-
-
-    .container {
-
-      position: relative;
-
-      z-index: 1;
-
-      text-align: center;
-
-      top: 50%;
-
-      transform: translateY(-50%);
-
-    }
-
-
-    h1 {
-
-      font-size: 3em;
-
-      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
-
-    }
-
-
-    p {
-
-      font-size: 1.5em;
-
-      color: #ccc;
-
-    }
-
-
-    button {
-
-      margin-top: 30px;
-
-      padding: 15px 30px;
-
-      font-size: 1em;
-
-      font-weight: bold;
-
-      background: transparent;
-
-      color: #00ffe7;
-
-      border: 2px solid #00ffe7;
-
-      border-radius: 10px;
-
-      cursor: pointer;
-
-      transition: 0.3s;
-
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
-
-    }
-
-
-    button:hover {
-
-      background: #00ffe7;
-
-      color: #000;
-
-      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
-
-    }
-
-  </style>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasay Ingenieria</title>
+
+        <!-- Font awesome cdn link-->
+        <!-- Enlace CDN de font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <!-- custom css file link-->
+        <!-- Enlace de archivo CSS personalizado-->
+    <link rel="stylesheet" href="assets/css/style.css" > 
 
 </head>
-
 <body>
 
-  <div class="background"></div>
-
-  <div class="container">
-
-    <h1>Bienvenido al Futuro</h1>
-
-    <p>Web de kasay en construccion</p>
-
-    <button id="exploreBtn">Welcome</button>
-
-  </div>
 
 
-  <script>
 
-    document.getElementById("exploreBtn").addEventListener("click", () => {
 
-      alert("¡Estás listo para entrar en el futuro!");
+<!-- Header section starts-->
 
-    });
+<header>
 
-  </script>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="logo">Kasay Ingenieria </a>
+    <a href="#" class="logoimg">
+
+
+    <nav class="navbar">
+        <a href="#inicio">inicio</a>
+        <a href="#servicios">servicios</a>
+        <a href="#info">acerca de</a>
+        <a href="#proyectos">proyectos</a>
+        <a href="#contacto">contacto</a>
+
+    </nav>
+
+    <div class="icons">
+
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-user"></a>
+
+    </div>
+
+</header>
+
+
+<!--Imagen de inicio-->
+<div class="espacio"></div>
+
+<div class="banner"></div> 
+
+
+
+
+
+  <section class="about" id="about">
+   <section class="home" id="home">
+
+    <div class="content">
+        <h3>Experiencia Corporativa y Colaboraciones Estratégicas</h3>
+    
+    </div>
+
+</section>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_1.jpeg" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_2.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_3.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_4.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_5.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_6.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_7.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_8.png" alt=""></div></div>
+        <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_9.jpg" alt=""></div></div>
+  
+    </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+
+<div class="banner"></div> 
+
+<section class="texto" id="texto">
+    <div class="titulos">    
+    <h3>   Soluciones geolocalizadas  </h3>
+    </div>
+    <div><img src="assets/images/logo.jpg" alt=""></div>
+    <div class="parrafo">
+
+    Ofrecemos servicios de Consultoría en
+         Gestión Catastral, comprometidos en proporcionar a 
+         los entes territoriales las capacidades técnicas, 
+         tecnológicas, administrativas y financieras necesarias
+          para garantizar una eficiente prestación del servicio
+           público de Gestión Catastral. Además, somos expertos 
+           en Consultoría Municipal y Tecnología Geoespacial, 
+           trabajando en estrecha colaboración con empresas para 
+           definir soluciones tecnológicas y realizar análisis
+            geográficos y cartografía de calidad.
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h1 class="heading"><span> Visor pa </span></h1>
+
+    <div class="row">
+
+        <iframe
+  src="https://geokas.kasay.com.co/visualizador_fotos.html?photo=https://geokas.kasay.com.co/proyecto_streetview/fotos360/zipaquira/photo31973.jpeg&direction=104.02&x=4888992.764626741&y=2113451.9066936825&yaw=0&long=-74.00176908888889&lat=5.0260122777777765" 
+  width="900" 
+  height="600" 
+  frameborder="0"
+  allowfullscreen>
+
+        </iframe>
+        
+        </div>
+
+</section>
+
+
+<div class="banner"></div> </div>
+
+
+<section class="about" id="about">
+
+    <h1 class="heading"><span> Acerca de </span></h1>
+
+    <div class="row">
+
+        <div class="video-contenedor">
+
+            <video src="assets/videos/kasayvideo.mp4" loop autoplay muted></video>
+
+            <h3> Trabajos realizados </h3>
+        
+        </div>
+
+        <div  class="content"></div>
+
+            <h3>Por que elegirnos?</h3>
+            <p>Por que somos los mejores</p>
+        
+    </div>
+
+
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
-
 </html>
->

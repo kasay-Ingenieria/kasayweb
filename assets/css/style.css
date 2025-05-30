@@ -18,7 +18,7 @@
     min-height: 15vh;
     margin: 0%;
     padding: 0%;
-    background: url(banner.png);
+    background: url(../images/banner.png);
     background-size: cover;
     background-position: cover;
 
@@ -196,7 +196,7 @@ header .fa-bars{
   font-family: 'Montserrat', sans-serif;
   color: #005ce6;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  background: linear-gradient(9deg, #007cf0, #00dfd8);
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeIn 2s ease-in;
@@ -225,13 +225,11 @@ header .fa-bars{
 
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
-  color: #005ce6;
+  color: #2a9fec;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  background: linear-gradient(90deg, #007cf0, #00dfd8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeIn 2s ease-in;
-  text-align: center;
+  
+ 
+
 
 }
 .about .row {
@@ -404,6 +402,7 @@ header .fa-bars{
     }
 
     header .navbar a{
+
 
         margin:1.5rem;
         padding: 1.5rem;
