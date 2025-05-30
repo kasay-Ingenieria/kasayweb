@@ -3,180 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasay Ingenieria</title>
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Kasay Ingenieria - Soluciones de Ingeniería Innovadoras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://cdn.tailwindcss.com/2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Estilos adicionales para Swiper si son necesarios o para asegurar compatibilidad */
+        /* Aplicar la fuente Inter globalmente */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos adicionales para Swiper */
         .swiper-container {
             width: 100%;
-            height: auto; /* O una altura específica si la necesitas */
+            padding-top: 20px; /* Espacio para el título de la sección */
+            padding-bottom: 50px; /* Espacio para la paginación */
         }
         .swiper-slide .picture {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 300px; /* Ajusta según tus necesidades */
+            height: 280px; /* Altura ajustada para las imágenes del carrusel */
             overflow: hidden;
+            border-radius: 0.75rem; /* Esquinas redondeadas consistentes */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra sutil */
         }
         .swiper-slide .picture img {
-            width: auto;
-            height: 100%;
-            object-fit: cover; /* o 'contain' dependiendo de cómo quieras que se muestren las imágenes */
+            width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+            height: 100%;/* Hacer que la imagen ocupe toda la altura del contenedor */
+            object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
         }
-        /* Asegúrate de que el banner tenga una imagen de fondo por defecto si la ruta no es válida */
+        /* Estilo para el banner principal con imagen de fondo */
         .banner-bg {
-            background-image: url('https://placehold.co/1200x400/cccccc/ffffff?text=Banner+Principal');
+            background-image: url('https://placehold.co/1920x800/3B82F6/FFFFFF?text=Ingenier%C3%ADa+Innovadora'); /* Imagen de placeholder más descriptiva y con colores de marca */
+            /* Considera usar una imagen real: background-image: url('assets/images/banner_principal.jpg'); */
+        }
+        /* Estilos para la paginación de Swiper */
+        .swiper-pagination-bullet {
+            background-color: #3B82F6; /* Color primario para los bullets */
+            opacity: 0.7;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #2563EB; /* Color primario más oscuro para el bullet activo */
+            opacity: 1;
+        }
+        /* Efecto de zoom sutil en el video al pasar el mouse */
+        .video-container-hover:hover video {
+            transform: scale(1.03);
+        }
+        .video-container-hover video {
+            transition: transform 0.3s ease-in-out;
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-50 text-gray-800 antialiased">
 
-    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center px-4">
+    <header class="bg-white shadow-lg py-4 sticky top-0 z-50 transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center px-6">
             <div class="flex items-center">
-                <input type="checkbox" name="" id="toggler" class="hidden">
-                <label for="toggler" class="fas fa-bars text-2xl text-gray-600 cursor-pointer lg:hidden mr-4"></label>
-                <a href="#" class="text-2xl font-bold text-blue-600">Kasay Ingenieria</a>
+                <input type="checkbox" name="nav-toggle" id="toggler" class="hidden">
+                <label for="toggler" class="fas fa-bars text-3xl text-blue-600 cursor-pointer lg:hidden mr-5"></label>
+                <a href="#inicio" class="text-3xl font-extrabold text-blue-600 hover:text-blue-700 transition-colors">
+                    Kasay<span class="text-gray-700">Ingenieria</span>
+                </a>
                 </div>
 
-            <nav class="hidden lg:flex space-x-6">
-                <a href="#inicio" class="text-gray-700 hover:text-blue-600 transition duration-300">inicio</a>
-                <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition duration-300">servicios</a>
-                <a href="#info" class="text-gray-700 hover:text-blue-600 transition duration-300">acerca de</a>
-                <a href="#proyectos" class="text-gray-700 hover:text-blue-600 transition duration-300">proyectos</a>
-                <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition duration-300">contacto</a>
+            <nav class="hidden lg:flex space-x-8 items-center">
+                <a href="#inicio" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Servicios</a>
+                <a href="#info" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Acerca de</a>
+                <a href="#proyectos" class="text-gray-600 hover:text-blue-600 font-medium pb-1 border-b-2 border-transparent hover:border-blue-600 transition-all duration-300">Proyectos</a>
+                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">Contacto</a>
             </nav>
 
-            <div class="hidden lg:flex items-center space-x-4">
-                <a href="#" class="text-gray-700 hover:text-red-500 transition duration-300"><i class="fas fa-heart text-xl"></i></a>
-                <a href="#" class="text-gray-700 hover:text-green-500 transition duration-300"><i class="fas fa-user text-xl"></i></a>
-            </div>
+            <!-- <div class="hidden lg:flex items-center space-x-5">
+                <a href="#" class="text-gray-500 hover:text-red-500 transition duration-300"><i class="fas fa-heart text-2xl"></i></a>
+                <a href="#" class="text-gray-500 hover:text-blue-500 transition duration-300"><i class="fas fa-user text-2xl"></i></a>
+            </div> -->
 
-            <nav id="mobile-nav" class="lg:hidden absolute top-full left-0 right-0 bg-white shadow-md py-4 px-4 hidden">
-                <a href="#inicio" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">inicio</a>
-                <a href="#servicios" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">servicios</a>
-                <a href="#info" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">acerca de</a>
-                <a href="#proyectos" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">proyectos</a>
-                <a href="#contacto" class="block py-2 text-gray-700 hover:text-blue-600 transition duration-300">contacto</a>
-                <div class="flex items-center space-x-4 mt-4">
-                    <a href="#" class="text-gray-700 hover:text-red-500 transition duration-300"><i class="fas fa-heart text-xl"></i></a>
-                    <a href="#" class="text-gray-700 hover:text-green-500 transition duration-300"><i class="fas fa-user text-xl"></i></a>
-                </div>
+            <nav id="mobile-nav" class="lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-5 px-6 hidden border-t border-gray-200">
+                <a href="#inicio" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Inicio</a>
+                <a href="#servicios" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Servicios</a>
+                <a href="#info" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Acerca de</a>
+                <a href="#proyectos" class="block py-3 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md px-3 font-medium transition-all duration-200">Proyectos</a>
+                <a href="#contacto" class="block py-3 mt-2 text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition-all duration-300">Contacto</a>
             </nav>
         </div>
     </header>
-    <div class="h-10" id="inicio"></div>
-
-    <div class="banner-bg bg-cover bg-center h-64 md:h-96 flex items-center justify-center text-white">
-        <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg">
-            <h1 class="text-4xl md:text-6xl font-bold">Kasay Ingenieria</h1>
-            <p class="text-xl md:text-2xl mt-4">Soluciones Innovadoras para un Futuro Sostenible</p>
-        </div>
-    </div>
-
-    <section class="py-16 bg-white" id="servicios">
-        <div class="container mx-auto px-4 text-center">
-            <div class="mb-12">
-                <h3 class="text-3xl md:text-4xl font-semibold text-gray-800">Experiencia Corporativa y Colaboraciones Estratégicas</h3>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Contamos con una amplia trayectoria colaborando con diversas entidades y empresas, aportando soluciones de ingeniería de vanguardia.</p>
-            </div>
-        </div>
-
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_1.jpeg" alt="Alianza 1" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_1';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_2.png" alt="Alianza 2" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_2';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_3.png" alt="Alianza 3" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_3';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_4.png" alt="Alianza 4" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_4';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_5.png" alt="Alianza 5" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_5';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_6.png" alt="Alianza 6" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_6';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_7.png" alt="Alianza 7" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_7';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_8.png" alt="Alianza 8" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_8';"></div></div>
-                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_9.jpg" alt="Alianza 9" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e0e0/757575?text=Imagen+Ali_9';"></div></div>
-            </div>
-            <div class="swiper-pagination mt-8"></div>
+    <section id="inicio" class="banner-bg bg-cover bg-center min-h-screen flex items-center justify-center text-white pt-16">
+        <div class="text-center bg-black bg-opacity-60 p-10 md:p-16 rounded-xl shadow-2xl max-w-3xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Kasay Ingenieria
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8">
+                Transformando ideas en realidades con soluciones de ingeniería innovadoras y sostenibles.
+            </p>
+            <a href="#servicios" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-100 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                Descubre Nuestros Servicios
+            </a>
         </div>
     </section>
 
-    <div class="h-16 bg-gray-100"></div>
+    <section class="py-20 bg-white" id="servicios">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Experiencia y Colaboraciones</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
+                    Una trayectoria sólida colaborando con líderes de la industria y entidades gubernamentales, aportando soluciones de ingeniería de vanguardia y construyendo un futuro mejor.
+                </p>
+            </div>
+        </div>
 
-    <section class="py-12 bg-white" id="info">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="text-center md:text-left">
-                <h3 class="text-3xl font-semibold text-blue-600 mb-6">Soluciones Geolocalizadas a su Medida</h3>
-                <p class="text-gray-700 leading-relaxed text-lg">
+        <div class="swiper-container container mx-auto px-6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_1.jpeg" alt="Logo Alianza 1" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+1';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_2.png" alt="Logo Alianza 2" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+2';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_3.png" alt="Logo Alianza 3" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+3';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_4.png" alt="Logo Alianza 4" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+4';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_5.png" alt="Logo Alianza 5" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+5';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_6.png" alt="Logo Alianza 6" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+6';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_7.png" alt="Logo Alianza 7" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+7';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_8.png" alt="Logo Alianza 8" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+8';"></div></div>
+                <div class="swiper-slide"><div class="picture"><img src="assets/images/ali_9.jpg" alt="Logo Alianza 9" onerror="this.onerror=null;this.src='https://placehold.co/400x280/F3F4F6/6B7280?text=Logo+Cliente+9';"></div></div>
+            </div>
+            <div class="swiper-pagination mt-10"></div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50" id="info">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="text-left">
+                <h2 class="text-4xl font-bold text-blue-600 mb-6">Soluciones Geolocalizadas a su Medida</h2>
+                <p class="text-gray-700 leading-relaxed text-lg mb-4">
                     Ofrecemos servicios de Consultoría en Gestión Catastral, comprometidos en proporcionar a
                     los entes territoriales las capacidades técnicas, tecnológicas, administrativas y financieras necesarias
                     para garantizar una eficiente prestación del servicio público de Gestión Catastral.
                 </p>
-                <p class="text-gray-700 leading-relaxed mt-4 text-lg">
+                <p class="text-gray-700 leading-relaxed text-lg">
                     Además, somos expertos en Consultoría Municipal y Tecnología Geoespacial,
                     trabajando en estrecha colaboración con empresas para definir soluciones tecnológicas y realizar análisis
                     geográficos y cartografía de calidad.
                 </p>
+                <a href="#contacto" class="mt-8 inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Más Información
+                </a>
             </div>
             <div class="flex justify-center items-center">
-                <img src="assets/images/logo.jpg" alt="Logo Kasay Ingenieria" class="max-w-xs md:max-w-sm rounded-lg shadow-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x400/e0e0e0/757575?text=Logo+Kasay';">
+                <img src="assets/images/logo.jpg" alt="Logo Kasay Ingenieria en sección informativa" class="max-w-md rounded-xl shadow-2xl" onerror="this.onerror=null;this.src='https://placehold.co/500x500/3B82F6/FFFFFF?text=Kasay+Logo';">
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-100" id="proyectos">
-        <div class="container mx-auto px-4">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12"><span class="text-blue-600">Visor</span> Panorámico</h1>
-            <div class="relative overflow-hidden rounded-lg shadow-2xl aspect-w-16 aspect-h-9">
+    <section class="py-20 bg-white" id="proyectos">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
+                <span class="text-blue-600">Visor</span> Panorámico Interactivo
+            </h2>
+            <div class="relative overflow-hidden rounded-xl shadow-2xl aspect-w-16 aspect-h-9 border-4 border-gray-200">
                 <iframe
                     class="absolute top-0 left-0 w-full h-full"
                     src="https://geokas.kasay.com.co/visualizador_fotos.html?photo=https://geokas.kasay.com.co/proyecto_streetview/fotos360/zipaquira/photo31973.jpeg&direction=104.02&x=4888992.764626741&y=2113451.9066936825&yaw=0&long=-74.00176908888889&lat=5.0260122777777765"
                     frameborder="0"
                     allowfullscreen
-                    title="Visor Panorámico Kasay">
+                    title="Visor Panorámico Interactivo de Proyectos Kasay">
                 </iframe>
             </div>
+            <p class="text-center text-gray-600 mt-8 text-lg">Explore nuestros proyectos de forma inmersiva a través de nuestro visor panorámico.</p>
         </div>
     </section>
 
-    <div class="h-16 bg-gray-100"></div>
-
-    <section class="py-16 bg-white" id="acerca-video">
-        <div class="container mx-auto px-4">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12"><span class="text-blue-600">Acerca</span> de Nosotros</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="relative rounded-lg overflow-hidden shadow-xl group">
-                    <video src="assets/videos/kasayvideo.mp4" loop autoplay muted class="w-full h-auto transition-transform duration-500 group-hover:scale-105" poster="https://placehold.co/600x400/cccccc/ffffff?text=Video+Kasay">
-                        Tu navegador no soporta la etiqueta de video.
+    <section class="py-20 bg-gray-50" id="acerca-video">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-800 text-center mb-16">
+                Conoce <span class="text-blue-600">Kasay</span> Ingenieria
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative rounded-xl overflow-hidden shadow-2xl group video-container-hover">
+                    <video src="assets/videos/kasayvideo.mp4" loop autoplay muted class="w-full h-auto" poster="https://placehold.co/800x450/374151/FFFFFF?text=Video+Institucional+Kasay">
+                        Tu navegador no soporta la etiqueta de video. Considera actualizarlo.
                     </video>
-                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                        <i class="fas fa-play-circle text-white text-6xl"></i>
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-play-circle text-white text-7xl"></i>
                     </div>
-                    <h3 class="absolute bottom-4 left-4 text-xl font-semibold text-white bg-blue-600 bg-opacity-75 py-2 px-4 rounded-md">Trabajos Realizados</h3>
+                    <h3 class="absolute bottom-5 left-5 text-xl font-semibold text-white bg-blue-600 bg-opacity-80 py-2 px-5 rounded-lg shadow-md">Nuestros Trabajos</h3>
                 </div>
-                <div class="space-y-6">
+                <div class="space-y-6 text-left">
                     <div>
-                        <h3 class="text-2xl font-semibold text-blue-600 mb-3">¿Por qué elegirnos?</h3>
+                        <h3 class="text-3xl font-bold text-blue-600 mb-4">¿Por Qué Elegirnos?</h3>
+                        <p class="text-gray-700 leading-relaxed text-lg mb-3">
+                            En Kasay Ingenieria, fusionamos experiencia probada, innovación constante y un compromiso inquebrantable con la calidad. Nos dedicamos a comprender profundamente las necesidades de cada cliente para ofrecer soluciones efectivas, eficientes y sostenibles que no solo cumplan, sino que superen sus expectativas.
+                        </p>
                         <p class="text-gray-700 leading-relaxed text-lg">
-                            En Kasay Ingenieria, combinamos experiencia, innovación y un profundo compromiso con la calidad.
-                            Nos dedicamos a entender las necesidades específicas de cada cliente para ofrecer soluciones
-                            efectivas y sostenibles que superen sus expectativas.
+                            Nuestro equipo de profesionales altamente cualificados y apasionados está preparado para afrontar los desafíos más complejos, garantizando resultados óptimos, cumplimiento de plazos y un servicio al cliente excepcional en cada etapa del proyecto.
                         </p>
-                        <p class="text-gray-700 leading-relaxed mt-3 text-lg">
-                            Nuestro equipo de profesionales altamente cualificados está listo para afrontar los desafíos más complejos,
-                            garantizando resultados óptimos y un servicio al cliente excepcional.
-                        </p>
-                        <a href="#contacto" class="mt-6 inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Contáctanos</a>
+                        <a href="#contacto" class="mt-8 inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 px-10 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg">
+                            Hablemos de tu Proyecto
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <footer class="bg-gray-800 text-white py-12 mt-16" id="contacto">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-lg">&copy; <span id="currentYear"></span> Kasay Ingenieria. Todos los derechos reservados.</p>
-            <p class="mt-2 text-gray-400">Diseñado con <i class="fas fa-heart text-red-500"></i> y Tailwind CSS</p>
-            <div class="mt-6 space-x-6">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f text-2xl"></i></a>
-                <a href="#" class="text-gray-
+    <footer class="bg-gray-900 text-gray-300 py-16" id="contacto">
+        <div class="container mx-auto px-6 text-center">
+            <a href="#inicio" class="text-3xl font-extrabold text-white hover:text-blue-400 transition-colors mb-6 inline-block">
+                Kasay<span class="text-blue-400">Ingenieria</span>
+            </a>
+            <p class="text-lg mb-3">&copy; <span id="currentYear"></span> Kasay Ingenieria. Todos los derechos reservados.</p>
+            <p class="mb-6 text-gray-400">Comprometidos con la excelencia y la innovación en ingeniería.</p>
+            <div class="mb-8 space-x-6">
+                <a href="#" aria-label="Facebook Kasay Ingenieria" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"><i class="fab fa-facebook-f text-3xl"></i></a>
+                <a href="#" aria-label="Twitter Kasay Ingenieria" class="text-gray-400 hover:text-blue-400 transition-colors duration-300"><i class="fab fa-twitter text-3xl"></i></a>
+                <a href="#" aria-label="LinkedIn Kasay Ingenieria" class="text-gray-400 hover:text-blue-600 transition-colors duration-300"><i class="fab fa-linkedin-in text-3xl"></i></a>
+                <a href="#" aria-label="Instagram Kasay Ingenieria" class="text-gray-400 hover:text-pink-500 transition-colors duration-300"><i class="fab fa-instagram text-3xl"></i></a>
+            </div>
+            <p class="text-sm text-gray-500">
+                Diseñado con <i class="fas fa-heart text-red-500 animate-pulse"></i> y potenciado por Tailwind CSS.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Script para el toggler del menú móvil
+        const toggler = document.getElementById('toggler');
+        const mobileNav = document.getElementById('mobile-nav');
+        
+        if (toggler && mobileNav) {
+            const navLinks = mobileNav.querySelectorAll('a'); 
+
+            toggler.addEventListener('change', () => {
+                mobileNav.classList.toggle('hidden', !toggler.checked);
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 1024) { // Cierra solo en vistas móviles/tablets
+                        toggler.checked = false; 
+                        mobileNav.classList.add('hidden'); 
+                    }
+                });
+            });
+        } else {
+            console.error("Error: No se encontró el toggler del menú móvil o el menú móvil.");
+        }
+
+        // Script para Swiper (Carrusel de Logos/Alianzas)
+        const swiper = new Swiper('.swiper-container', {
+          loop: true,
+          slidesPerView: 2, 
+          spaceBetween: 20,
+          autoplay: {
+            delay: 3000, // Reducido para un carrusel más dinámico
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          breakpoints: {
+            640: { // sm
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            768: { // md
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1024: { // lg
+              slidesPerView: 5, // Mostrar más logos en pantallas grandes
+              spaceBetween: 40
+            }
+          }
+        });
+
+        // Script para el año actual en el footer
+        const currentYearElement = document.getElementById('currentYear');
+        if (currentYearElement) {
+            currentYearElement.textContent = new Date().getFullYear();
+        }
+
+
+        // Smooth scroll para los enlaces del navbar y otros enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Asegurarse de que no es solo un enlace "#" (que podría ser usado para otros fines)
+                if (href.length > 1) {
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        e.preventDefault();
+                        // Calcular la posición del elemento de destino
+                        const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                        // Considerar la altura del header fijo si existe y es relevante
+                        const headerOffset = document.querySelector('header.sticky') ? document.querySelector('header.sticky').offsetHeight : 0;
+                        
+                        window.scrollTo({
+                            top: offsetTop - headerOffset - 20, // Ajuste de 20px para más espacio
+                            behavior: 'smooth'
+                        });
+                        
+                        // Si es un enlace del menú móvil y el menú está abierto, cerrarlo
+                        if (mobileNav && !mobileNav.classList.contains('hidden') && window.innerWidth < 1024) {
+                           if(toggler) toggler.checked = false;
+                           mobileNav.classList.add('hidden');
+                        }
+                    }
+                }
+            });
+        });
+      </script>
+</body>
+</html>
