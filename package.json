@@ -1,0 +1,24 @@
+{
+  "name": "kasayweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasay-ingenieria/kasayweb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasay-ingenieria/kasayweb/issues"
+  },
+  "homepage": "https://github.com/kasay-ingenieria/kasayweb#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^4.1.8"
+  }
+}
