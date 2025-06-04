@@ -40,17 +40,19 @@
       <div class="flex flex-col md:flex-row items-center gap-8">
         
       
-        <model-viewer
-          class="rounded-lg shadow-lg mb-20 ml-8" 
-          src="moto.glb"
-          alt="Modelo 3D de un terreno"
-          auto-rotate
-          camera-controls
-          shadow-intensity="1"
-          max-camera-distance="10m"
-          camera-orbit="10deg -190deg 0.3m"
-          ar>
-        </model-viewer>
+       <model-viewer 
+    loading="lazy"
+    class="rounded-lg shadow-lg mb-20 ml-8" 
+    src="moto.glb"
+    alt="Modelo 3D de un terreno"
+    auto-rotate
+    camera-controls
+    shadow-intensity="1"
+    max-camera-distance="10m"
+    camera-orbit="10deg -190deg 0.3m"
+    ar>
+</model-viewer>
+
 
     
         <div class="w-full md:w-1/2 text-gray-800">
