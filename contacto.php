@@ -133,7 +133,15 @@
 
 <hr/>
 
+  <section id="nosotros" class="pt-0 bg-white">
+    <div class="w-full h-[350px]">
        
+        <iframe class="w-full h-30 border-0" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.6913261566597!2d-74.09614079005497!3d4.649035495306297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bb8db53308d%3A0xea102704edc4714b!2sKasay%20Ingenier%C3%ADa!5e0!3m2!1sen!2sco!4v1748981413696!5m2!1sen!2sco" width="1900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      
+    </div>
+  </section>        
 <hr/>
 
  <!-- Pie de pagina  -->
