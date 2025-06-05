@@ -13,13 +13,15 @@
 
     <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <img src="./assets/images/logo.jpg" alt="logo" class="w-32 h-auto">
+            <a href="servicios.php">
+                <img src="./assets/images/logo.jpg" alt="logo" class="w-32 h-auto">
+            </a>
             <div class="space-x-4">
                 <a href="./servicios.php" class="text-gray-600 hover:text-blue-500 transition duration-300">Inicio</a>
                 <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition duration-300">Servicios</a>
                 <a href="./nosotros.php" class="text-gray-600 hover:text-blue-500 transition duration-300">Nosotros</a>
                 <a href="./contacto.php" class="text-gray-600 hover:text-blue-500 transition duration-300">Contacto</a>
-                <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-500 transition duration-300">Empezar</a>
+                <a href="#" class="bg-[linear-gradient(120deg,_rgba(0,124,240,0.9),_rgba(0,154,186,0.8))] text-white px-4 py-2 rounded-full hover:bg-blue-500 transition duration-300">Empezar</a>
             </div>
         </nav>
     </header>
