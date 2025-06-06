@@ -23,32 +23,34 @@
 ?>
 
   
-<section id="contacto" class="pt-0 pb-10 bg-white">
+<section id="contacto" class="pb-7 bg-white">
 
-      <section id="inicio" class="text-white pt-3 pb-16 md:pt-20 md:pb-2">
+      <section id="inicio" class="text-white pt-3 pb-16 md:pt-16 md:pb-1">
 
-        <div class="relative w-full h-72 overflow-hidden">
+        <div class="relative w-full h-[390px] overflow-hidden">
  
             <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="assets/videos/kasaycontacto.mp4" type="video/mp4">
-            Tu navegador no soporta video HTML5.
+              <source src="assets/videos/kasaycontacto.mp4" type="video/mp4">
+              Tu navegador no soporta video HTML5.
             </video>
 
-            <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
 
-    <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl">
+        <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl">
 
-        <div class="container mx-auto px-6 text-center">
+            <div class="container mx-auto px-6 text-center">
             
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Kasay Ingeniería S.A.S </h1>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Especialistas en Inteligencia Territorial y Tecnología Catastral Avanzada</p>
+              <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Kasay Ingeniería S.A.S </h1>
+              <p class="text-lg md:text-3xl mb-8 max-w-4xl mx-auto">Asesoría en gestión catastral, análisis geoespacial y soporte</p>
+            </div>
+
         </div>
 
-    </div>
+      </section>
 
-    </section>
-  
-  <section id="contacto" class="pt-10 pb-10 bg-[linear-gradient(120deg,_rgba(0,124,240,0.6),_rgba(0,223,216,0.2))]">
+<br>
+
+<section id="contacto" class="pt-10 pb-10 bg-[linear-gradient(120deg,_rgba(0,124,240,0.6),_rgba(0,223,216,0.2))]">
 
   <div class="container mx-auto px-6 flex flex-col md:flex-row gap-8">
     
@@ -151,13 +153,12 @@
     </div>
   </form>
 </div>
-
 </section>
 </section>
 
 <hr/>
 
-  <section id="nosotros" class="pt-0 bg-white">
+  <section id="nosotros" class="pt-0 pb-7 bg-white">
       <div class="relative h-[350px] w-full">
          <!-- Mapa Leaflet -->
         <div id="map" class="absolute inset-0 z-0"></div>

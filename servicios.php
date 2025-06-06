@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* Puedes añadir estilos personalizados aquí si es necesario */
+      
         .hero-bg {
             background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://wallpapers.com/images/high/blue-geometric-kiyhavrstg1buil4.webp'); /* Imagen de fondo de ejemplo */
             background-size: cover;
@@ -26,7 +26,7 @@
 
 ?>
 
-    <section id="inicio" class="text-white pt-3 pb-16 md:pt-20 md:pb-2">
+    <section id="inicio" class="text-white pb-16 md:pt-16 md:pb-2">
 
         <div class="relative w-full h-screen overflow-hidden">
  
