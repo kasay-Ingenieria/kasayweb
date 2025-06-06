@@ -12,9 +12,9 @@
 <body class="bg-gray-100 text-gray-800">
 
     <header class="bg-white shadow-md fixed w-full z-50">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <nav class="container mx-auto px-6 py-2 flex justify-between items-center">
             <a href="servicios.php">
-                <img src="./assets/images/logo.jpg" alt="logo" class="w-32 h-auto">
+                <img src="./assets/images/logotrans.png" alt="logo" class="w-32 h-auto">
             </a>
             <div class="space-x-4">
                 <a href="./servicios.php" class="text-gray-600 hover:text-blue-500 transition duration-300">Inicio</a>

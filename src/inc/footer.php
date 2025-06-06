@@ -13,12 +13,14 @@
 <body class="bg-gray-100 text-gray-800">
 
 
-    <footer class="bg-gray-800 text-gray-300 py-12">
+    <footer class="bg-sky-700 text-gray-300 py-12">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <img src="./assets/images/logo.jpg" alt="logo" class="w-32 h-auto"><br>
-                    <p class="text-sm">Creando el futuro digital, un proyecto a la vez.</p>
+                <div >
+                    <div class="bg-white p-4 rounded-lg shadow-lg inline-block text-center">
+                        <img src="./assets/images/logotrans.png" alt="logo" class="w-32 h-auto mx-auto mb-2">
+                    </div>
+                    <p class="text-1xl pt-4 font-bold">Creando el futuro digital, un proyecto a la vez.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h4>
@@ -32,14 +34,14 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Síguenos</h4>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/p/Kasay-Ingeniería-SAS-61552725575542/" class="text-gray-400 hover:text-white transition duration-300" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="https://maps.app.goo.gl/UDNfZEkGSy4sbgpz6" class="text-gray-400 hover:text-white transition duration-300" target="_blank"><i class="fa-solid fa-map-pin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.facebook.com/p/Kasay-Ingeniería-SAS-61552725575542/" class="text-gray-300 hover:text-blue-400 transition duration-300" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://maps.app.goo.gl/UDNfZEkGSy4sbgpz6" class="text-gray-300 hover:text-blue-400 transition duration-300" target="_blank"><i class="fa-solid fa-map-pin"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition duration-300" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 pt-8 text-center text-sm">
+            <div class="border-t border-gray-400 pt-8 text-center text-sm">
                 <p>&copy; 2025 Kasay Ingenieria SAS. &nbsp; <i class="fa-solid fa-font-awesome"></i>
             </div>
         </div>

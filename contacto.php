@@ -23,7 +23,30 @@
 ?>
 
   
-<section id="contacto" class="pt-32 pb-10 bg-white">
+<section id="contacto" class="pt-0 pb-10 bg-white">
+
+      <section id="inicio" class="text-white pt-3 pb-16 md:pt-20 md:pb-2">
+
+        <div class="relative w-full h-72 overflow-hidden">
+ 
+            <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="assets/videos/kasaycontacto.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+            </video>
+
+            <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+
+    <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl">
+
+        <div class="container mx-auto px-6 text-center">
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Kasay Ingeniería S.A.S </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Especialistas en Inteligencia Territorial y Tecnología Catastral Avanzada</p>
+        </div>
+
+    </div>
+
+    </section>
   
   <section id="contacto" class="pt-10 pb-10 bg-[linear-gradient(120deg,_rgba(0,124,240,0.6),_rgba(0,223,216,0.2))]">
 
@@ -178,9 +201,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Icono de marcador personalizado
         var customIcon = L.icon({
           iconUrl: 'ezgif.com-effects.webp', // URL del ícono personalizado
-          iconSize: [60, 70], // Tamaño del ícono
-          iconAnchor: [30, 70], // Punto donde se ancla el ícono
-          popupAnchor: [0, -70] // Punto donde se ancla el popup
+          iconSize: [35, 55], // Tamaño del ícono
+          iconAnchor: [20, 60], // Punto donde se ancla el ícono
+          popupAnchor: [-3, -60] // Punto donde se ancla el popup
         });
 
         // Marcador
