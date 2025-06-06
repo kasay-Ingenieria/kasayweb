@@ -21,7 +21,7 @@
                 <a href="#servicios" class="text-gray-600 hover:text-blue-500 transition duration-300">Servicios</a>
                 <a href="./nosotros.php" class="text-gray-600 hover:text-blue-500 transition duration-300">Nosotros</a>
                 <a href="./contacto.php" class="text-gray-600 hover:text-blue-500 transition duration-300">Contacto</a>
-                <a href="#" class="bg-[linear-gradient(120deg,_rgba(0,124,240,0.9),_rgba(0,154,186,0.8))] text-white px-4 py-2 rounded-full hover:bg-blue-500 transition duration-300">Empezar</a>
+                <a href="#" class="bg-[linear-gradient(120deg,_rgba(0,124,240,0.9),_rgba(0,154,186,0.8))] text-white px-4 py-2 rounded-full hover:bg-blue-500 transition duration-300">Iniciar sesion</a>
             </div>
         </nav>
     </header>
