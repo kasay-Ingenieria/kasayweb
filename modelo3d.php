@@ -32,7 +32,7 @@
   
 <section id="contacto" class="pt-28 bg-blue-50">
   <div class="w-full px-20">
-    <div class="bg-white p-8 rounded-lg">
+     <div class="bg-white p-8 rounded-lg">
       
       <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Modelo 3D Xd</h2>
 
@@ -40,18 +40,12 @@
       <div class="flex flex-col md:flex-row items-center gap-8">
         
       
-       <model-viewer 
-    loading="lazy"
-    class="rounded-lg shadow-lg mb-20 ml-8" 
-    src="moto.glb"
-    alt="Modelo 3D de un terreno"
-    auto-rotate
-    camera-controls
-    shadow-intensity="1"
-    max-camera-distance="10m"
-    camera-orbit="10deg -190deg 0.3m"
-    ar>
-</model-viewer>
+   <iframe 
+          class="rounded-lg shadow-lg w-full h-[600px]" 
+          src="./tiles/visu_ortofoto.php"
+          title="Mapa interactivo de OpenLayers"
+          frameborder="0">
+        </iframe>
 
 
     
@@ -88,17 +82,12 @@
           </p>
         </div>
 
-        <model-viewer
-          class="rounded-lg shadow-lg mb-20 ml-8" 
-          src="modelos.glb"
-          alt="Modelo 3D de un terreno"
-          auto-rotate
-          camera-controls
-          shadow-intensity="1"
-          max-camera-distance="100m"
-          camera-orbit="0deg 75deg 100m"
-          ar>
-        </model-viewer>
+        <iframe 
+          class="rounded-lg shadow-lg w-full h-[600px]" 
+          src="visu_modelo3d.php"
+          title="Mapa interactivo de OpenLayers"
+          frameborder="0">
+        </iframe>
 
     
 
@@ -119,17 +108,12 @@
       <div class="flex flex-col md:flex-row items-center gap-8">
         
       
-        <model-viewer
-          class="rounded-lg shadow-lg mb-20 ml-8" 
-          src="1.glb"
-          alt="Modelo 3D de un terreno"
-          auto-rotate
-          camera-controls
-          shadow-intensity="1"
-          max-camera-distance="100m"
-          camera-orbit="0deg 75deg 8m"
-          ar>
-        </model-viewer>
+         <iframe 
+          class="rounded-lg shadow-lg w-full h-[600px]" 
+          src="visu_modpuntos.php"
+          title="Mapa interactivo de OpenLayers"
+          frameborder="0">
+        </iframe>
 
     
         <div class="w-full md:w-1/2 text-gray-800">

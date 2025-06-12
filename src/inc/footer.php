@@ -18,7 +18,7 @@
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div >
                     <div class="bg-white p-4 rounded-lg shadow-lg inline-block text-center">
-                        <img src="./assets/images/logotrans.png" alt="logo" class="w-32 h-auto mx-auto mb-2">
+                        <img src="./assets/images/logo.jpg" alt="logo" class="w-32 h-auto mx-auto mb-2">
                     </div>
                     <p class="text-1xl pt-4 font-bold">Creando el futuro digital, un proyecto a la vez.</p>
                 </div>
