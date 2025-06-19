@@ -22,7 +22,7 @@
 <!-- Barra de navegación -->
  <?php
 
-        include_once 'src/inc/navbar.php';
+        include_once '../inc/navbar.php';
 
 ?>
 
@@ -107,21 +107,13 @@ observer.observe(img);
 
     <hr/>
 
-    <section class="py-20 bg-blue-500 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para Empezar tu Próximo Proyecto?</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto">No esperes más. Contáctanos hoy mismo y descubre cómo podemos ayudarte a llevar tu negocio al siguiente nivel.</p>
-            <a href="contacto.php" class="bg-white text-blue-500 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg">Contáctanos Ahora</a>
-        </div>
-    </section>
-
-    <hr/>
+   
 
 
  <!-- Pie de pagina  -->
  <?php
 
-        include_once 'src/inc/footer.php';
+        include_once '../inc/footer.php';
  ?>
 
 </body>

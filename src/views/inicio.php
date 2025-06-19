@@ -22,7 +22,7 @@
 <!-- Barra de navegación -->
  <?php
 
-        include_once 'src/inc/navbar.php';
+        include_once '../inc/navbar.php';
 
 ?>
 
@@ -238,7 +238,7 @@
  <!-- Pie de pagina  -->
  <?php
 
-        include_once 'src/inc/footer.php';
+        include_once '../inc/footer.php';
  ?>
 
 </body>
