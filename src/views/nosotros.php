@@ -27,7 +27,7 @@
 <!-- Barra de navegación -->
  <?php
 
-        include_once 'src/inc/navbar.php';
+        include_once '../inc/navbar.php';
 
 ?>
 
@@ -157,7 +157,7 @@ Colaboramos estrechamente con nuestros clientes, entendiendo sus desafíos geogr
  <!-- Pie de pagina  -->
  <?php
 
-        include_once 'src/inc/footer.php';
+        include_once '../inc/footer.php';
  ?>
 
 </body>

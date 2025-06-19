@@ -18,7 +18,7 @@
 <!-- Barra de navegación -->
  <?php
 
-        include_once 'src/inc/navbar.php';
+        include_once '../inc/navbar.php';
 
 ?>
 
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Icono de marcador personalizado
         var customIcon = L.icon({
-          iconUrl: 'ezgif.com-effects.webp', // URL del ícono personalizado
+          iconUrl: 'assets/gif/icon_maps.webp', // URL del ícono personalizado
           iconSize: [35, 55], // Tamaño del ícono
           iconAnchor: [20, 60], // Punto donde se ancla el ícono
           popupAnchor: [-3, -60] // Punto donde se ancla el popup
@@ -313,7 +313,7 @@ toggleButton.onAdd = function (map) {
  <!-- Pie de pagina  -->
  <?php
 
-        include_once 'src/inc/footer.php';
+        include_once '../inc/footer.php';
  ?>
 
 </body>

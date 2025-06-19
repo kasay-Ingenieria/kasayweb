@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
+
+    <base href="/kasayweb/">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -24,7 +27,7 @@
 <!-- Barra de navegación -->
  <?php
 
-        include_once 'src/inc/navbar.php';
+        include_once '../inc/navbar.php';
 
 ?>
        
@@ -42,7 +45,7 @@
       
    <iframe 
           class="rounded-lg shadow-lg w-full h-[600px]" 
-          src="./tiles/visu_ortofoto.php"
+          src="assets/tiles/visu_ortofoto.php"
           title="Mapa interactivo de OpenLayers"
           frameborder="0">
         </iframe>
@@ -136,7 +139,7 @@
  <!-- Pie de pagina  -->
  <?php
 
-        include_once 'src/inc/footer.php';
+        include_once '../inc/footer.php';
  ?>
 
 </body>
