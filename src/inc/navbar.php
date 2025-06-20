@@ -16,7 +16,7 @@
 
     <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto px-0 py-2 flex justify-between items-center">
-            <a href="servicios.php">
+            <a href="src/views/inicio.php">
                 <img src="assets/images/logo.jpg" alt="logo" class="w-32 h-[50px]">
             </a>
             <div class="space-x-4">
