@@ -109,7 +109,6 @@ observer.observe(img);
 
    
 
-
  <!-- Pie de pagina  -->
  <?php
 
