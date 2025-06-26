@@ -83,161 +83,143 @@
 
     <hr/>
 
-<section id="nosot" class="bg-white py-12 scroll-mt-[30px]">
-    <div class="bg-gradient-to-b from-sky-50 to-white py-16">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold text-sky-500 mb-6">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-blue-600">
-                    Nuestros Servicios
-                </span>
-            </h2>
-            <p class="text-xl text-sky-500 max-w-4xl mx-auto mb-16 leading-relaxed">
-                Gestión Catastral: Organización y Administración Integral de la Información Territorial.
-            </p>
+<section id="nosot" class="bg-white py-20 scroll-mt-[60px]">
+  <div class="bg-gradient-to-b from-sky-50 to-white py-24">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-700 mb-6">
+        Nuestros Servicios
+      </h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16 leading-relaxed">
+        Gestión Catastral Integral con Soluciones Técnicas, Tecnológicas y Administrativas de Alto Nivel.
+      </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-4">
-
-                <!-- Servicio 1 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-    <div class="relative overflow-hidden rounded-xl h-48 mb-6 group">
-    <img src="./assets/images/ali_2.png" 
-         alt="Consultoría Especializada"
-         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/60 to-transparent"></div>
-</div>
-
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Consultoría Especializada</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.
-                    </p>
-                    <a href="#" class="inline-block text-sky-500 font-medium hover:text-sky-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 2 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Gestión Catastral SaaS"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Gestión Catastral SaaS</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
-                    </p>
-                    <a href="#" class="inline-block text-teal-500 font-medium hover:text-teal-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 3 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Seguimiento GPS"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-purple-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Seguimiento GPS</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
-                    </p>
-                    <a href="#" class="inline-block text-purple-500 font-medium hover:text-purple-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 4 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Resultados Confiables"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-orange-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Resultados Confiables</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Puede contar con nuestros servicios para obtener resultados consistentes y fiables en todo momento.
-                    </p>
-                    <a href="#" class="inline-block text-orange-500 font-medium hover:text-orange-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 5 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Cartografía Digital"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Cartografía Digital</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Producción y actualización de cartografía digital para una precisa representación del territorio.
-                    </p>
-                    <a href="#" class="inline-block text-green-500 font-medium hover:text-green-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 6 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Bases de Datos Geográficas"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-red-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Bases de Datos Geográficas</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.
-                    </p>
-                    <a href="#" class="inline-block text-red-500 font-medium hover:text-red-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 7 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Análisis Territorial"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Análisis Territorial</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
-                    </p>
-                    <a href="#" class="inline-block text-indigo-500 font-medium hover:text-indigo-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-                <!-- Servicio 8 -->
-                <div class="group bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transform transition-all duration-500 hover:-translate-y-3 border border-sky-100">
-                    <div class="relative overflow-hidden rounded-xl h-48 mb-6">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                             alt="Soporte y Mantenimiento"
-                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-yellow-900/60 to-transparent"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Soporte y Mantenimiento</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        Ofrecemos soporte técnico continuo y mantenimiento de nuestras soluciones de software.
-                    </p>
-                    <a href="#" class="inline-block text-yellow-500 font-medium hover:text-yellow-600 transition-colors">
-                        Más información →
-                    </a>
-                </div>
-
-            </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-10">
+        
+        <!-- Servicio 1 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_consultoria.png" alt="Consultoría Especializada"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/20 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Consultoría Especializada</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
+
+        <!-- Servicio 2 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_saas.png"
+              alt="Gestión Catastral SaaS"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/20 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Gestión Catastral SaaS</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_gps.png"
+              alt="Seguimiento GPS"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Seguimiento GPS</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_360.png"
+              alt="Resultados Confiables"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Visores SIG Web</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Descubre Datos Geoespaciales en tu Navegador.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_carto.png"
+              alt="Cartografía Digital"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Cartografía Digital</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Producción y actualización de cartografía digital para una precisa representación del territorio.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_gdbs.png"
+              alt="Bases de Datos Geográficas"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Bases de Datos Geográficas</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+
+        <!-- Servicio 7 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_analisis.png"
+              alt="Análisis Territorial"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Análisis Territorial</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+
+        <!-- Servicio 8 -->
+        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
+          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
+            <img src="./assets/images/servicios/servicios_operacion.png"
+              alt="Soporte y Mantenimiento"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Operación Catastral</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-4">
+            Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
+          </p>
+          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+        </div>
+        
+
+      </div>
     </div>
+  </div>
 </section>
+
 
     <hr/>
     <!-- Sección de Servicios Destacados -->
