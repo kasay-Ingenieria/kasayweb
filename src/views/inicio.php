@@ -106,7 +106,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/consultoria.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 2 -->
@@ -121,7 +121,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/gestion_saas.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 3 -->
@@ -136,7 +136,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/seguimiento_gps.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 4 -->
@@ -151,7 +151,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Descubre Datos Geoespaciales en tu Navegador.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/visores_sig.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 5 -->
@@ -166,7 +166,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Producción y actualización de cartografía digital para una precisa representación del territorio.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/carto_digital.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 6 -->
@@ -181,7 +181,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/gdbs.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 7 -->
@@ -196,7 +196,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/analisis_territorial.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <!-- Servicio 8 -->
@@ -211,7 +211,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
           </p>
-          <a href="#" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="src/views/op_catastral.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
         
 
