@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="assets/images/cartografia_hero_illustration.png" alt="Ilustración de cartografía digital con mapa y datos" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
+                <img src="/kasayweb/assets/images/cartografia_hero_illustration.png" alt="Ilustración de cartografía digital con mapa y datos" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
             </div>
         </div>
     </section>

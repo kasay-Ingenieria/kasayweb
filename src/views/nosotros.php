@@ -37,7 +37,7 @@
         <div class="relative w-full h-[70vh] md:h-[50vh] overflow-hidden">
  
             <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0" aria-hidden="true">
-            <source src="assets/videos/kasaycontacto.mp4" type="video/mp4">
+            <source src="/kasayweb/assets/videos/kasaycontacto.mp4" type="video/mp4">
                 Tu navegador no soporta video HTML5.
             </video>
 
@@ -99,7 +99,7 @@
 
       <!-- Imagen -->
       <div class="flex justify-center  md:justify-start pt-8 md:pt-2">
-        <img src="assets/images/logotrans.png" alt="Logotipo de Kasay Ingeniería" 
+        <img src="/kasayweb/assets/images/logotrans.png" alt="Logotipo de Kasay Ingeniería" 
              class="rounded-lg pt-8 w-[200px] sm:w-[300px] md:w-[500px] h-[80px] sm:h-[120px] md:h-[230px] object-cover">
       </div>
 

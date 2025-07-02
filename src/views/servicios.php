@@ -33,7 +33,7 @@
 
         <div class="relative w-full h-screen overflow-hidden">
 
-            <img  src="assets/images/ortofoto.png" alt="Ortofoto" class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <img  src="/kasayweb/assets/images/ortofoto.png" alt="Ortofoto" class="absolute top-0 left-0 w-full h-full object-cover z-0">
 
 
             <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
@@ -89,7 +89,7 @@
             <div class="w-[1480px]  text-gray-800">
                  <iframe 
           class="rounded-lg shadow-lg w-full h-[600px]" 
-          src="assets/tiles/visu_ortofoto.php"
+          src="/kasayweb/assets/tiles/visu_ortofoto.php"
           title="Mapa interactivo de OpenLayers"
           frameborder="0">
         </iframe>

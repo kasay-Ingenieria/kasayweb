@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="assets/images/gps_hero_illustration.png" alt="Ilustración de seguimiento GPS en mapa" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
+                <img src="/kasayweb/assets/images/gps_hero_illustration.png" alt="Ilustración de seguimiento GPS en mapa" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
             </div>
         </div>
     </section>

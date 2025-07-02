@@ -16,17 +16,16 @@
             background-size: cover;
             background-position: center;
         }
+        /* Opcional: Añade scroll-behavior: smooth si no te funciona el JS o lo quieres más simple */
+        /* html { scroll-behavior: smooth; } */ 
     </style>
 </head>
 
 
 <body class="bg-gray-100 text-gray-800">
 
-<!-- Barra de navegación -->
- <?php
-
+<?php
         include_once '../inc/navbar.php';
-
 ?>
 
 
@@ -35,7 +34,7 @@
     <div class="relative w-full h-screen overflow-hidden">
  
         <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="assets/videos/kasay-solutions.mp4" type="video/mp4">
+            <source src="/kasayweb/assets/videos/kasay-solutions.mp4" type="video/mp4">
             Tu navegador no soporta video HTML5.
         </video>
 
@@ -53,14 +52,14 @@
                 <div class="container text-white/70 pt-40 grid grid-cols-3 gap-32 shadow-lg ">
                     
                     <div class="text-left  text-xl mx-auto hover:text-white">
-                        <a href="#seccion2">
+                        <a href="#proyectos_inicio">
                             <p>&nbsp;<i class="fa-solid fa-suitcase mr-2"></i> Proyectos</p>
                                 <hr class="border-t-2 border-gray-300 my-2">  
                              <p>Explora nuestros casos de éxito y soluciones implementadas en diversos sectores.</p>
                         </a>
                     </div>
                     <div class="text-left text-xl mx-auto  hover:text-white">
-                        <a href="#seccion2">
+                        <a href="#servicios_inicio">
                             <p>&nbsp;<i class="fa-solid fa-gear mr-2"></i> Servicios</p>
                             <hr class="border-t-2 border-gray-300 my-2">
                             <p>Conoce nuestro portafolio de consultoría, análisis de datos y tecnología geoespacial.</p>
@@ -83,7 +82,7 @@
 
     <hr/>
 
-<section id="nosot" class="bg-white py-20 scroll-mt-[60px]">
+<section id="servicios_inicio" class="bg-white py-20 scroll-mt-[60px]">
   <div class="bg-gradient-to-b from-sky-50 to-white py-24">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-700 mb-6">
@@ -95,10 +94,9 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-10">
         
-        <!-- Servicio 1 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_consultoria.png" alt="Consultoría Especializada"
+            <img src="/kasayweb/assets/images/servicios/servicios_consultoria.png" alt="Consultoría Especializada"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/20 to-transparent"></div>
           </div>
@@ -109,10 +107,9 @@
           <a href="src/views/consultoria.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 2 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_saas.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_saas.png"
               alt="Gestión Catastral SaaS"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/20 to-transparent"></div>
@@ -124,10 +121,9 @@
           <a href="src/views/gestion_saas.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 3 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_gps.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_gps.png"
               alt="Seguimiento GPS"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
@@ -139,10 +135,9 @@
           <a href="src/views/seguimiento_gps.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 4 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_360.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_360.png"
               alt="Resultados Confiables"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
@@ -154,10 +149,9 @@
           <a href="src/views/visores_sig.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 5 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_carto.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_carto.png"
               alt="Cartografía Digital"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
@@ -169,10 +163,9 @@
           <a href="src/views/carto_digital.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 6 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_gdbs.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_gdbs.png"
               alt="Bases de Datos Geográficas"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
@@ -184,10 +177,9 @@
           <a href="src/views/gdbs.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 7 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_analisis.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_analisis.png"
               alt="Análisis Territorial"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
@@ -199,10 +191,9 @@
           <a href="src/views/analisis_territorial.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
-        <!-- Servicio 8 -->
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
           <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="./assets/images/servicios/servicios_operacion.png"
+            <img src="/kasayweb/assets/images/servicios/servicios_operacion.png"
               alt="Soporte y Mantenimiento"
               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
@@ -222,8 +213,7 @@
 
 
     <hr/>
-    <!-- Sección de Servicios Destacados -->
-<section id="servicios" class="py-20 bg-gradient-to-br from-sky-50 to-blue-50">
+    <section id="servicios" class="py-20 bg-gradient-to-br from-sky-50 to-blue-50">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">SOLUCIONES INTEGRALES</span>
@@ -232,8 +222,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Servicio 1 -->
-            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
+            <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-blue-500">
                     <i class="fas fa-map-marked-alt text-blue-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
                 </div>
@@ -255,7 +244,6 @@
                 </ul>
             </div>
             
-            <!-- Servicio 2 -->
             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-teal-500">
                     <i class="fas fa-layer-group text-teal-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
@@ -278,7 +266,6 @@
                 </ul>
             </div>
             
-            <!-- Servicio 3 -->
             <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-purple-500">
                     <i class="fas fa-cubes text-purple-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
@@ -304,8 +291,7 @@
     </div>
 </section>
 
-<!-- Sección de Proyectos -->
-<section id="proyectos" class="py-20 bg-white">
+<section id="proyectos_inicio" class="py-20 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">CASOS DE ÉXITO</span>
@@ -314,18 +300,18 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Proyecto 1 -->
             <div class="group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a3ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                         alt="Modernización Catastral"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                     <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                       <source src="/kasayweb/assets/videos/monteria.mp4" type="video/mp4">
+                          Tu navegador no soporta video HTML5.
+                     </video>                         
                     <div class="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent flex items-end p-6">
-                        <h3 class="text-2xl font-bold text-white">Modernización Catastral</h3>
+                        <h3 class="text-2xl font-bold text-white">Montería, Córdoba.</h3>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <p class="text-gray-600 mb-4">Implementación de sistema de gestión catastral para municipio de 50,000 habitantes.</p>
+                    <p class="text-gray-600 mb-4">Actualización catastral de el municipio, 2023</p>
                     <div class="flex justify-between items-center">
                         <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-semibold">Gestión Catastral</span>
                         <a href="#" class="text-blue-500 hover:text-blue-700 font-medium">Ver caso →</a>
@@ -333,39 +319,38 @@
                 </div>
             </div>
             
-            <!-- Proyecto 2 -->
             <div class="group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-64 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                         alt="Seguimiento GPS"
-                         class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+                       <source src="/kasayweb/assets/videos/sesquile.mp4" type="video/mp4">
+                          Tu navegador no soporta video HTML5.
+                     </video>       
                     <div class="absolute inset-0 bg-gradient-to-t from-teal-900/70 to-transparent flex items-end p-6">
-                        <h3 class="text-2xl font-bold text-white">Seguimiento GPS</h3>
+                        <h3 class="text-2xl font-bold text-white">Sesquilé, Cundinamarca.</h3>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <p class="text-gray-600 mb-4">Sistema de monitoreo vehicular para flota de 200 unidades en empresa logística.</p>
+                    <p class="text-gray-600 mb-4">Actualización catastral de el municipio, 2022</p>
                     <div class="flex justify-between items-center">
-                        <span class="inline-block px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-xs font-semibold">Tecnología GPS</span>
+                        <span class="inline-block px-3 py-1 bg-teal-100 text-teal-600 rounded-full text-xs font-semibold">Gestión Catastral</span>
                         <a href="#" class="text-teal-500 hover:text-teal-700 font-medium">Ver caso →</a>
                     </div>
                 </div>
             </div>
             
-            <!-- Proyecto 3 -->
             <div class="group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div class="relative h-64 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
                          alt="Análisis Territorial"
                          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-purple-900/70 to-transparent flex items-end p-6">
-                        <h3 class="text-2xl font-bold text-white">Análisis Territorial</h3>
+                        <h3 class="text-2xl font-bold text-white">Zipaquira, Cundinamarca.</h3>
                     </div>
                 </div>
                 <div class="p-6 bg-white">
-                    <p class="text-gray-600 mb-4">Estudio geoespacial para planificación urbana en área metropolitana.</p>
+                    <p class="text-gray-600 mb-4">Actualización catastral de el municipio, 2024.</p>
                     <div class="flex justify-between items-center">
-                        <span class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold">GIS</span>
+                        <span class="inline-block px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-xs font-semibold">Gestión Catastral</span>
                         <a href="#" class="text-purple-500 hover:text-purple-700 font-medium">Ver caso →</a>
                     </div>
                 </div>
@@ -381,13 +366,12 @@
     </div>
 </section>
 
-<!-- Sección Nosotros -->
 <section id="nosotros" class="py-20 bg-gradient-to-r from-sky-50 to-blue-50">
     <div class="container mx-auto px-6">
         <div class="flex flex-col lg:flex-row items-center gap-12">
             <div class="lg:w-1/2">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="assets/images/dron2.png" alt="Equipo Kasay Ingeniería" class="w-full h-auto">
+                    <img src="/kasayweb/assets/images/dron2.png" alt="Equipo Kasay Ingeniería" class="w-full h-auto">
                     <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
                         <div class="flex items-center">
                             <div class="bg-blue-100 p-3 rounded-lg mr-3">
@@ -457,7 +441,6 @@
     </div>
 </section>
 
-<!-- Sección CTA -->
 <section class="py-20 bg-gradient-to-r from-sky-600 to-blue-700 text-white">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu gestión territorial?</h2>
@@ -486,31 +469,31 @@
         <div class="swiper-allies">
             <div class="swiper-wrapper">
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_1.jpeg" alt="Logo Aliado 1" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_1.jpeg" alt="Logo Aliado 1" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_2.png" alt="Logo Aliado 2" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_2.png" alt="Logo Aliado 2" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_3.png" alt="Logo Aliado 3" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_3.png" alt="Logo Aliado 3" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_4.png" alt="Logo Aliado 4" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_4.png" alt="Logo Aliado 4" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_5.png" alt="Logo Aliado 5" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_5.png" alt="Logo Aliado 5" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_6.png" alt="Logo Aliado 6" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_6.png" alt="Logo Aliado 6" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                 <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_7.png" alt="Logo Aliado 7" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_7.png" alt="Logo Aliado 7" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                  <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_8.png" alt="Logo Aliado 8" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_8.png" alt="Logo Aliado 8" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
                  <div class="swiper-slide flex justify-center items-center p-4">
-                    <img src="assets/images/ali_9.jpg" alt="Logo Aliado 9" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
+                    <img src="/kasayweb/assets/images/ali_9.jpg" alt="Logo Aliado 9" class="max-h-32 w-auto filter grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100">
                 </div>
             </div>
         </div>
@@ -548,13 +531,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- Pie de pagina -->
 <?php include_once '../inc/footer.php'; ?>
 
-<!-- Scripts adicionales -->
 <script>
-    // Animación al hacer scroll
+    // Animación al hacer scroll Y Scroll Suave
     document.addEventListener('DOMContentLoaded', function() {
+        // Script para animaciones al aparecer (IntersectionObserver)
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -568,11 +550,33 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('section, .service-card').forEach(section => {
             observer.observe(section);
         });
+
+        // Script para scroll suave en enlaces de ancla
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita el salto instantáneo predeterminado
+
+                const targetId = this.getAttribute('href'); // Obtiene el ID del destino (ej. "#servicios_inicio")
+                const targetElement = document.querySelector(targetId); // Selecciona el elemento de destino
+
+                if (targetElement) {
+                    // Opción B: Usar window.scrollTo con cálculo de offset (para headers fijos)
+                    const headerOffset = 60; // <<< AJUSTA ESTE VALOR: Altura de tu barra de navegación fija
+                    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({
+                        top: elementPosition - headerOffset,
+                        behavior: "smooth"
+                    });
+
+                    // Opcional: Actualizar la URL en la barra de direcciones sin recargar
+                    // history.pushState(null, null, targetId);
+                }
+            });
+        });
     });
 </script>
 
 
- <!-- Pie de pagina  -->
  <?php
 
         include_once '../inc/footer.php';

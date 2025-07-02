@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
 
-    <base href="/kasayweb/">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -21,7 +20,7 @@
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div >
                     <div class="bg-white p-4 rounded-lg shadow-lg inline-block text-center">
-                        <img src="assets/images/logo.jpg" alt="logo" class="w-32 h-auto mx-auto mb-2">
+                        <img src="/kasayweb/assets/images/logo.jpg" alt="logo" class="w-32 h-auto mx-auto mb-2">
                     </div>
                     <p class="text-1xl pt-4 font-bold">Creando el futuro digital, un proyecto a la vez.</p>
                 </div>
