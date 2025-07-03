@@ -13,7 +13,7 @@
 
     <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto px-4 py-2 flex items-center justify-between">
-            <a href="src/views/inicio.php">
+            <a href="/kasayweb/src/views/inicio.php">
                 <img src="/kasayweb/assets/images/logo.jpg" alt="logo" class="w-32 h-[50px]">
             </a>
 

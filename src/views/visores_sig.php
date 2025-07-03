@@ -94,10 +94,12 @@
                         Explore entornos como si estuviera allí. Nuestros visores 360° ofrecen una experiencia inmersiva para inspección de sitios o planificación de proyectos.
                     </p>
                     <div class="w-full h-64 bg-gray-200 rounded-md overflow-hidden mb-4">
-                        <img id="viewer-360-img" src="/kasayweb/assets/images/visor_360_placeholder.jpg" alt="Visor 360" class="w-full h-full object-cover image-reveal-on-scroll">
-                    </div>
-                    <div class="text-center mt-auto">
-                        <a href="src/views/visor_360_example.php" class="inline-block bg-sky-500 text-white font-bold py-2 px-6 rounded-full hover:bg-sky-600 transition duration-300 text-md">Ver Demo</a>
+                    <iframe 
+                            class="w-full h-full object-cover image-reveal-on-scroll" 
+                            src="https://geokas.kasay.com.co/visualizador_fotos.html?photo=https://geokas.kasay.com.co/proyecto_streetview/fotos360/zipaquira/photo34856.jpeg&direction=13.2211&x=4889726.542586484&y=2113162.392243876&yaw=0&long=-73.99514391666666&lat=5.023402638888888" 
+                            title="Visor 3D Digital Twin"
+                            frameborder="0">
+                        </iframe>
                     </div>
                 </div>
 
@@ -112,13 +114,10 @@
                     <div class="w-full h-64 bg-gray-200 rounded-md overflow-hidden mb-4">
                          <iframe 
                             class="w-full h-full object-cover image-reveal-on-scroll" 
-                            src="src/views/visor_digital_twin.php" 
+                            src="src/functional/visor_digital_twin.php" 
                             title="Visor 3D Digital Twin"
                             frameborder="0">
                         </iframe>
-                    </div>
-                     <div class="text-center mt-auto">
-                        <a href="src/views/visor_dsm.php" class="inline-block bg-sky-500 text-white font-bold py-2 px-6 rounded-full hover:bg-sky-600 transition duration-300 text-md">Ver Demo</a>
                     </div>
                 </div>
 
