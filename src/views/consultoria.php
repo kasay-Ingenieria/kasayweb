@@ -32,7 +32,7 @@
 
     <section class="gradient-bg-hero text-white pt-24 pb-16 md:pt-32 md:pb-24">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
-            <div class="md:w-1/2 text-center md:text-left">
+            <div class="md:w-4/2 md:text-left">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                     Consultoría Especializada: <br class="hidden md:inline"> Su Guía en Gestión Catastral
                 </h1>
@@ -44,28 +44,27 @@
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="/kasayweb/assets/images/consultoria_hero_illustration.png" alt="Ilustración de consultoría estratégica" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
+                <img src="/kasayweb/assets/images/servicios/servicios_consultoria.png" alt="Ilustración de consultoría estratégica" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
             </div>
         </div>
     </section>
 
     <hr/>
-
-    <section id="expertise" class="py-16 bg-white [scroll-margin-top:80px]">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+    <section class="text-sky-700 mx-auto pt-20 pb-10 bg-white">
+        <div class="container mx-auto  text-justify pb-10 px-4 sm:px-8 md:px-24 lg:px-48">
+            <h2 class="text-3xl md:text-5xl  font-bold mb-6">
                 Nuestra Expertise en Consultoría Catastral
             </h2>
-            <div class="max-w-5xl mx-auto text-center text-lg leading-relaxed text-gray-700">
-                <p class="mb-8">
-                    En Kasay Ingeniería S.A.S., somos su aliado estratégico para la modernización y eficiencia en la administración territorial. Ofrecemos **consultoría especializada** para la habilitación de su municipio como Gestor Catastral y la planificación de la prestación del servicio público.
+            
+            <p class="text-lg md:text-xl mb-8 max-w-6xl ">
+                En Kasay Ingeniería S.A.S., somos su aliado estratégico para la modernización y eficiencia en la administración territorial. Ofrecemos **consultoría especializada** para la habilitación de su municipio como Gestor Catastral y la planificación de la prestación del servicio público.
                 </p>
                 <p>
                     Nuestro equipo multidisciplinario combina profundo conocimiento técnico, legal y operativo para diseñar soluciones a medida que garantizan el cumplimiento normativo, la optimización de procesos y el uso de tecnologías de vanguardia en su gestión catastral.
                 </p>
-            </div>
         </div>
-    </section>
+
+   </section>
 
     <hr/>
 
@@ -181,22 +180,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <hr/>
-
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                ¿Listo para Transformar su Gestión Catastral?
-            </h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Nuestro equipo de expertos está listo para ofrecerle una asesoría personalizada y adaptada a sus necesidades específicas.
-            </p>
-            <a href="src/views/contacto.php" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Contáctenos para una Asesoría
-            </a>
         </div>
     </section>
 

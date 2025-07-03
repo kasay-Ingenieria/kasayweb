@@ -47,17 +47,10 @@
             
             <h1 class="text-4xl md:text-8xl font-bold mb-6 leading-tight">Soluciones geolocalizadas </h1>
             <p class="text-lg md:text-4xl mb-8 max-w-4xl mx-auto">Experiencia Corporativa y Colaboraciones Estratégicas.</p>
-            <a href="#nosot" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg">Descubre Más</a>
+            <a href="#servicios_inicio" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg">Descubre Más</a>
 
                 <div class="container text-white/70 pt-40 grid grid-cols-3 gap-32 shadow-lg ">
                     
-                    <div class="text-left  text-xl mx-auto hover:text-white">
-                        <a href="#proyectos_inicio">
-                            <p>&nbsp;<i class="fa-solid fa-suitcase mr-2"></i> Proyectos</p>
-                                <hr class="border-t-2 border-gray-300 my-2">  
-                             <p>Explora nuestros casos de éxito y soluciones implementadas en diversos sectores.</p>
-                        </a>
-                    </div>
                     <div class="text-left text-xl mx-auto  hover:text-white">
                         <a href="#servicios_inicio">
                             <p>&nbsp;<i class="fa-solid fa-gear mr-2"></i> Servicios</p>
@@ -66,8 +59,17 @@
                         </a>
                     </div>
 
+                    <div class="text-left  text-xl mx-auto hover:text-white">
+                        <a href="#proyectos_inicio">
+                            <p>&nbsp;<i class="fa-solid fa-suitcase mr-2"></i> Proyectos</p>
+                                <hr class="border-t-2 border-gray-300 my-2">  
+                             <p>Explora nuestros casos de éxito y soluciones implementadas en diversos sectores.</p>
+                        </a>
+                    </div>
+
+
                     <div class="text-left text-xl mx-auto  hover:text-white">
-                        <a href="#seccion2">
+                        <a href="#nosotros">
                             <p>&nbsp;<i class="fa-regular fa-circle-question mr-2"></i>Apoyo</p>
                             <hr class="border-t-2 border-gray-300 my-2">
                             <p>Accede a nuestra base de conocimiento o contacta a nuestro equipo de asistencia técnica.</p>
@@ -82,10 +84,10 @@
 
     <hr/>
 
-<section id="servicios_inicio" class="bg-white py-20 scroll-mt-[60px]">
-  <div class="bg-gradient-to-b from-sky-50 to-white py-24">
+<section id="servicios_inicio" class="bg-white pb- scroll-mt-[60px]">
+  <div class="bg-gradient-to-b from-sky-50 to-white pt-8 pb-24 ">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-700 mb-6">
+      <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-400 mb-6">
         Nuestros Servicios
       </h2>
       <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16 leading-relaxed">
@@ -104,7 +106,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.
           </p>
-          <a href="src/views/consultoria.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/consultoria.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -118,7 +120,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
           </p>
-          <a href="src/views/gestion_saas.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/gestion_saas.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -132,7 +134,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
           </p>
-          <a href="src/views/seguimiento_gps.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/seguimiento_gps.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -146,7 +148,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Descubre Datos Geoespaciales en tu Navegador.
           </p>
-          <a href="src/views/visores_sig.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/visores_sig.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -160,7 +162,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Producción y actualización de cartografía digital para una precisa representación del territorio.
           </p>
-          <a href="src/views/carto_digital.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/carto_digital.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -174,7 +176,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.
           </p>
-          <a href="src/views/gdbs.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/gdbs.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -188,7 +190,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
           </p>
-          <a href="src/views/analisis_territorial.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/analisis_territorial.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
 
         <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
@@ -202,7 +204,7 @@
           <p class="text-gray-500 text-sm leading-relaxed mb-4">
             Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
           </p>
-          <a href="src/views/op_catastral.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
+          <a href="/kasayweb/src/views/op_catastral.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
         </div>
         
 
@@ -213,7 +215,7 @@
 
 
     <hr/>
-    <section id="servicios" class="py-20 bg-gradient-to-br from-sky-50 to-blue-50">
+    <section id="servicios" class="py-32 bg-gradient-to-br from-sky-50 to-blue-50">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">SOLUCIONES INTEGRALES</span>
@@ -371,22 +373,12 @@
         <div class="flex flex-col lg:flex-row items-center gap-12">
             <div class="lg:w-1/2">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
-                    <img src="/kasayweb/assets/images/dron2.png" alt="Equipo Kasay Ingeniería" class="w-full h-auto">
-                    <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg">
-                        <div class="flex items-center">
-                            <div class="bg-blue-100 p-3 rounded-lg mr-3">
-                                <i class="fas fa-award text-blue-500 text-xl"></i>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-500">Experiencia</p>
-                                <p class="font-bold text-gray-800">10+ años</p>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="/kasayweb/assets/images/logoj.png" alt="Equipo Kasay Ingeniería" class="w-full max-w-[56rem] mx-auto h-auto max-h-[72rem] object-contain">
+                    
                 </div>
             </div>
             
-            <div class="lg:w-1/2">
+            <div class="lg:w-1/2 text-center lg:text-left">
                 <span class="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">SOBRE NOSOTROS</span>
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Kasay <span class="gradient-text">Ingeniería</span></h2>
                 <p class="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -432,28 +424,11 @@
                     </div>
                 </div>
                 
-                <a href="#contacto" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 transition-all duration-300">
+                <a href="contacto.php" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 transition-all duration-300">
                     Contactar al equipo
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-20 bg-gradient-to-r from-sky-600 to-blue-700 text-white">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu gestión territorial?</h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Contáctanos hoy mismo y descubre cómo podemos ayudarte a optimizar tus procesos con tecnología geoespacial de vanguardia.</p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="contacto.php" class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-full shadow-sm text-blue-600 bg-white hover:bg-gray-100 transition-all duration-300">
-                Solicitar consultoría
-                <i class="fas fa-calendar-check ml-2"></i>
-            </a>
-            <a href="tel:+123456789" class="inline-flex items-center justify-center px-8 py-4 border border-2 border-white text-lg font-medium rounded-full text-white hover:bg-white/10 transition-all duration-300">
-                <i class="fas fa-phone-alt mr-2"></i>
-                Llamar ahora
-            </a>
         </div>
     </div>
 </section>
