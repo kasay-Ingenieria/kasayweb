@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Icono de marcador personalizado
         var customIcon = L.icon({
-          iconUrl: 'assets/gif/icon_maps.webp', // URL del ícono personalizado
+          iconUrl: '/kasayweb/assets/gif/icon_maps.webp', // URL del ícono personalizado
           iconSize: [35, 55], // Tamaño del ícono
           iconAnchor: [20, 60], // Punto donde se ancla el ícono
           popupAnchor: [-3, -60] // Punto donde se ancla el popup

@@ -16,8 +16,54 @@
             background-size: cover;
             background-position: center;
         }
-        /* Opcional: Añade scroll-behavior: smooth si no te funciona el JS o lo quieres más simple */
-        /* html { scroll-behavior: smooth; } */ 
+        
+         /* Estilos personalizados que son difíciles de replicar solo con clases de Tailwind sin configuración */
+        /* La lógica de posicionamiento de los items del carrusel se mantiene para la funcionalidad JS */
+        .slide .item:nth-child(1),
+        .slide .item:nth-child(2) {
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide .item:nth-child(3) { left: 50%; }
+        .slide .item:nth-child(4) { left: calc(50% + 220px); }
+        .slide .item:nth-child(5) { left: calc(50% + 440px); }
+        .slide .item:nth-child(n + 6) {
+            left: calc(50% + 660px);
+            opacity: 0;
+        }
+
+        /* La animación se mantiene para simplicidad */
+        .content .name, .content .des, .content button {
+            opacity: 0;
+            animation: animate 1s ease-in-out forwards;
+        }
+        
+        .slide .item:nth-child(2) .content {
+            display: block;
+        }
+
+        .content .des { animation-delay: 0.3s; }
+        .content button { animation-delay: 0.6s; }
+
+        @keyframes animate {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+                filter: blur(33px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                filter: blur(0);
+            }
+        }
+       
+        
     </style>
 </head>
 
@@ -52,7 +98,7 @@
                 <div class="container text-white/70 pt-40 grid grid-cols-3 gap-32 shadow-lg ">
                     
                     <div class="text-left text-xl mx-auto  hover:text-white">
-                        <a href="#servicios_inicio">
+                        <a href="#seccion_carrusel">
                             <p>&nbsp;<i class="fa-solid fa-gear mr-2"></i> Servicios</p>
                             <hr class="border-t-2 border-gray-300 my-2">
                             <p>Conoce nuestro portafolio de consultoría, análisis de datos y tecnología geoespacial.</p>
@@ -82,140 +128,7 @@
 
 </section>
 
-    <hr/>
-
-<section id="servicios_inicio" class="bg-white pb- scroll-mt-[60px]">
-  <div class="bg-gradient-to-b from-sky-50 to-white pt-8 pb-24 ">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-400 mb-6">
-        Nuestros Servicios
-      </h2>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-16 leading-relaxed">
-        Gestión Catastral Integral con Soluciones Técnicas, Tecnológicas y Administrativas de Alto Nivel.
-      </p>
-
-      <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-10">
-        
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_consultoria.png" alt="Consultoría Especializada"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/20 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Consultoría Especializada</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.
-          </p>
-          <a href="/kasayweb/src/views/consultoria.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_saas.png"
-              alt="Gestión Catastral SaaS"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/20 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Gestión Catastral SaaS</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
-          </p>
-          <a href="/kasayweb/src/views/gestion_saas.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_gps.png"
-              alt="Seguimiento GPS"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Seguimiento GPS</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
-          </p>
-          <a href="/kasayweb/src/views/seguimiento_gps.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_360.png"
-              alt="Resultados Confiables"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Visores SIG Web</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Descubre Datos Geoespaciales en tu Navegador.
-          </p>
-          <a href="/kasayweb/src/views/visores_sig.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_carto.png"
-              alt="Cartografía Digital"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Cartografía Digital</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Producción y actualización de cartografía digital para una precisa representación del territorio.
-          </p>
-          <a href="/kasayweb/src/views/carto_digital.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_gdbs.png"
-              alt="Bases de Datos Geográficas"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Bases de Datos Geográficas</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.
-          </p>
-          <a href="/kasayweb/src/views/gdbs.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_analisis.png"
-              alt="Análisis Territorial"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Análisis Territorial</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
-          </p>
-          <a href="/kasayweb/src/views/analisis_territorial.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-
-        <div class="group bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-500 border border-gray-100 hover:-translate-y-2">
-          <div class="relative overflow-hidden rounded-xl h-44 mb-6">
-            <img src="/kasayweb/assets/images/servicios/servicios_operacion.png"
-              alt="Soporte y Mantenimiento"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-            <div class="absolute inset-0 bg-gradient-to-t from-cyan-700/30 to-transparent"></div>
-          </div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-2">Operación Catastral</h3>
-          <p class="text-gray-500 text-sm leading-relaxed mb-4">
-            Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
-          </p>
-          <a href="/kasayweb/src/views/op_catastral.php" class="text-sky-600 text-sm font-medium hover:underline">Más información →</a>
-        </div>
-        
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <hr/>
-    <section id="servicios" class="py-32 bg-gradient-to-br from-sky-50 to-blue-50">
+    <section id="servicios" class="pt-32 pb-24 bg-white [scroll-margin-top:60px]">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">SOLUCIONES INTEGRALES</span>
@@ -224,7 +137,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
+            <div class="group bg-gradient-to-br from-sky-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-blue-500">
                     <i class="fas fa-map-marked-alt text-blue-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
                 </div>
@@ -246,7 +159,7 @@
                 </ul>
             </div>
             
-            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
+            <div class="bg-gradient-to-br from-sky-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-teal-500">
                     <i class="fas fa-layer-group text-teal-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
                 </div>
@@ -268,7 +181,7 @@
                 </ul>
             </div>
             
-            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
+            <div class="bg-gradient-to-br from-sky-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-purple-500">
                     <i class="fas fa-cubes text-purple-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
                 </div>
@@ -293,7 +206,161 @@
     </div>
 </section>
 
-<section id="proyectos_inicio" class="py-20 bg-white">
+
+
+<section id="seccion_carrusel" class="relative pb-20 pt-12 scroll-mt-[60px] min-h-[400px] bg-white">
+    
+        <div class="text-center mb-16">
+            <span class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">SOLUCIONES INTEGRALES</span>
+            <h2 class="text-4xl font-bold text-gray-800 mb-2">Tecnología Geoespacial <span class="gradient-text">Avanzada</span></h2>
+        </div>
+        <!-- Fondo blanco en vez de imagen borrosa -->
+        <div id="carrusel-bg" class="w-full h-full bg-white transition-all duration-700"></div>
+    </div>
+    
+    <div class="relative min-h-[580px] flex items-center justify-center z-10">
+        
+        <div class="slide" style="left: 80px; ">
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_360.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Visores 360° Inmersivos</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Explore entornos como si estuviera allí. Nuestros visores 360° ofrecen una experiencia inmersiva para inspección de sitios o planificación de proyectos.</div>
+                        <a href="/kasayweb/src/views/visores_sig.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>
+                </div>
+            </div>
+
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px]  h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/ortofoto.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Visores de Ortofotos 2D y Mapas</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Navegue por mapas de alta resolución y ortofotos actualizadas para un análisis preciso de su territorio en 2D.</div>
+
+                        <a href="/kasayweb/src/views/ortofoto.php" class="px-5 font-bold py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                
+                    </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/geoks.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Visores de Modelos 3D Avanzados</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Visualice con detalle modelos 3D de edificaciones, infraestructuras y terrenos. Perfectos para urbanismo, arquitectura e ingeniería.</div>
+
+                        <a href="/kasayweb/src/views/visores_sig.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                    
+                     </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_carto.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Cartografía Digital</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Producción y actualización de cartografía digital para una precisa representación del territorio.</div>
+
+                        <a href="/kasayweb/src/views/carto_digital.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                    
+                     </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_gdbs.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Bases de Datos Geográficas</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.</div>
+
+                        <a href="/kasayweb/src/views/gdbs.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                   
+                      </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_analisis.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Análisis Territorial</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.</div>
+
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                    
+                     </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_operacion.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Operación Catastral</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.</div>
+
+                        <a href="/kasayweb/src/views/op_catastral.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                   
+                      </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_consultoria.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Consultoría Especializada</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.</div>
+
+                        <a href="/kasayweb/src/views/consultoria.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                     
+                    </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_saas.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Gestión Catastral SaaS</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).</div>
+
+                        <a href="/kasayweb/src/views/gestion_saas.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>                   
+                      </div>
+            </div>
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_gps.png');">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Seguimiento GPS</div>
+                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.</div>
+
+                        <a href="/kasayweb/src/views/seguimiento_gps.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                         Más información →
+                        </a>     
+                                    </div>
+            </div>
+        </div>
+    </div>
+     <div class="button absolute bottom-5 w-full text-center">
+            <button class="prev w-16 h-12 cursor-pointer mx-1.5 transition-all duration-300 hover:text-white">
+                <i class="fa-regular fa-circle-left text-4xl text-sky-600/60 rounded-lg hover:bg-gray-100"></i>
+            </button>
+            <button class="next w-16 h-12 cursor-pointer mx-1.5 transition-all duration-300 ">
+                <i class="fa-regular fa-circle-right text-4xl text-sky-600/60 rounded-lg hover:bg-gray-100"></i>
+            </button>
+        </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Cambia el fondo del carrusel según el slide activo (el segundo .item visible)
+    function updateCarruselBg() {
+        const items = document.querySelectorAll('.slide .item');
+        // El slide activo es el segundo hijo (índice 1)
+        if (items.length > 1) {
+            const bg = items[1].style.backgroundImage;
+        }
+    }
+    
+
+    // Botones de navegación
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    next.addEventListener('click', function(){
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').appendChild(items[0]);
+        updateCarruselBg();
+    });
+    prev.addEventListener('click', function(){
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').prepend(items[items.length - 1]);
+        updateCarruselBg();
+    });
+});
+</script>
+
+<section id="proyectos_inicio" class="pt-20 pb-32 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="inline-block px-4 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-4">CASOS DE ÉXITO</span>
@@ -371,7 +438,7 @@
 <section id="nosotros" class="py-20 bg-gradient-to-r from-sky-50 to-blue-50">
     <div class="container mx-auto px-6">
         <div class="flex flex-col lg:flex-row items-center gap-12">
-            <div class="lg:w-1/2">
+            <div class="lg:w-1/2 pr-16">
                 <div class="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img src="/kasayweb/assets/images/logoj.png" alt="Equipo Kasay Ingeniería" class="w-full max-w-[56rem] mx-auto h-auto max-h-[72rem] object-contain">
                     
