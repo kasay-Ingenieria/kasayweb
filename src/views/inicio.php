@@ -9,62 +9,72 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script> <style>
-      
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://wallpapers.com/images/high/blue-geometric-kiyhavrstg1buil4.webp'); /* Imagen de fondo de ejemplo */
-            background-size: cover;
-            background-position: center;
-        }
-        
-         /* Estilos personalizados que son difíciles de replicar solo con clases de Tailwind sin configuración */
-        /* La lógica de posicionamiento de los items del carrusel se mantiene para la funcionalidad JS */
-        .slide .item:nth-child(1),
-        .slide .item:nth-child(2) {
-            top: 0;
-            left: 0;
-            transform: translate(0, 0);
-            border-radius: 0;
-            width: 100%;
-            height: 100%;
-        }
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <style>
+       .hero-bg {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://wallpapers.com/images/high/blue-geometric-kiyhavrstg1buil4.webp');
+        background-size: cover;
+        background-position: center;
+    }
 
-        .slide .item:nth-child(3) { left: 50%; }
-        .slide .item:nth-child(4) { left: calc(50% + 220px); }
-        .slide .item:nth-child(5) { left: calc(50% + 440px); }
-        .slide .item:nth-child(n + 6) {
-            left: calc(50% + 660px);
+    /* Estilos personalizados */
+    .slide .item {
+        border: 4px solid rgb(213, 219, 219, 0.7);
+        box-sizing: border-box;
+        opacity: 0.7;
+    }
+
+    .slide .item:nth-child(1),
+    .slide .item:nth-child(2) {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        opacity: 1;
+    }
+
+    .slide .item:nth-child(3) { left: 50%; }
+    .slide .item:nth-child(4) { left: calc(50% + 220px); }
+    .slide .item:nth-child(5) { left: calc(50% + 440px); }
+    .slide .item:nth-child(n + 6) {
+        left: calc(50% + 660px);
+        opacity: 0;
+    }
+
+    /* --- ESTA PARTE ES CRUCIAL PARA MOSTRAR EL TEXTO --- */
+    
+    /* Hace visible el contenedor del texto en el slide activo */
+    .slide .item:nth-child(2) .content {
+        display: block;
+    }
+
+    /* Prepara los elementos del texto para la animación */
+    .content .name, .content .des, .content a { /* Asegúrate de incluir la etiqueta 'a' del botón */
+        opacity: 0;
+        animation: animate 1s ease-in-out forwards;
+    }
+
+    .content .des { animation-delay: 0.3s; }
+    .content a { animation-delay: 0.6s; } /* Y animar el botón también */
+
+    /* Animación de entrada del texto */
+    @keyframes animate {
+        from {
             opacity: 0;
+            transform: translateY(100px);
+            filter: blur(33px);
         }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+    }
 
-        /* La animación se mantiene para simplicidad */
-        .content .name, .content .des, .content button {
-            opacity: 0;
-            animation: animate 1s ease-in-out forwards;
-        }
-        
-        .slide .item:nth-child(2) .content {
-            display: block;
-        }
-
-        .content .des { animation-delay: 0.3s; }
-        .content button { animation-delay: 0.6s; }
-
-        @keyframes animate {
-            from {
-                opacity: 0;
-                transform: translateY(100px);
-                filter: blur(33px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-                filter: blur(0);
-            }
-        }
-       
-        
-    </style>
+</style>
 </head>
 
 
@@ -262,51 +272,51 @@
                      </div>
             </div>
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_gdbs.png');">
-                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Bases de Datos Geográficas</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.</div>
 
-                        <a href="/kasayweb/src/views/gdbs.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/gdbs.php" class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-100 hover:text-gray-700 rounded cursor-pointer inline-block">
                          Más información →
                         </a>                   
                       </div>
             </div>
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_analisis.png');">
-                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
-                    <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Análisis Territorial</div>
-                    <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.</div>
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="name text-6xl uppercase  font-bold w-[700px] max-w-none">Análisis Territorial</div>
+                    <div class="des mt-2.5 text-xl pt-6  w-[700px] mb-5">Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.</div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                    
                      </div>
-            </div>
+            </div>servicios_consultoria
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_operacion.png');">
-                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Operación Catastral</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.</div>
 
-                        <a href="/kasayweb/src/views/op_catastral.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                   
                       </div>
             </div>
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_consultoria.png');">
-                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-white -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Consultoría Especializada</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Asesoría para la habilitación del municipio como Gestor Catastral y planificación del servicio público.</div>
 
-                        <a href="/kasayweb/src/views/consultoria.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-100 font-bold hover:bg-sky-400 hover:text-gray-700 text-black  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                     
                     </div>
             </div>
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_saas.png');">
-                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Gestión Catastral SaaS</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).</div>
 
-                        <a href="/kasayweb/src/views/gestion_saas.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                   
                       </div>
@@ -316,7 +326,7 @@
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Seguimiento GPS</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.</div>
 
-                        <a href="/kasayweb/src/views/seguimiento_gps.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>     
                                     </div>
