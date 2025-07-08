@@ -273,7 +273,7 @@
         
         <div class="slide" style="left: 80px; ">
                         
-            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_gdbs.png');">
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicio_gdbs.png');">
                 <span class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[160px] text-center w-full">
                   <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                        Bases de Datos Geográficas
@@ -420,7 +420,7 @@
                         </a>                   
                       </div>
             </div>
-            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_gps.png');">
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicio_gps.png');">
                 <span class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
                   <span class="bg-gray-700/70 py-2 rounded-lg inline-block">
                                         Seguimiento GPS
