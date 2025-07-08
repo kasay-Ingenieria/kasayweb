@@ -18,30 +18,38 @@
     }
 
     /* Estilos personalizados */
-    .slide .item {
-        border: 4px solid rgb(213, 219, 219, 0.7);
-        box-sizing: border-box;
-        opacity: 0.7;
-    }
+.slide .item {
+    border: 6px solid rgb(213, 219, 219, 0.7);
+    box-sizing: border-box;
+    opacity: 0.9;
+    background-color: white; 
+    background-size: 600%;
+    background-position: top left; /* ✨ AÑADE ESTA LÍNEA */
+}
+    
 
-    .slide .item:nth-child(1),
-    .slide .item:nth-child(2) {
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-        border-radius: 0;
-        width: 100%;
-        height: 100%;
-        border: none;
-        opacity: 1;
-    }
 
-    .slide .item:nth-child(3) { left: 50%; }
-    .slide .item:nth-child(4) { left: calc(50% + 220px); }
-    .slide .item:nth-child(5) { left: calc(50% + 440px); }
-    .slide .item:nth-child(n + 6) {
-        left: calc(50% + 660px);
-        opacity: 0;
+.slide .item:nth-child(1),
+.slide .item:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+     background-size: cover;
+    background-position: left;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 1;
+    background-size: cover; /* ✨ AÑADE ESTA LÍNEA */
+}
+
+.slide .item:nth-child(3) { left: calc(50% + 100px); } /* +100px */
+.slide .item:nth-child(4) { left: calc(50% + 220px + 100px); } /* +100px */
+.slide .item:nth-child(5) { left: calc(50% + 440px + 100px); } /* +100px */
+.slide .item:nth-child(n + 6) {
+    left: calc(50% + 660px + 100px); /* +100px */
+    opacity: 0;
     }
 
     /* --- ESTA PARTE ES CRUCIAL PARA MOSTRAR EL TEXTO --- */
@@ -232,10 +240,10 @@
         
         <div class="slide" style="left: 80px; ">
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_360.png');">
-                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Visores 360° Inmersivos</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Explore entornos como si estuviera allí. Nuestros visores 360° ofrecen una experiencia inmersiva para inspección de sitios o planificación de proyectos.</div>
-                        <a href="/kasayweb/src/views/visores_sig.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/gdbs.php" class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-300 hover:text-gray-700 rounded cursor-pointer inline-block">
                          Más información →
                         </a>
                 </div>
@@ -246,27 +254,27 @@
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Visores de Ortofotos 2D y Mapas</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Navegue por mapas de alta resolución y ortofotos actualizadas para un análisis preciso de su territorio en 2D.</div>
 
-                        <a href="/kasayweb/src/views/ortofoto.php" class="px-5 font-bold py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/ortofoto.php" class="px-5 font-bold py-2.5 hover:bg-white bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                          Más información →
                         </a>                
                     </div>
             </div>
-            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/geoks.png');">
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/geoks.png');">
                 <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Visores de Modelos 3D Avanzados</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Visualice con detalle modelos 3D de edificaciones, infraestructuras y terrenos. Perfectos para urbanismo, arquitectura e ingeniería.</div>
 
-                        <a href="/kasayweb/src/views/visores_sig.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/visores_sig.php" class="px-5 py-2.5 hover:bg-white font-bold bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                          Más información →
                         </a>                    
                      </div>
             </div>
-            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_carto.png');">
+            <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_cartos.png');">
                 <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Cartografía Digital</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Producción y actualización de cartografía digital para una precisa representación del territorio.</div>
 
-                        <a href="/kasayweb/src/views/carto_digital.php" class="px-5 py-2.5 bg-white text-black rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/carto_digital.php" class="px-5 py-2.5 hover:bg-white font-bold bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                          Más información →
                         </a>                    
                      </div>
@@ -276,7 +284,7 @@
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Bases de Datos Geográficas</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Diseño e implementación de bases de datos espaciales para la gestión de información geográfica.</div>
 
-                        <a href="/kasayweb/src/views/gdbs.php" class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-100 hover:text-gray-700 rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/gdbs.php" class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-300 hover:text-gray-700 rounded cursor-pointer inline-block">
                          Más información →
                         </a>                   
                       </div>
@@ -286,17 +294,17 @@
                     <div class="name text-6xl uppercase  font-bold w-[700px] max-w-none">Análisis Territorial</div>
                     <div class="des mt-2.5 text-xl pt-6  w-[700px] mb-5">Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.</div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                    
                      </div>
-            </div>servicios_consultoria
+            </div>
             <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500" style="background-image: url('/kasayweb/assets/images/servicios/servicios_operacion.png');">
                 <div class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Operación Catastral</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.</div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                   
                       </div>
@@ -316,7 +324,7 @@
                     <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">Gestión Catastral SaaS</div>
                     <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).</div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
+                        <a href="/kasayweb/src/views/analisis_territorial.php" class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                          Más información →
                         </a>                   
                       </div>
@@ -344,29 +352,133 @@
 </section>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Cambia el fondo del carrusel según el slide activo (el segundo .item visible)
-    function updateCarruselBg() {
-        const items = document.querySelectorAll('.slide .item');
-        // El slide activo es el segundo hijo (índice 1)
-        if (items.length > 1) {
-            const bg = items[1].style.backgroundImage;
-        }
-    }
-    
 
-    // Botones de navegación
-    let next = document.querySelector('.next');
-    let prev = document.querySelector('.prev');
-    next.addEventListener('click', function(){
-        let items = document.querySelectorAll('.item');
-        document.querySelector('.slide').appendChild(items[0]);
-        updateCarruselBg();
+    // --- MÓDULO 1: CARRUSEL DE SERVICIOS (Personalizado) ---
+    const slideContainer = document.querySelector('.slide');
+    const carruselSection = document.getElementById('seccion_carrusel');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+    let intervaloSlide;
+
+    // Se comprueba que todos los elementos del carrusel principal existan antes de ejecutar su lógica
+    if (slideContainer && carruselSection && nextBtn && prevBtn) {
+        
+        function avanzarSlide() {
+            let items = slideContainer.querySelectorAll('.item');
+            if (items.length > 1) {
+                slideContainer.appendChild(items[0]);
+            }
+        }
+        
+        function retrocederSlide() {
+            let items = slideContainer.querySelectorAll('.item');
+            if (items.length > 1) {
+                slideContainer.prepend(items[items.length - 1]);
+            }
+        }
+
+        function detenerIntervalo() {
+            clearInterval(intervaloSlide);
+        }
+
+        function iniciarIntervalo() {
+            detenerIntervalo(); // Siempre limpia el anterior para evitar duplicados
+            intervaloSlide = setInterval(avanzarSlide, 6000); // 6 segundos
+        }
+
+        // Eventos para los botones de navegación
+        nextBtn.addEventListener('click', () => {
+            detenerIntervalo();
+            avanzarSlide();
+            iniciarIntervalo();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            detenerIntervalo();
+            retrocederSlide();
+            iniciarIntervalo();
+        });
+
+        // Eventos para pausar con el ratón
+        carruselSection.addEventListener('mouseenter', detenerIntervalo);
+        carruselSection.addEventListener('mouseleave', iniciarIntervalo);
+
+        // Evento para seleccionar un slide haciendo clic (versión corregida)
+        slideContainer.addEventListener('click', function(event) {
+            const clickedItem = event.target.closest('.item');
+            if (!clickedItem) return;
+
+            const allItems = [...slideContainer.querySelectorAll('.item')];
+            const clickIndex = allItems.indexOf(clickedItem);
+
+            // Condición corregida: > 1 porque los slides 0 y 1 son los principales
+            if (clickIndex > 1) { 
+                detenerIntervalo();
+                
+                // Bucle corregido con "- 1" para detenerse en el slide correcto
+                for (let i = 0; i < clickIndex - 1; i++) {
+                    avanzarSlide();
+                }
+
+                iniciarIntervalo();
+            }
+        });
+
+        // Arranque automático del carrusel
+        iniciarIntervalo();
+    }
+
+
+    // --- MÓDULO 2: CARRUSEL DE ALIADOS (Swiper) ---
+    if (document.querySelector('.swiper-allies')) {
+        const alliesSwiper = new Swiper('.swiper-allies', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2, spaceBetween: 20 },
+                768: { slidesPerView: 4, spaceBetween: 30 },
+                1024: { slidesPerView: 6, spaceBetween: 40 }
+            }
+        });
+    }
+
+
+    // --- MÓDULO 3: ANIMACIÓN DE SCROLL Y SCROLL SUAVE ---
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                observer.unobserve(entry.target); // Para que la animación ocurra solo una vez
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, .service-card').forEach(section => {
+        observer.observe(section);
     });
-    prev.addEventListener('click', function(){
-        let items = document.querySelectorAll('.item');
-        document.querySelector('.slide').prepend(items[items.length - 1]);
-        updateCarruselBg();
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                const headerOffset = 60; // Altura de tu barra de navegación fija
+                const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: elementPosition - headerOffset,
+                    behavior: "smooth"
+                });
+            }
+        });
     });
+
 });
 </script>
 
