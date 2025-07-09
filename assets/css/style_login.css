@@ -1,0 +1,61 @@
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.gradient-bg-hero {
+    /* Using a slightly darker gradient for a more "pro" look, while keeping brand colors */
+    background: linear-gradient(120deg, rgba(0,90,180,0.95), rgba(0,120,150,0.85));
+    /* Optional: Add a subtle futuristic pattern here */
+    /* background-image: url('/kasayweb/assets/images/subtle-grid-pattern.png'), linear-gradient(120deg, rgba(0,90,180,0.95), rgba(0,120,150,0.85)); */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Custom animation for card entry */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInSlideUp {
+    animation: fadeInSlideUp 0.8s ease-out forwards;
+}
+
+/* Modern input focus effect */
+.input-elegant-focus:focus {
+    border-color: #007cf0; /* A vibrant blue for focus */
+    box-shadow: 0 0 0 4px rgba(0, 124, 240, 0.25); /* Stronger, diffused glow */
+}
+
+/* Subtle underline animation for heading */
+.animated-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.animated-underline::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom: -5px; /* Adjust distance from text */
+    left: 0;
+    background-color: #007cf0; /* Blue underline */
+    transition: width 0.4s ease-out;
+}
+
+.animated-underline.is-visible::after {
+    width: 100%;
+}
+
+/* Button hover effect */
+.btn-hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 124, 240, 0.3); /* Enhanced shadow */
+}
