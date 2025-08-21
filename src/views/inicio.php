@@ -262,7 +262,7 @@
                             inmersiva para inspección de sitios o planificación de proyectos.
                         </div>
 
-                        <a href="/kasayweb/src/views/gdbs.php"
+                        <a href="/kasayweb/src/views/services/gdbs.php"
                             class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-300 hover:text-gray-700 rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -292,7 +292,7 @@
                             territorio en 2D.
                         </div>
 
-                        <a href="/kasayweb/src/views/ortofoto.php"
+                        <a href="/kasayweb/src/views/services/ortofoto.php"
                             class="px-5 font-bold py-2.5 hover:bg-white bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -321,7 +321,7 @@
                             para urbanismo, arquitectura e ingeniería.
                         </div>
 
-                        <a href="/kasayweb/src/views/visores_sig.php"
+                        <a href="/kasayweb/src/views/services/visores_sig.php"
                             class="px-5 py-2.5 hover:bg-white font-bold bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -407,7 +407,7 @@
                             Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
                         </div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php"
+                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -437,7 +437,7 @@
                             servicio público.
                         </div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php"
+                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
                             class="px-5 py-2.5 bg-sky-100 font-bold hover:bg-sky-400 hover:text-gray-700 text-black  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -465,7 +465,7 @@
                             Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
                         </div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php"
+                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -493,7 +493,7 @@
                             Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
                         </div>
 
-                        <a href="/kasayweb/src/views/analisis_territorial.php"
+                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
