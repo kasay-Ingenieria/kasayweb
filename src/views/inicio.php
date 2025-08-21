@@ -232,7 +232,7 @@
                             geográfica.
                         </div>
 
-                        <a href="/kasayweb/src/views/gdbs.php"
+                        <a href="/kasayweb/src/views/services/gdbs.php"
                             class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-300 hover:text-gray-700 rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -351,7 +351,7 @@
                             territorio.
                         </div>
 
-                        <a href="/kasayweb/src/views/carto_digital.php"
+                        <a href="/kasayweb/src/views/services/carto_digital.php"
                             class="px-5 py-2.5 hover:bg-white font-bold bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -379,7 +379,7 @@
                         <div class="des mt-2.5 text-xl pt-6  w-[700px] mb-5">
                             Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
                         </div>
-                        <a href="/kasayweb/src/views/analisis_territorial.php"
+                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
