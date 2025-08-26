@@ -3,118 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasay Ingeneria</title>
+    <title>Visores 360° Inmersivos - Kasay Ingeniería</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <style>
-      
-        .hero-bg {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://wallpapers.com/images/high/blue-geometric-kiyhavrstg1buil4.webp'); /* Imagen de fondo de ejemplo */
-            background-size: cover;
-            background-position: center;
+        html {
+            scroll-behavior: smooth;
+        }
+        .font-lora { 
+            font-family: 'Lora', serif; 
+        }
+        .gradient-bg-hero { 
+            background: linear-gradient(120deg, rgba(0,124,240,0.9), rgba(0,154,186,0.8)); 
+        }
+        .card-hover-effect { 
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+        }
+        .card-hover-effect:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px; /* Ancho ajustado para subtítulos */
+            height: 4px;
+            margin: 16px auto 0;
+            background: linear-gradient(90deg, rgb(8, 45, 63), rgb(0, 153, 177));
+            border-radius: 2px;
         }
     </style>
 </head>
 
-
 <body class="bg-gray-100 text-gray-800">
 
-<!-- Barra de navegación -->
- <?php
+    <?php include_once '../../inc/navbar.php'; ?>
 
-        include_once '../inc/navbar.php';
-
-?>
-
-    <section id="inicio" class="text-white pb-0  md:pb-2">
-
-        <div class="relative w-full h-screen overflow-hidden">
-
-            <img  src="/kasayweb/assets/images/ortofoto.png" alt="Ortofoto" class="absolute top-0 left-0 w-full h-full object-cover z-0">
-
-
-            <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
-
-    <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl">
-
-        <div class="container mx-auto px-6 text-center">
-            
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Soluciones geolocalizadas </h1>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Experiencia Corporativa y Colaboraciones Estratégicas.</p>
-            <a href="#ortofoto" class="bg-white text-sky-500 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg">Descubre Más</a>
-        </div>
-
-    </div>
-
-    </section>
-
-    <hr/>
-
-    <section id="nosot" class="py-20 bg-blue-50 [scroll-margin-top:60px]">
-    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2">
-            <h2 class="text-3xl font-bold mb-6 text-gray-800">Conoce a Nuestro Equipo ✨</h2>
-            <p class="text-gray-700 mb-4 leading-relaxed">Somos un equipo apasionado de desarrolladores, diseñadores y estrategas dedicados a crear soluciones digitales excepcionales. Creemos en la colaboración, la innovación y, sobre todo, en el éxito de nuestros clientes.</p>
-            <p class="text-gray-700 leading-relaxed">Nuestra misión es superar tus expectativas y ayudarte a alcanzar tus objetivos de negocio a través de la tecnología y el diseño.</p>
-            <a href="#contacto" class="mt-6 inline-block bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Hablemos</a>
-        </div>
-        
-        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12 ">
-<img src="/kasayweb/assets/images/dron2.png"
-     class="opacity-0 transition duration-1000 transform translate-x-full"
-     id="equipoImg">
-
-        </div>
-        
-    </div>
-</section>
-
-<script>
-const img = document.getElementById('equipoImg');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      img.classList.remove('translate-x-full', 'opacity-0');
-      img.classList.add('translate-x-0', 'opacity-100');
-    } else {
-      img.classList.remove('translate-x-0', 'opacity-100');
-      img.classList.add('translate-x-full', 'opacity-0');
-    }
-  });
-}, {
-  threshold: 0.2 // Se activa cuando el 20% de la imagen es visible
-});
-
-observer.observe(img);
-</script>
-
-
-    <hr/>
-
-    <section id="ortofoto" class="py-16 bg-blue-50">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-            <div class="w-full md:w-[1500px] h-[600px] mx-auto text-gray-800 shadow-lg rounded-lg overflow-hidden">
-                <iframe 
-                    class="w-full h-full object-cover image-reveal-on-scroll" 
-                    src="https://geokas.kasay.com.co/visualizador_fotos.html?photo=https://geokas.kasay.com.co/proyecto_streetview/fotos360/zipaquira/photo34856.jpeg&direction=13.2211&x=4889726.542586484&y=2113162.392243876&yaw=0&long=-73.99514391666666&lat=5.023402638888888" 
-                    title="Visor 3D Digital Twin"
-                    frameborder="0"
-                    allowfullscreen
-                ></iframe>
+    <section class="gradient-bg-hero text-white pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Visores 360° Inmersivos: <br class="hidden md:inline"> Explore Entornos Como si Estuviera Allí
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0 font-lora">
+                    Ofrecemos experiencias visuales inmersivas para la inspección remota, planificación de proyectos y promoción de propiedades.
+                </p>
+                <a href="#visor" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-lg">
+                    Ver Demostración
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end" data-aos="fade-left">
+                <img src="/kasayweb/assets/images/servicios/servicio_360.png" alt="Ilustración de un visor 360 grados" class="w-full max-w-md rounded-lg shadow-2xl">
             </div>
         </div>
     </section>
 
-    <hr/>
+    <section id="solucion" class="py-16 bg-white [scroll-margin-top:80px]">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-sky-800 section-title">
+                Una Ventana Digital a sus Proyectos
+            </h2>
+            <div class="max-w-4xl mx-auto text-center text-lg leading-relaxed text-gray-700">
+                <p class="mb-6">
+                    En Kasay Ingeniería, transformamos la manera en que interactúa con sus activos y locaciones. Nuestros <strong>visores 360° inmersivos</strong> le permiten realizar recorridos virtuales detallados desde la comodidad de su oficina, proporcionando una comprensión completa del entorno sin necesidad de desplazamientos físicos.
+                </p>
+                <p>
+                    Esta tecnología es ideal para la inspección de infraestructuras, el seguimiento de obras, la promoción inmobiliaria o la documentación de sitios de interés, ofreciendo una perspectiva realista y precisa que las fotografías tradicionales no pueden igualar.
+                </p>
+            </div>
+        </div>
+    </section>
 
-   
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-sky-800 section-title" data-aos="fade-up">
+                Beneficios Clave de Nuestros Visores 360°
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover-effect flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-sky-500 mb-4 text-5xl">
+                        <i class="fas fa-street-view"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-700">Inmersión Total</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Navegue por los espacios con una libertad de movimiento completa, obteniendo una percepción real de las dimensiones y detalles.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover-effect flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-sky-500 mb-4 text-5xl">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-700">Inspección Remota Eficiente</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Realice análisis y mediciones preliminares a distancia, identificando posibles problemas sin estar físicamente en el lugar.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover-effect flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-sky-500 mb-4 text-5xl">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-700">Ahorro de Tiempo y Costos</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Reduzca drásticamente los gastos y el tiempo asociados a viajes y visitas a campo, optimizando la productividad de su equipo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
- <!-- Pie de pagina  -->
- <?php
+    <section id="visor" class="py-16 bg-white [scroll-margin-top:80px]">
+        <div class="container mx-auto px-6" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-sky-800 section-title">
+                Demostración Interactiva
+            </h2>
+            <div class="w-full max-w-6xl mx-auto h-[600px] text-gray-800 shadow-xl rounded-lg overflow-hidden border-4 border-gray-200">
+                <iframe 
+                    class="w-full h-full" 
+                    src="https://360.geokas.com.co/visualizador_fotos.html?photo=https://360.geokas.com.co//proyecto_streetview/fotos-360/zipaquira/photo26637.jpeg&direction=12.3216&x=4889722.020006847&y=2113141.8962433976&yaw=-12.3216&long=-73.99518444444445&lat=5.02321711111111" 
+                    title="Visor 360 Inmersivo de Kasay Ingeniería"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-        include_once '../inc/footer.php';
- ?>
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                ¿Listo para Llevar sus Proyectos a la Siguiente Dimensión?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Contáctenos para descubrir cómo nuestros visores 360° pueden transformar su forma de trabajar.
+            </p>
+            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
+                Solicitar Cotización
+            </a>
+        </div>
+    </section>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true, // La animación ocurre solo una vez al scrollear
+        });
+    </script>
+    
+    <?php include_once '../../inc/footer.php'; ?>
 
 </body>
 </html>

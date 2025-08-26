@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasay Ingeneria</title>
-    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/style_inicio.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_inicio.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
@@ -24,7 +24,7 @@
 
     <!-- barra de navegación -->
     <?php
-    include_once '../inc/navbar.php';
+    include_once 'src/inc/navbar.php';
     ?>
 
     <!-- Seccion de inicio con video de fondo y Texto agregado-->
@@ -232,7 +232,7 @@
                             geográfica.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/gdbs.php"
+                        <a href="src/views/services/gdbs.php"
                             class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-300 hover:text-gray-700 rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -262,7 +262,7 @@
                             inmersiva para inspección de sitios o planificación de proyectos.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/gdbs.php"
+                        <a href="src/views/services/visor360.php"
                             class="px-5 py-2.5 bg-sky-400 text-white font-bold hover:bg-sky-300 hover:text-gray-700 rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -292,7 +292,7 @@
                             territorio en 2D.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/ortofoto.php"
+                        <a href="src/views/services/ortofoto.php"
                             class="px-5 font-bold py-2.5 hover:bg-white bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -321,7 +321,7 @@
                             para urbanismo, arquitectura e ingeniería.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/visores_sig.php"
+                        <a href="src/views/services/modelo3d.php"
                             class="px-5 py-2.5 hover:bg-white font-bold bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -351,7 +351,7 @@
                             territorio.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/carto_digital.php"
+                        <a href="src/views/services/carto_digital.php"
                             class="px-5 py-2.5 hover:bg-white font-bold bg-blue-400 text-white hover:text-black rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -379,7 +379,7 @@
                         <div class="des mt-2.5 text-xl pt-6  w-[700px] mb-5">
                             Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
                         </div>
-                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
+                        <a href="src/views/services/analisis_territorial.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -407,7 +407,7 @@
                             Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
+                        <a href="src/views/services/op_catastral.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -437,7 +437,7 @@
                             servicio público.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
+                        <a href="src/views/services/consultoria.php"
                             class="px-5 py-2.5 bg-sky-100 font-bold hover:bg-sky-400 hover:text-gray-700 text-black  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -465,7 +465,7 @@
                             Sistema de Gestión Catastral bajo la modalidad de Software como Servicio (SaaS).
                         </div>
 
-                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
+                        <a href="src/views/services/gestion_saas.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-300 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -493,7 +493,7 @@
                             Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
                         </div>
 
-                        <a href="/kasayweb/src/views/services/analisis_territorial.php"
+                        <a href="src/views/services/seguimiento_gps.php"
                             class="px-5 py-2.5 bg-sky-400 font-bold hover:bg-sky-100 hover:text-gray-700 text-white  rounded cursor-pointer inline-block">
                             Más información →
                         </a>
@@ -678,7 +678,7 @@
                         </div>
                     </div>
 
-                    <a href="contacto.php"
+                    <a href="src/views/contacto.php"
                         class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 transition-all duration-300">
                         Contactar al equipo
                         <i class="fas fa-arrow-right ml-2"></i>
@@ -746,10 +746,10 @@
 
     <!-- Footer -->
     <?php
-    include_once '../inc/footer.php';
+    include_once 'src/inc/footer.php';
     ?>
     <!-- Scripts -->
-    <script src="../../assets/js/scripts_inicio.js"></script>
+    <script src="assets/js/scripts_inicio.js"></script>
 
 </body>
 

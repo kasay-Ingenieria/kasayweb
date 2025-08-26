@@ -28,7 +28,7 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-    <?php include_once '../inc/navbar.php'; ?>
+    <?php include_once '../../inc/navbar.php'; ?>
 
     <section class="gradient-bg-hero text-white pt-24 pb-16 md:pt-32 md:pb-24">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -44,7 +44,7 @@
                 </a>
             </div>
             <div class="md:w-1/2 flex justify-center md:justify-end">
-                <img src="/kasayweb/assets/images/analisis_territorial_hero_illustration.png" alt="Ilustración de análisis de datos geoespaciales y gráficos" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in">
+                <img src="assets/images/paginas_servicios/analisis_territorialweb.png" alt="Ilustración de análisis de datos geoespaciales y gráficos" class="w-full max-w-lg rounded-lg shadow-2xl animate-fade-in ">
             </div>
         </div>
     </section>
@@ -213,23 +213,9 @@
 
     <hr/>
 
-    <section class="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Convierta sus Datos en Ventaja Competitiva
-            </h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Permita que nuestros expertos en análisis territorial revelen el potencial oculto de su información geográfica.
-            </p>
-            <a href="src/views/contacto.php" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Contáctenos para un Análisis
-            </a>
-        </div>
-    </section>
 
-    <hr/>
 
-    <?php include_once '../inc/footer.php'; ?>
+    <?php include_once '../../inc/footer.php'; ?>
 
 </body>
 </html>

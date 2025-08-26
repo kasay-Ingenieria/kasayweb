@@ -13,7 +13,7 @@
 
     <header class="bg-white shadow-md fixed w-full z-50">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <a href="/kasayweb/src/views/inicio.php">
+            <a href="/kasayweb/index.php">
                 <img src="/kasayweb/assets/images/logo_extenso.jpg" alt="logo" class="w-60 h-[30px]">
             </a>
 
@@ -25,7 +25,7 @@
             <!-- Enlaces -->
             <div id="menu"
                 class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-4 absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none px-6 md:px-0 py-4 md:py-0 z-50">
-                <a href="/kasayweb/src/views/inicio.php"
+                <a href="/kasayweb/index.php"
                     class="block text-gray-600 hover:text-blue-500 transition duration-300 py-2 md:py-0">Inicio</a>
                 <a href="/kasayweb/src/views/nosotros.php"
                     class="block text-gray-600 hover:text-blue-500 transition duration-300 py-2 md:py-0">Nosotros</a>

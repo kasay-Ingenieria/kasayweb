@@ -212,33 +212,7 @@
                 </div>
             </div>
         </section>
-
-        <div class="bg_white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
-                <path fill="#f0f9fF" fill-opacity="1" d="M0,64L80,80C160,96,320,128,480,128C640,128,800,96,960,80C1120,64,1280,64,1360,64L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-            </svg>
-        </div>
-
         
-                
-        <section class="py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    Convierta Sus Datos en Mapas Inteligentes
-                </h2>
-                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                    Permítanos crear la cartografía digital que su proyecto o entidad necesita para una comprensión territorial sin igual.
-                </p>
-                <a href="src/views/contacto.php" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                    Cotice su Proyecto Cartográfico
-                </a>
-            </div>
-        </section>
-
-        
-
-        
-
         <?php include_once '../../inc/footer.php'; ?> <!-- Inclusión del pie de página --> 
 
     </body>

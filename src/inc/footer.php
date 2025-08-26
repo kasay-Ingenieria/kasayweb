@@ -27,7 +27,7 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Enlaces Rápidos</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="/kasayweb/src/views/inicio.php" class="hover:text-blue-400 transition duration-300">Inicio</a></li>
+                        <li><a href="/kasayweb/index.php" class="hover:text-blue-400 transition duration-300">Inicio</a></li>
                         <li><a href="/kasayweb/src/views/servicios.php" class="hover:text-blue-400 transition duration-300">Servicios</a></li>
                         <li><a href="/kasayweb/src/views/nosotros.php" class="hover:text-blue-400 transition duration-300">Nosotros</a></li>
                         <li><a href="/kasayweb/src/views/contacto.php" class="hover:text-blue-400 transition duration-300">Contacto</a></li>
