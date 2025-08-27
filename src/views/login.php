@@ -30,7 +30,7 @@
                 class="bg-white p-8 md:p-10 rounded-xl shadow-2xl w-full text-gray-800 border-b-4 border-sky-600 animate-fadeInSlideUp">
                 <!-- Encabezado del login -->
                 <div class="text-center mb-8">
-                    <img src="assets/images/logo.png" alt="Kasay Ingeniería Logo"
+                    <img src="/kasayweb/assets/images/logo.jpg" alt="Kasay Ingeniería Logo"
                         class="mx-auto h-16 w-auto mb-4 opacity-70">
                 </div>
                 <!-- Formulario de inicio de sesión -->

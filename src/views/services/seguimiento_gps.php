@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma de Inteligencia Logística y Seguimiento GPS - Kasay Ingeniería</title>
-    <base href="/kasayweb/">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -43,7 +42,7 @@
 
     <section id="inicio" class="relative w-full h-screen overflow-hidden text-white">
         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="assets/videos/servicios/servicios_seguimiento_gps.mp4" type="video/mp4">
+            <source src="/kasayweb//assets/videos/servicios/servicios_seguimiento_gps.mp4" type="video/mp4">
             Tu navegador no soporta video HTML5.
         </video>
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
@@ -55,8 +54,8 @@
                 <p class="text-lg md:text-2xl mb-10 max-w-4xl mx-auto font-lora">
                     Transforme sus operaciones con nuestra plataforma avanzada de seguimiento GPS, optimización de flotas y gestión de activos.
                 </p>
-                <a href="#plataforma" class="bg-sky-600 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-700 transition duration-300 text-lg shadow-lg">
-                    Solicitar una Demostración
+                <a href="#aplicacion-industria" class="bg-sky-600 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-700 transition duration-300 text-lg shadow-lg">
+                    Aplicación según su Industria
                 </a>
             </div>
         </div>
@@ -81,7 +80,7 @@
         </div>
     </section>
 
-    <section class="py-20 bg-slate-50">
+    <section id="aplicacion-industria" class="py-20 bg-slate-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-sky-900 section-title" data-aos="fade-up">
                 Soluciones a la Medida de su Industria
@@ -111,7 +110,7 @@
         </div>
     </section>
 
-    <section id="plataforma" class="py-20 bg-white [scroll-margin-top:80px]">
+    <section id="a" class="py-20 bg-white [scroll-margin-top:80px]">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-20 text-sky-900 section-title" data-aos="fade-up">
                 Una Plataforma Robusta para un Control Absoluto
@@ -136,18 +135,7 @@
             </div>
         </div>
     </section>
-    
-    <section class="py-20 bg-gradient-to-r from-sky-800 to-blue-900 text-white">
-        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Tome el Control Total de sus Operaciones</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-lora">
-                Nuestra plataforma le proporciona las herramientas para reducir costos, aumentar la seguridad y mejorar la eficiencia de toda su flota.
-            </p>
-            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Hable con un Especialista
-            </a>
-        </div>
-    </section>
+
 
     <script>
         AOS.init({

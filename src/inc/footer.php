@@ -20,7 +20,7 @@
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div >
                     <div class="bg-white p-4 rounded-lg shadow-lg inline-block text-center">
-                        <img src="/kasayweb/assets/images/logo.jpg" alt="logo" class="w-32 h-auto mx-auto mb-2">
+                        <a href="/kasayweb"><img src="/kasayweb/assets/images/logo.jpg" alt="logo" class="w-32 h-auto mx-auto mb-2"></a>
                     </div>
                     <p class="text-1xl pt-4 font-bold">Creando el futuro digital, un proyecto a la vez.</p>
                 </div>

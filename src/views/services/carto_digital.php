@@ -97,9 +97,9 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
                     Precisión y Detalle en Cada Mapa Digital
                 </h2>
-                <div class="max-w-5xl mx-auto text-center text-lg leading-relaxed text-gray-700">
+                <div class="max-w-5xl mx-auto text-justify text-lg leading-relaxed text-gray-700">
                     <p class="mb-8">
-                        En Kasay Ingeniería, somos especialistas en la **producción y actualización de cartografía digital** para una representación precisa y completa del territorio. Entendemos que un mapa es más que una imagen; es una herramienta vital para la planificación, el desarrollo y la toma de decisiones informadas.
+                        En Kasay Ingeniería, somos especialistas en la "producción y actualización de cartografía digital" para una representación precisa y completa del territorio. Entendemos que un mapa es más que una imagen; es una herramienta vital para la planificación, el desarrollo y la toma de decisiones informadas.
                     </p>
                     <p>
                         Ofrecemos servicios integrales que abarcan desde la captura de datos geoespaciales hasta la elaboración de mapas temáticos, topográficos, urbanos y rurales, garantizando siempre la máxima calidad y exactitud.
@@ -212,7 +212,7 @@
                 </div>
             </div>
         </section>
-        
+
         <?php include_once '../../inc/footer.php'; ?> <!-- Inclusión del pie de página --> 
 
     </body>

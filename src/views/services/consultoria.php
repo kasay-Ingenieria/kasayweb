@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultoría Estratégica para Gestores Catastrales - Kasay Ingeniería</title>
-    <base href="/kasayweb/">
+    
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
     <section id="inicio" class="relative w-full h-screen overflow-hidden text-white">
         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="/kasayweb/assets/videos/consulting_hero.mp4" type="video/mp4">
+            <source src="/kasayweb/assets/videos/servicios/servicios_consultoria.mp4" type="video/mp4">
             Tu navegador no soporta video HTML5.
         </video>
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
@@ -59,7 +59,7 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                  <div class="md:order-2" data-aos="fade-left">
-                    <img src="assets/images/paginas_servicios/servicio_consultoria.png" alt="Sesión de consultoría estratégica con equipo de Kasay" class="rounded-lg shadow-2xl w-full h-auto" style="max-height: 500px; object-fit: cover;">
+                    <img src="../../../assets/images/paginas_servicios/servicio_consultoria.png" alt="Sesión de consultoría estratégica con equipo de Kasay" class="rounded-lg shadow-2xl w-full h-auto" style="max-height: 500px; object-fit: cover;">
                 </div>
                 <div class="md:order-1" data-aos="fade-right">
                     <h2 class="text-3xl md:text-4xl font-bold text-sky-900 mb-6">Su Aliado en la Modernización Territorial</h2>

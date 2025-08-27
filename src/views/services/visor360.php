@@ -37,7 +37,7 @@
 
     <section id="inicio" class="relative w-full h-screen overflow-hidden text-white">
         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="../../../assets/videos/servicios/servicios_360.mp4" type="video/mp4">
+            <source src="/kasayweb/assets/videos/servicios/servicios_360.mp4" type="video/mp4">
             Tu navegador no soporta video HTML5.
         </video>
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
@@ -64,7 +64,7 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
-                    <img src="../../../assets/images/paginas_servicios/captura_imagenes360.jpg" alt="Equipo técnico realizando captura 360" class="rounded-lg shadow-xl w-full h-auto">
+                    <img src="/kasayweb/assets/images/paginas_servicios/captura_imagenes360.jpg" alt="Equipo técnico realizando captura 360" class="rounded-lg shadow-xl w-full h-auto">
                 </div>
                 <div class="space-y-6" data-aos="fade-left">
                     <div class="p-4 rounded-lg feature-item flex items-start">
@@ -145,18 +145,6 @@
                     </iframe>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-gradient-to-r from-sky-800 to-blue-900 text-white">
-        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Potencie sus Proyectos con Visión 360°</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-lora">
-                Permita que nuestro equipo de expertos le muestre cómo la inteligencia visual inmersiva puede optimizar sus operaciones.
-            </p>
-            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Contactar a un Especialista
-            </a>
         </div>
     </section>
 

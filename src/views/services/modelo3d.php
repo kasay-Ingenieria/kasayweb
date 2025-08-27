@@ -55,7 +55,7 @@
                 <p class="text-lg md:text-2xl mb-10 max-w-4xl mx-auto font-lora">
                     Creamos representaciones 3D interactivas y milimétricamente precisas de sus activos para una simulación, análisis y gestión sin precedentes.
                 </p>
-                <a href="#visor" class="bg-sky-600 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-700 transition duration-300 text-lg shadow-lg">
+                <a href="#modelogeokas" class="bg-sky-600 text-white font-bold py-3 px-8 rounded-full hover:bg-sky-700 transition duration-300 text-lg shadow-lg">
                     Explorar un Modelo
                 </a>
             </div>
@@ -114,7 +114,7 @@
             </div>
 
 
-            <section id="plataforma" class="py-20 bg-white [scroll-margin-top:80px]">
+            <section id="modelogeokas" class="py-20 bg-white [scroll-margin-top:80px]">
         <div class="container mx-auto px-6">
             <div class="w-full max-w-7xl mx-auto p-4 bg-slate-100 rounded-xl shadow-2xl border border-slate-200" data-aos="zoom-in-up">
                  <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden">
@@ -142,18 +142,6 @@
                 </div>
             </div>
             -->
-        </div>
-    </section>
-
-    <section class="py-20 bg-gradient-to-r from-sky-800 to-blue-900 text-white">
-        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Construya el Futuro Digital de sus Proyectos</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-lora">
-                Permítanos demostrarle cómo la tecnología de Gemelos Digitales puede llevar sus proyectos de ingeniería y planificación al siguiente nivel.
-            </p>
-            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Contactar a un Experto en Modelado 3D
-            </a>
         </div>
     </section>
 

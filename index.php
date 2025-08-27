@@ -445,17 +445,18 @@
                     </div>
                 </div>
                 <!-- Diapositiva 9 -->
+                <!--
                 <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500"
                     style="background-image: url('/kasayweb/assets/images/servicios/servicios_saas.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
-                    <span
+                   <!-- <span
                         class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
                         <span class="bg-gray-700/70 py-2 rounded-lg inline-block">
                             Gestión Catastral SaaS
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
+                 <!--   <div
                         class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
                         <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
                             Gestión Catastral SaaS
@@ -472,6 +473,8 @@
 
                     </div>
                 </div>
+                -->
+
                 <!-- Diapositiva 10 -->
                 <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500"
                     style="background-image: url('/kasayweb/assets/images/servicios/servicio_gps.png');">

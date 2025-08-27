@@ -447,20 +447,6 @@
 
         <hr/> <!-- Separador visual -->
 
-        <!-- Sección de llamado a la acción final -->
-        <section class="py-8 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
-            <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                Construya el Cimiento de su Inteligencia Territorial <!-- Llamado a la acción -->
-            </h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-                Hable con nuestros expertos para diseñar una base de datos geográfica que impulse sus proyectos.
-            </p>
-            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Contáctenos Ahora <!-- Botón de contacto -->
-            </a>
-            </div>
-        </section>
 
         <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> <!-- Script para interactividad FAQ -->
 

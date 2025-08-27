@@ -42,7 +42,7 @@
 
     <section id="inicio" class="relative w-full h-screen overflow-hidden text-white">
         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="../../../assets/videos/servicios/servicios_ortofoto.mp4" type="video/mp4">
+            <source src="/kasayweb/assets/videos/servicios/servicios_ortofoto.mp4" type="video/mp4">
             Tu navegador no soporta video HTML5.
         </video>
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
@@ -63,7 +63,7 @@
 
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Cartografía Digital: La Base para Decisiones Informadas</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Ortofoto Digital: La Base para Decisiones Informadas</h2>
             <div class="max-w-4xl mx-auto text-lg text-gray-600 mt-8 space-y-4 text-justify">
                 <p>
                     Una <strong>ortofoto</strong> es mucho más que una simple fotografía aérea. Es una imagen del terreno geométricamente corregida, de manera que la escala es uniforme y puede ser utilizada para medir distancias reales. Cada píxel está georreferenciado con precisión.
@@ -131,17 +131,6 @@
         </div>
     </section>
 
-    <section class="py-20 bg-gradient-to-r from-sky-800 to-blue-900 text-white">
-        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Transforme la Gestión de su Territorio</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-lora">
-                Nuestros datos geoespaciales son el primer paso hacia una administración más eficiente, sostenible y rentable.
-            </p>
-            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Solicitar Asesoría Técnica
-            </a>
-        </div>
-    </section>
 
     <script>
         AOS.init({

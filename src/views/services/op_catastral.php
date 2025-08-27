@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operación Catastral Integral y de Precisión - Kasay Ingeniería</title>
-    <base href="/kasayweb/">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -36,7 +35,7 @@
 
     <section id="inicio" class="relative w-full h-screen overflow-hidden text-white">
         <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <source src="/kasayweb/assets/videos/cadastral_ops_hero.mp4" type="video/mp4">
+            <source src="/kasayweb/assets/videos/servicios/servicios_opcatastral.mp4" type="video/mp4">
             Tu navegador no soporta video HTML5.
         </video>
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10"></div>
@@ -90,7 +89,7 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div data-aos="fade-right">
-                    <img src="assets/images/paginas_servicios/servicio_opcatastral.jpg" alt="Equipo técnico de Kasay realizando levantamiento catastral en campo" class="rounded-lg shadow-2xl w-full h-auto">
+                    <img src="/kasayweb/assets/images/paginas_servicios/servicio_opcatastral.jpg" alt="Equipo técnico de Kasay realizando levantamiento catastral en campo" class="rounded-lg shadow-2xl w-full h-auto">
                 </div>
                 <div data-aos="fade-left">
                     <h2 class="text-3xl md:text-4xl font-bold text-sky-900 mb-6">Sinergia en el Terreno: Talento y Tecnología</h2>
@@ -98,7 +97,7 @@
                         El éxito de una operación catastral reside en la perfecta combinación de profesionales expertos y herramientas de vanguardia. Nuestro enfoque integra ambos para garantizar la máxima calidad y eficiencia.
                     </p>
                     <ul class="space-y-4">
-                        <li class="flex items-start"><i class="fas fa-check-circle text-sky-500 mt-1 mr-3"></i><div><strong class="text-gray-800">Equipos Multidisciplinarios:</strong> Topógrafos, abogados y técnicos catastrales trabajando de forma coordinada.</div></li>
+                        <li class="flex items-start"><i class="fas fa-check-circle text-sky-500 mt-1 mr-3"></i><div><strong class="text-gray-800">Equipos Multidisciplinarios:</strong> Topógrafos, abogados y especialistas catastrales trabajando de forma coordinada.</div></li>
                         <li class="flex items-start"><i class="fas fa-check-circle text-sky-500 mt-1 mr-3"></i><div><strong class="text-gray-800">GPS de Alta Precisión:</strong> Equipos geodésicos para la captura de linderos y puntos con exactitud centimétrica.</div></li>
                         <li class="flex items-start"><i class="fas fa-check-circle text-sky-500 mt-1 mr-3"></i><div><strong class="text-gray-800">Aplicaciones Móviles de Captura:</strong> Formularios digitales y validación de datos en tiempo real para minimizar errores.</div></li>
                     </ul>
@@ -150,17 +149,6 @@
         </div>
     </section>
 
-    <section class="py-20 bg-gradient-to-r from-sky-800 to-blue-900 text-white">
-        <div class="container mx-auto px-6 text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Garantice la Calidad de su Catastro</h2>
-            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-lora">
-                Confíe en un equipo experto y una metodología probada para la actualización y conservación de la información territorial de su municipio.
-            </p>
-            <a href="/kasayweb/src/views/contacto.php" class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg shadow-xl">
-                Contactar a Nuestros Expertos
-            </a>
-        </div>
-    </section>
 
     <script>
         AOS.init({
