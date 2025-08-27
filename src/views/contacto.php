@@ -5,6 +5,7 @@
         <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
         <title>Nosotros</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+        <link rel="icon" href="/kasayweb/assets/images/favicon.ico" type="image/x-icon">
         <script src="https://cdn.tailwindcss.com"></script> <!-- Incluye Tailwind CSS para estilos rápidos -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Incluye Font Awesome versión beta 6.0.0 para iconos -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"> <!-- Incluye Font Awesome versión 6.5.0 para iconos -->
