@@ -229,10 +229,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Bases de Datos Geográficas
                         </div>
 
@@ -259,10 +258,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Visores 360° Inmersivos
                         </div>
 
@@ -289,10 +287,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Visores de Ortofotos 2D y Mapas
                         </div>
 
@@ -319,9 +316,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Visores de Modelos 3D Avanzados
                         </div>
 
@@ -348,10 +345,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Cartografía Digital
                         </div>
 
@@ -378,10 +374,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase  font-bold w-[700px] sm:w-[400px] max-w-none">
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Análisis Territorial
                         </div>
 
@@ -406,9 +401,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[500px] max-w-none">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Operación Catastral
                         </div>
 
@@ -434,10 +429,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-white -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Consultoría Especializada
                         </div>
 
@@ -495,9 +489,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div
-                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
-                        <div class="name text-6xl uppercase font-bold cursor-pointer w-[700px] sm:w-[400px] max-w-none">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+
+                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Seguimiento GPS
                         </div>
 
