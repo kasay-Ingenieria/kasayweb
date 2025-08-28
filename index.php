@@ -117,8 +117,7 @@
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div
                     class="group bg-gradient-to-br from-sky-50 to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
-                    <div
-                        class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-blue-500">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 transition-all duration-500 group-hover:bg-blue-500">
                         <i
                             class="fas fa-map-marked-alt text-blue-500 text-2xl transition-all duration-500 group-hover:text-white"></i>
                     </div>
@@ -199,7 +198,7 @@
 
     <!-- Sección de servicios -->
     <!-- Esta sección muestra los servicios avanzados que ofrece la empresa -->
-    <section id="seccion_carrusel" class="relative pb-2 pt-12 scroll-mt-[60px] bg-white">
+    <section id="seccion_carrusel" class="relative pb-2 pt-8 scroll-mt-[60px] bg-white">
 
         <!-- Contenedor Titulos y descripción -->
         <div class="container mx-auto">
@@ -207,7 +206,7 @@
                 <span
                     class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">Servicios
                     Avanzados</span>
-                <h2 class="text-4xl font-bold text-gray-800 mb-2">Servicios y Soluciones Tecnologícas</h2>
+                <h2 class="text-4xl font-bold text-gray-800 ">Servicios y Soluciones Tecnologícas</h2>
             </div>
             <!-- Fondo blanco para que la imagen se vea mas clara -->
             <div id="carrusel-bg" class="w-full h-full bg-white transition-all duration-700">
@@ -224,20 +223,20 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicio_gdbs.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[50px] text-center w-full">
                         <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                             Bases de Datos Geográficas
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
                             Bases de Datos Geográficas
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Diseño e implementación de bases de datos espaciales para la gestión de información
                             geográfica.
                         </div>
@@ -254,20 +253,20 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicio_360.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                             Visores 360° Inmersivos
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
                             Visores 360° Inmersivos
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Explore entornos como si estuviera allí. Nuestros visores 360° ofrecen una experiencia
                             inmersiva para inspección de sitios o planificación de proyectos.
                         </div>
@@ -284,20 +283,20 @@
                     style="background-image: url('/kasayweb/assets/images/ortofoto.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title font-bold text-2xl cursor-pointer text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                             Ortofotos 2D y Mapas
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
                             Visores de Ortofotos 2D y Mapas
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Navegue por mapas de alta resolución y ortofotos actualizadas para un análisis preciso de su
                             territorio en 2D.
                         </div>
@@ -314,19 +313,19 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/geoks.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title font-bold cursor-pointer text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title font-bold cursor-pointer text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                             Modelos 3D Avanzados
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
                             Visores de Modelos 3D Avanzados
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Visualice con detalle modelos 3D de edificaciones, infraestructuras y terrenos. Perfectos
                             para urbanismo, arquitectura e ingeniería.
                         </div>
@@ -343,20 +342,20 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicios_cartos.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title font-bold cursor-pointer text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title font-bold cursor-pointer text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                             Cartografía Digital
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
                             Cartografía Digital
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Producción y actualización de cartografía digital para una precisa representación del
                             territorio.
                         </div>
@@ -373,20 +372,20 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicios_analisis.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title font-bold cursor-pointer text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title font-bold cursor-pointer text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-400/70 py-2 rounded-lg inline-block">
                             Análisis Territorial
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase  font-bold w-[700px] max-w-none">
+                        <div class="name text-6xl uppercase  font-bold w-[700px] sm:w-[400px] max-w-none">
                             Análisis Territorial
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6  w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Análisis espacial y estudios territoriales para la toma de decisiones estratégicas.
                         </div>
                         <a href="src/views/services/analisis_territorial.php"
@@ -401,19 +400,19 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicios_operacion.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-700/70 py-2 rounded-lg inline-block">
                             Operación Catastral
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[500px] max-w-none">
                             Operación Catastral
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Captura Integral de Datos Físicos, Jurídicos y Económicos en el Terreno.
                         </div>
 
@@ -429,20 +428,20 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicios_consultoria.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-700/70 py-2 rounded-lg inline-block">
                             Consultoría Especializada
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-white -translate-y-1/2 hidden font-sans">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-6xl uppercase font-bold w-[700px] max-w-none">
+                        <div class="name text-6xl uppercase font-bold w-[700px] sm:w-[400px] max-w-none">
                             Consultoría Especializada
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Asesoría para la habilitación del municipio como Gestor Catastral y planificación del
                             servicio público.
                         </div>
@@ -490,19 +489,19 @@
                     style="background-image: url('/kasayweb/assets/images/servicios/servicio_gps.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
-                        class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[160px] text-center w-full">
+                        class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
                         <span class="bg-gray-700/70 py-2 rounded-lg inline-block">
                             Seguimiento GPS
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
                     <div
-                        class="content absolute top-1/2 left-[200px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
-                        <div class="name text-6xl uppercase font-bold cursor-pointer w-[700px] max-w-none">
+                        class="content absolute top-1/2 left-[200px] sm:left-[140px] w-[300px] text-left text-gray-100 -translate-y-1/2 hidden font-sans">
+                        <div class="name text-6xl uppercase font-bold cursor-pointer w-[700px] sm:w-[400px] max-w-none">
                             Seguimiento GPS
                         </div>
 
-                        <div class="des mt-2.5 text-xl pt-6 w-[700px] cursor-pointer mb-5">
+                        <div class="des mt-2.5 text-base sm:text-sm md:text-lg lg:text-xl pt-6 max-w-[700px] mb-5">
                             Implementación de sistemas de seguimiento vehicular y de activos con tecnología GPS.
                         </div>
 
@@ -516,12 +515,12 @@
             </div>
         </div>
         <!-- Botónes para el carrusel -->
-        <div class="button absolute bottom-44 w-full text-center z-30">
-            <button class="prev w-16 h-12 cursor-pointer mx-1.5 transition-all duration-300 hover:text-white">
-                <i class="fa-regular fa-circle-left text-4xl text-sky-600/60 rounded-lg hover:bg-gray-100"></i>
+        <div class="button absolute bottom-28 w-full text-center z-30">
+            <button class="prev w-16 h-12 cursor-pointer mx-1.5 transition-all duration-300 hover:text-white100/70">
+                <i class="fa-regular fa-circle-left text-4xl text-sky-700/60 rounded-lg hover:text-sky-700/40"></i>
             </button>
             <button class="next w-16 h-12 cursor-pointer mx-1.5 transition-all duration-300 ">
-                <i class="fa-regular fa-circle-right text-4xl text-sky-600/60 rounded-lg hover:bg-gray-100"></i>
+                <i class="fa-regular fa-circle-right text-4xl text-sky-600/60 rounded-lg hover:text-sky-700/40"></i>
             </button>
         </div>
 
@@ -529,7 +528,7 @@
 
     <!-- Sección de proyectos -->
     <!-- Esta sección muestra los proyectos destacados de la empresa -->
-    <section id="proyectos_inicio" class="pt-20 pb-44 bg-white">
+    <section id="proyectos_inicio" class="pt-24 pb-44 bg-white">
 
         <div class="container mx-auto px-6">
             <!-- Contenedor Titulos y descripción -->
@@ -629,11 +628,11 @@
     <!-- Sección de nosotros -->
     <!-- Esta sección presenta a la empresa y su equipo -->
     <section id="nosotros" class="py-20 bg-gradient-to-r from-sky-50 to-blue-50">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-0">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <!-- Imagen del logo -->
                 <div class="lg:w-1/2 pr-16">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                    <div class="relative rounded-3xl sm:left-8 overflow-hidden shadow-2xl">
                         <img src="/kasayweb/assets/images/logoj.png" alt="Equipo Kasay Ingeniería"
                             class="w-full max-w-[56rem] mx-auto h-auto max-h-[72rem] object-contain">
 
@@ -646,13 +645,13 @@
                         NOSOTROS</span>
                     <h2 class="text-4xl font-bold text-gray-800 mb-6">Kasay <span
                             class="gradient-text">Ingeniería</span></h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    <p class="text-lg text-gray-600 mb-12 leading-relaxed">
                         Somos especialistas en Consultoría Municipal y Tecnología Geoespacial, trabajando en estrecha
                         colaboración con entidades territoriales y empresas para definir soluciones tecnológicas y
                         realizar análisis geográficos de alta precisión.
                     </p>
                     <!-- Lista de características -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="grid lg:text-left grid-cols-1 sm:text-left md:grid-cols-2 gap-6 mb-8 ml-40 sm:ml-0">
                         <div class="flex items-start">
                             <div class="bg-blue-100 p-3 rounded-lg mr-4">
                                 <i class="fas fa-check text-blue-500"></i>
@@ -690,6 +689,7 @@
                             </div>
                         </div>
                     </div>
+                    <br />
 
                     <a href="src/views/contacto.php"
                         class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 transition-all duration-300">

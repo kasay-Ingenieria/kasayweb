@@ -8,7 +8,8 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+    <link rel="icon" href="/kasayweb/assets/images/favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -59,7 +60,7 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                  <div class="md:order-2" data-aos="fade-left">
-                    <img src="../../../assets/images/paginas_servicios/servicio_consultoria.png" alt="Sesión de consultoría estratégica con equipo de Kasay" class="rounded-lg shadow-2xl w-full h-auto" style="max-height: 500px; object-fit: cover;">
+                    <img src="/kasayweb/assets/images/paginas_servicios/servicio_consultoria.png" alt="Sesión de consultoría estratégica con equipo de Kasay" class="rounded-lg shadow-2xl w-full h-auto" style="max-height: 500px; object-fit: cover;">
                 </div>
                 <div class="md:order-1" data-aos="fade-right">
                     <h2 class="text-3xl md:text-4xl font-bold text-sky-900 mb-6">Su Aliado en la Modernización Territorial</h2>

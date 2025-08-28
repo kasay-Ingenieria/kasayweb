@@ -19,7 +19,7 @@
 .thumbnail-title {
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 00%;
   background: rgba(55, 65, 81, 0.4);
   position: absolute;
   top: 0;
@@ -33,7 +33,7 @@
 }
 
 .slide .item:not(:nth-child(1)):not(:nth-child(2)):hover {
-  transform: translateY(-180px); /* Lo eleva 10 píxeles */
+  transform: translateY(-130px); /* Lo eleva 10 píxeles */
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -47,6 +47,7 @@
   display: none;
 }
 
+/*Configuracion de el fondo detras de las diapositivas flotantes*/
 .slide .item:nth-child(1),
 .slide .item:nth-child(2) {
   top: 0;
@@ -63,16 +64,24 @@
 }
 
 .slide .item:nth-child(3) {
-  left: calc(50% + 70px);
+  left: calc(50% + 220px);
+  width: 10%;
+  height:35%;
+  top: 13rem;
+  
 } /* +100px */
 .slide .item:nth-child(4) {
-  left: calc(50% + 190px + 100px);
+  left: calc(50% + 338px + 100px);
+  width: 10%;
+  height:35%;
+  top: 13rem;
 } /* +100px */
 .slide .item:nth-child(5) {
-  left: calc(50% + 410px + 100px);
-  display : none;
+  left: calc(50% + 550px + 100px);
+  width: 10%;
+  height:35%;
+  top: 13rem;
 } /* +100px */
-
 .slide .item:nth-child(n + 6) {
   left: calc(50% + 660px + 100px); /* +100px */
   opacity: 0;
@@ -115,71 +124,95 @@
     filter: blur(0);
   }
 }
-
-/* --- Modo responsive --- */
-
-/* Para pantallas de 1131px o menos, ocultar todos los slides */
-@media (max-width: 1131px) {
-  .slide .item {
-    display: none; /* Ocultar todos los slides */
+/* Responsive del carrusel para pantallas de hasta 1790px */
+@media (max-width: 1490px) {
+  .slide .item:nth-child(3) {
+    left: calc(50% + 210px);
+    width: 10rem;
+    height: 35%;
+    top: 13rem;
   }
-}
 
-/* Para pantallas de 1131px hacia arriba (más grandes que 1131px) */
-@media (min-width: 1132px) {
-  .slide .item {
-    display: block; /* Mostrar todos los slides */
+  .slide .item:nth-child(4) {
+    left: calc(50% + 380px);
+    width: 10rem;
+    height: 35%;
+    top: 13rem;
   }
-}
 
-/* Ajustes para pantallas menores a 1024px (tablets y móviles) */
-@media (max-width: 1024px) {
-  .content .name {
-    font-size: 1.8rem; /* Un poco más pequeño para tablets */
+  .slide .item:nth-child(5) {
+    left: calc(50% + 550px);
+    width: 10rem;
+    height: 35%;
+    top: 13rem;
   }
-  .content .des {
-    font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
-  }
-}
 
-  /* Ocultamos los items pequeños (a la derecha) */
-  .slide .item:nth-child(n + 3) {
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 580px);
+    opacity: 0;
     display: none;
   }
+}
 
-  /* El contenido siempre visible en el item activo */
-  .slide .item:nth-child(2) .content {
-    display: block;
-    padding: 20px;
+/* Responsive del carrusel para pantallas de hasta 1366px */
+@media (max-width: 1490px) {
+  .slide .item:nth-child(3) {
+    left: calc(50% + 210px);
+    width: 10rem;
+    height: 35%;
+    top: 13rem;
   }
 
-  /* Ajustamos los textos */
-  .content .name {
-    font-size: 2rem; /* ~32px */
-  }
-  .content .des {
-    font-size: 1rem; /* ~16px */
-  }
-
-
-/* Ajustes para pantallas menores a 640px (móviles) */
-@media (max-width: 640px) {
-  .content .name {
-    font-size: 1.5rem; /* ~24px */
+  .slide .item:nth-child(4) {
+    left: calc(50% + 380px);
+    width: 10rem;
+    height: 35%;
+    top: 13rem;
   }
 
-  .content .des {
-    font-size: 0.875rem; /* ~14px */
+  .slide .item:nth-child(5) {
+    left: calc(50% + 550px);
+    width: 10rem;
+    height: 35%;
+    top: 13rem;
+  }
+
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 580px);
+    opacity: 0;
+    display: none;
   }
 }
 
-/* Ajustes con unidades relativas en función del tamaño de la pantalla */
-@media (max-width: 600px) {
-  .content .name {
-    font-size: 6vw; /* Ajusta el tamaño a un porcentaje del ancho de la pantalla */
+/* Responsive del carrusel para pantallas de hasta 600px */
+@media (max-width: 1300px) {
+  .slide .item:nth-child(3) {
+    left: calc(50% + 210px);
+    width: 10rem;
+    height: 35%;
+    display: none;
+    top: 13rem;
   }
 
-  .content .des {
-    font-size: 4vw; /* También ajusta el tamaño del texto descriptivo */
+  .slide .item:nth-child(4) {
+    left: calc(50% + 380px);
+    width: 10rem;
+    height: 35%;
+    display: none;
+    top: 13rem;
+  }
+
+  .slide .item:nth-child(5) {
+    left: calc(50% + 550px);
+    width: 10rem;
+    display: none;
+    height: 35%;
+    top: 13rem;
+  }
+
+  .slide .item:nth-child(n + 6) {
+    left: calc(50% + 580px);
+    opacity: 0;
+    display: none;
   }
 }

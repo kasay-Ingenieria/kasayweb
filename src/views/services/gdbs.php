@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconecta a Google Fonts (gstatic) -->
         <link rel="icon" href="../../../assets/images/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> <!-- Importa la fuente Lora desde Google Fonts -->
-        
+        <link rel="icon" href="/kasayweb/assets/images/favicon.ico" type="image/x-icon">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <style>
