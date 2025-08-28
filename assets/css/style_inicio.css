@@ -56,24 +56,27 @@
   background-position: left;
   border-radius: 50px;
   width: 100%;
-  height: 100%;
+  height: 73%;
   border: none;
   opacity: 1;
   background-size: cover;
 }
 
 .slide .item:nth-child(3) {
-  left: calc(50% + 100px);
+  left: calc(50% + 70px);
 } /* +100px */
 .slide .item:nth-child(4) {
-  left: calc(50% + 220px + 100px);
+  left: calc(50% + 190px + 100px);
 } /* +100px */
 .slide .item:nth-child(5) {
-  left: calc(50% + 440px + 100px);
+  left: calc(50% + 410px + 100px);
+  display : none;
 } /* +100px */
+
 .slide .item:nth-child(n + 6) {
   left: calc(50% + 660px + 100px); /* +100px */
   opacity: 0;
+  display: none;
 }
 
 /* --- ESTA PARTE ES CRUCIAL PARA MOSTRAR EL TEXTO --- */
@@ -110,5 +113,73 @@
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+  }
+}
+
+/* --- Modo responsive --- */
+
+/* Para pantallas de 1131px o menos, ocultar todos los slides */
+@media (max-width: 1131px) {
+  .slide .item {
+    display: none; /* Ocultar todos los slides */
+  }
+}
+
+/* Para pantallas de 1131px hacia arriba (más grandes que 1131px) */
+@media (min-width: 1132px) {
+  .slide .item {
+    display: block; /* Mostrar todos los slides */
+  }
+}
+
+/* Ajustes para pantallas menores a 1024px (tablets y móviles) */
+@media (max-width: 1024px) {
+  .content .name {
+    font-size: 1.8rem; /* Un poco más pequeño para tablets */
+  }
+  .content .des {
+    font-size: 0.9rem; /* Reducir ligeramente el tamaño del texto */
+  }
+}
+
+  /* Ocultamos los items pequeños (a la derecha) */
+  .slide .item:nth-child(n + 3) {
+    display: none;
+  }
+
+  /* El contenido siempre visible en el item activo */
+  .slide .item:nth-child(2) .content {
+    display: block;
+    padding: 20px;
+  }
+
+  /* Ajustamos los textos */
+  .content .name {
+    font-size: 2rem; /* ~32px */
+  }
+  .content .des {
+    font-size: 1rem; /* ~16px */
+  }
+
+
+/* Ajustes para pantallas menores a 640px (móviles) */
+@media (max-width: 640px) {
+  .content .name {
+    font-size: 1.5rem; /* ~24px */
+  }
+
+  .content .des {
+    font-size: 0.875rem; /* ~14px */
+  }
+}
+
+/* Ajustes con unidades relativas en función del tamaño de la pantalla */
+@media (max-width: 600px) {
+  .content .name {
+    font-size: 6vw; /* Ajusta el tamaño a un porcentaje del ancho de la pantalla */
+  }
+
+  .content .des {
+    font-size: 4vw; /* También ajusta el tamaño del texto descriptivo */
   }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kasay Ingeneria</title>
-    <link rel="icon" href="/kasayweb/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -27,65 +27,75 @@
     include_once 'src/inc/navbar.php';
     ?>
 
-    <!-- Seccion de inicio con video de fondo y Texto agregado-->
-    <section id="inicio" class="text-white">
+ <!-- Sección de inicio con video de fondo y texto -->
+<section id="inicio" class="text-white">
+  <div class="relative w-full h-screen overflow-hidden">
 
-        <div class="relative w-full h-screen overflow-hidden">
+    <!-- Video de fondo -->
+    <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <source src="/kasayweb/assets/videos/kasay-solutions.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
 
-            <!-- video de fondo-->
-            <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-                <source src="/kasayweb/assets/videos/kasay-solutions.mp4" type="video/mp4">
-                Tu navegador no soporta video HTML5.
-            </video>
+    <!-- Capa oscura -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
 
-            <!-- Capa oscura con transparencia para el video -->
-            <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
+    <!-- Contenido principal -->
+    <div class="relative z-20 flex items-center justify-center h-full text-white">
+      <div class="container mx-auto px-4 pt-28 sm:pt-40 md:pt-52 text-center">
 
-            <!-- Texto inicial que se superpone al video -->
-            <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl">
+        <!-- Título -->
+        <h1 class="text-3xl sm:text-5xl md:text-8xl font-bold mb-6 leading-tight">
+          Soluciones geolocalizadas
+        </h1>
 
-                <div class="container mx-auto pt-52 text-center ">
+        <!-- Subtítulo -->
+        <p class="text-base sm:text-xl md:text-4xl mb-8 max-w-4xl mx-auto">
+          Experiencia Corporativa y Colaboraciones Estratégicas.
+        </p>
 
-                    <h1 class="text-4xl md:text-8xl font-bold mb-6 leading-tight">Soluciones geolocalizadas </h1>
-                    <p class="text-lg md:text-4xl mb-8 max-w-4xl mx-auto">Experiencia Corporativa y Colaboraciones
-                        Estratégicas.</p>
-                    <a href="#soluciones_integrales"
-                        class="bg-white text-sky-700 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300 text-lg">Descubre
-                        Más</a>
+        <!-- Botón -->
+        <a href="#soluciones_integrales"
+          class="bg-white text-sky-700 font-bold py-2 sm:py-3 px-6 sm:px-8 rounded-full hover:bg-gray-200 transition duration-300 text-base sm:text-lg">
+          Descubre Más
+        </a>
 
-                    <div class="container text-white/70 pt-40 grid grid-cols-3 gap-32 shadow-lg ">
+        <!-- Sección inferior con 3 bloques -->
+        <div class="hidden lg:grid mt-12 grid-cols-3">
 
-                        <div class="text-left text-xl mx-auto  hover:text-white">
-                            <a href="#seccion_carrusel">
-                                <p>&nbsp;<i class="fa-solid fa-gear mr-2"></i> Servicios</p>
-                                <hr class="border-t-2 border-gray-300 my-2">
-                                <p>Conoce nuestro portafolio de consultoría, análisis de datos y tecnología geoespacial.
-                                </p>
-                            </a>
-                        </div>
+          <!-- Bloque Servicios -->
+          <div class="text-left text-base sm:text-lg md:text-xl mx-auto hover:text-white max-w-xs">
+            <a href="#seccion_carrusel">
+              <p><i class="fa-solid fa-gear mr-2"></i> Servicios</p>
+              <hr class="border-t-2 border-gray-300 my-2">
+              <p>Conoce nuestro portafolio de consultoría, análisis de datos y tecnología geoespacial.</p>
+            </a>
+          </div>
 
-                        <div class="text-left  text-xl mx-auto hover:text-white">
-                            <a href="#proyectos_inicio">
-                                <p>&nbsp;<i class="fa-solid fa-suitcase mr-2"></i> Proyectos</p>
-                                <hr class="border-t-2 border-gray-300 my-2">
-                                <p>Explora nuestros casos de éxito y soluciones implementadas en diversos sectores.</p>
-                            </a>
-                        </div>
+          <!-- Bloque Proyectos -->
+          <div class="text-left text-base sm:text-lg md:text-xl mx-auto hover:text-white max-w-xs">
+            <a href="#proyectos_inicio">
+              <p><i class="fa-solid fa-suitcase mr-2"></i> Proyectos</p>
+              <hr class="border-t-2 border-gray-300 my-2">
+              <p>Explora nuestros casos de éxito y soluciones implementadas en diversos sectores.</p>
+            </a>
+          </div>
 
+          <!-- Bloque Apoyo -->
+          <div class="text-left text-base sm:text-lg md:text-xl mx-auto hover:text-white max-w-xs">
+            <a href="#nosotros">
+              <p><i class="fa-regular fa-circle-question mr-2"></i> Apoyo</p>
+              <hr class="border-t-2 border-gray-300 my-2">
+              <p>Accede a nuestra base de conocimiento o contacta a nuestro equipo de asistencia técnica.</p>
+            </a>
+          </div>
 
-                        <div class="text-left text-xl mx-auto  hover:text-white">
-                            <a href="#nosotros">
-                                <p>&nbsp;<i class="fa-regular fa-circle-question mr-2"></i>Apoyo</p>
-                                <hr class="border-t-2 border-gray-300 my-2">
-                                <p>Accede a nuestra base de conocimiento o contacta a nuestro equipo de asistencia
-                                    técnica.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </section>
 
     <!-- Sección de soluciones integrales -->
     <!-- Esta sección muestra las soluciones integrales que ofrece la empresa -->
@@ -189,7 +199,7 @@
 
     <!-- Sección de servicios -->
     <!-- Esta sección muestra los servicios avanzados que ofrece la empresa -->
-    <section id="seccion_carrusel" class="relative pb-20 pt-12 scroll-mt-[60px] min-h-[400px] bg-white">
+    <section id="seccion_carrusel" class="relative pb-2 pt-12 scroll-mt-[60px] bg-white">
 
         <!-- Contenedor Titulos y descripción -->
         <div class="container mx-auto">
@@ -206,7 +216,7 @@
         </div>
 
         <!-- Carrusel de servicios -->
-        <div class="relative min-h-[580px] flex items-center justify-center z-10">
+        <div class="relative min-h-[580px] flex items-center justify-center z-20">
             <!-- Contenedor de Diapositivas -->
             <div class="slide" style="left: 80px; ">
                 <!-- Diapositiva 1 -->
@@ -506,7 +516,7 @@
             </div>
         </div>
         <!-- Botónes para el carrusel -->
-        <div class="button absolute bottom-5 w-full text-center">
+        <div class="button absolute bottom-44 w-full text-center z-30">
             <button class="prev w-16 h-12 cursor-pointer mx-1.5 transition-all duration-300 hover:text-white">
                 <i class="fa-regular fa-circle-left text-4xl text-sky-600/60 rounded-lg hover:bg-gray-100"></i>
             </button>
@@ -704,7 +714,7 @@
                     soluciones robustas y confiables.</p>
             </div>
             <!-- Carrusel de aliados -->
-            <div class="swiper-allies">
+            <div class="swiper-allies overflow-hidden">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide flex justify-center items-center p-4">
                         <img src="/kasayweb/assets/images/ali_1.jpeg" alt="Logo Aliado 1"
