@@ -42,7 +42,7 @@
 
     <!-- Contenido principal -->
     <div class="relative z-20 flex items-center justify-center h-full text-white">
-      <div class="container mx-auto px-4 pt-28 sm:pt-40 md:pt-52 text-center">
+      <div class="container mx-auto px-4 pt-28 sm:pt-36 md:pt-40 text-center">
 
         <!-- Título -->
         <h1 class="text-3xl sm:text-5xl md:text-8xl font-bold mb-6 leading-tight">
@@ -61,7 +61,7 @@
         </a>
 
         <!-- Sección inferior con 3 bloques -->
-        <div class="hidden lg:grid mt-12 grid-cols-3">
+        <div class="hidden xl:grid mt-28 grid-cols-3">
 
           <!-- Bloque Servicios -->
           <div class="text-left text-base sm:text-lg md:text-xl mx-auto hover:text-white max-w-xs">
@@ -107,8 +107,8 @@
                 <span
                     class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">SOLUCIONES
                     INTEGRALES</span>
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Tecnología Geoespacial Avanzada</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ofrecemos servicios de Consultoría en Gestión
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tecnología Geoespacial Avanzada</h2>
+                <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">Ofrecemos servicios de Consultoría en Gestión
                     Catastral, comprometidos en proporcionar las capacidades técnicas, tecnológicas y administrativas
                     necesarias.</p>
             </div>
@@ -206,7 +206,7 @@
                 <span
                     class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">Servicios
                     Avanzados</span>
-                <h2 class="text-4xl font-bold text-gray-800 ">Servicios y Soluciones Tecnologícas</h2>
+                <h2 class="text-3xl font-bold text-gray-800 ">Servicios y Soluciones Tecnologícas</h2>
             </div>
             <!-- Fondo blanco para que la imagen se vea mas clara -->
             <div id="carrusel-bg" class="w-full h-full bg-white transition-all duration-700">
@@ -229,9 +229,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Bases de Datos Geográficas
                         </div>
 
@@ -258,9 +258,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Visores 360° Inmersivos
                         </div>
 
@@ -287,9 +287,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Visores de Ortofotos 2D y Mapas
                         </div>
 
@@ -316,9 +316,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Visores de Modelos 3D Avanzados
                         </div>
 
@@ -345,9 +345,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Cartografía Digital
                         </div>
 
@@ -374,9 +374,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Análisis Territorial
                         </div>
 
@@ -392,7 +392,7 @@
                 </div>
                 <!-- Diapositiva 7 -->
                 <div class="item absolute top-1/2 -translate-y-1/2 w-[200px] h-[300px] rounded-2xl bg-cover bg-center inline-block transition-all duration-500"
-                    style="background-image: url('/kasayweb/assets/images/servicios/servicios_operacion.png');">
+                    style="background-image: url('/kasayweb/assets/images/servicios/servicios_operacion4.png');">
                     <!-- Título de la diapositiva en el cuadro pequeño -->
                     <span
                         class="thumbnail-title cursor-pointer font-bold text-2xl text-white/80 inline-block pt-[60px] text-center w-full">
@@ -401,9 +401,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-gray-700 -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Operación Catastral
                         </div>
 
@@ -429,9 +429,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Consultoría Especializada
                         </div>
 
@@ -489,9 +489,9 @@
                         </span>
                     </span>
                     <!-- Contenido de la diapositiva -->
-                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[260px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
+                    <div class="content absolute top-1/2 left-[40px] sm:left-[140px] md:left-[180px] lg:left-[170px] w-[320px] sm:w-[300px] md:w-[350px] lg:w-[900px] text-left text-white -translate-y-1/2 hidden font-sans">
 
-                        <div class="name text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
+                        <div class="name text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl uppercase font-bold w-full max-w-[700px]">
                             Seguimiento GPS
                         </div>
 
@@ -625,7 +625,7 @@
         <div class="container mx-auto px-0">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <!-- Imagen del logo -->
-                <div class="lg:w-1/2 pr-16">
+                <div class="lg:w-1/2 pr-16 pl-16 sm:pl-0">
                     <div class="relative rounded-3xl sm:left-8 overflow-hidden shadow-2xl">
                         <img src="/kasayweb/assets/images/logoj.png" alt="Equipo Kasay Ingeniería"
                             class="w-full max-w-[56rem] mx-auto h-auto max-h-[72rem] object-contain">
@@ -639,13 +639,13 @@
                         NOSOTROS</span>
                     <h2 class="text-4xl font-bold text-gray-800 mb-6">Kasay <span
                             class="gradient-text">Ingeniería</span></h2>
-                    <p class="text-lg text-gray-600 mb-12 leading-relaxed">
+                    <p class="text-lg text-gray-600 mb-12 px-2 text-center leading-relaxed">
                         Somos especialistas en Consultoría Municipal y Tecnología Geoespacial, trabajando en estrecha
                         colaboración con entidades territoriales y empresas para definir soluciones tecnológicas y
                         realizar análisis geográficos de alta precisión.
                     </p>
                     <!-- Lista de características -->
-                    <div class="grid lg:text-left grid-cols-1 sm:text-left md:grid-cols-2 gap-6 mb-8 ml-40 sm:ml-0">
+                    <div class="grid lg:text-left text-left grid-cols-1 sm:text-left md:grid-cols-2 gap-6 mb-8 ml-12 sm:ml-0">
                         <div class="flex items-start">
                             <div class="bg-blue-100 p-3 rounded-lg mr-4">
                                 <i class="fas fa-check text-blue-500"></i>

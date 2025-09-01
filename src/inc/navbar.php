@@ -13,9 +13,9 @@
 <body class="bg-gray-100 text-gray-800">
 
     <header class="bg-white shadow-md fixed w-full z-50">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <nav class="container mx-auto px-16 py-4 flex items-center justify-between">
             <a href="/kasayweb/index.php">
-                <img src="/kasayweb/assets/images/logo_extenso.jpg" alt="logo" class="w-60 h-[30px]">
+                <img src="/kasayweb/assets/images/logo_extenso.jpg" alt="logo" class="w-52 h-[24px]">
             </a>
 
             <!-- Botón hamburguesa para móviles -->
