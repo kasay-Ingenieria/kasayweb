@@ -57,7 +57,7 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Descifrando el ADN de su Territorio</h2>
-            <div class="max-w-4xl mx-auto text-lg text-gray-600 mt-8 space-y-4 text-justify">
+            <div class="max-w-4xl mx-auto text-lg text-gray-600 mt-8 space-y-4 text-justify hyphens-auto">
                 <p>
                     El verdadero valor de los datos geográficos no está en tenerlos, sino en entenderlos. Nuestro servicio de Análisis Territorial va más allá de la cartografía para descubrir patrones, predecir tendencias y responder preguntas críticas para su negocio o gestión.
                 </p>
@@ -186,7 +186,7 @@
     <script>
         AOS.init({
             duration: 800,
-            once: true,
+            once: false,
         });
     </script>
     

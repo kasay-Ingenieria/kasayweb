@@ -63,7 +63,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Aplicaciones Estratégicas</h2>
                 <p class="text-lg text-gray-600 mt-6 max-w-3xl mx-auto">Nuestra tecnología 360° ofrece soluciones tangibles para los desafíos más complejos de diversas industrias.</p>
             </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
                     <img src="/kasayweb/assets/images/paginas_servicios/captura_imagenes360.jpg" alt="Equipo técnico realizando captura 360" class="rounded-lg shadow-xl w-full h-auto">
                 </div>
@@ -100,27 +100,30 @@
                 Nuestro Proceso: De la Captura a la Visualización
             </h2>
             <div class="relative max-w-4xl mx-auto">
-                <div class="absolute left-1/2 w-0.5 h-full bg-sky-200 transform -translate-x-1/2"></div>
-                <div class="mb-12 flex justify-between items-center w-full" data-aos="fade-right">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">1</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+                <div class="absolute left-1/2 w-0.5 h-full bg-sky-200 transform -translate-x-1/2 hidden md:block"></div>
+                
+                <div class="mb-12 flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full" data-aos="fade-right">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1 md:order-none">1</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Levantamiento 360°</h3>
                         <p class="text-gray-600 text-sm">Utilizamos cámaras de alta resolución y equipos GPS de precisión para capturar imágenes inmersivas en campo.</p>
                     </div>
                 </div>
-                <div class="mb-12 flex justify-between flex-row-reverse items-center w-full" data-aos="fade-left">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">2</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+                
+                <div class="mb-12 flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full md:flex-row-reverse" data-aos="fade-left">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1">2</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Procesamiento y Ensamble</h3>
                         <p class="text-gray-600 text-sm">Procesamos y unimos las imágenes para crear panoramas 360° fluidos y georreferenciados con exactitud.</p>
                     </div>
                 </div>
-                <div class="flex justify-between items-center w-full" data-aos="fade-right">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">3</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+
+                <div class="flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full" data-aos="fade-right">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1 md:order-none">3</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Publicación en Plataforma</h3>
                         <p class="text-gray-600 text-sm">Alojamos los recorridos virtuales en nuestra plataforma segura y de alto rendimiento, accesible desde cualquier dispositivo.</p>
                     </div>
@@ -135,10 +138,10 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Plataforma Interactiva: Una Experiencia Real</h2>
                 <p class="text-lg text-gray-600 mt-6 max-w-3xl mx-auto">Navegue, explore y analice el entorno como si estuviera allí. Utilice el ratón para moverse en 360 grados.</p>
             </div>
-            <div class="w-full max-w-7xl mx-auto p-4 bg-slate-100 rounded-xl shadow-2xl border border-slate-200" data-aos="zoom-in-up">
-                 <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden">
+            <div class="w-full max-w-7xl mx-auto p-2 sm:p-4 bg-slate-100 rounded-xl shadow-2xl border border-slate-200" data-aos="zoom-in-up">
+                <div class="bg-black rounded-lg overflow-hidden">
                     <iframe 
-                        class="w-full h-[650px]" 
+                        class="w-full h-[450px] md:h-[650px]" 
                         src="https://360.geokas.com.co/visualizador_fotos.html?photo=https://360.geokas.com.co//proyecto_streetview/fotos-360/zipaquira/photo26637.jpeg&direction=12.3216&x=4889722.020006847&y=2113141.8962433976&yaw=-12.3216&long=-73.99518444444445&lat=5.02321711111111" 
                         title="Visor 360 Inmersivo de Kasay Ingeniería"
                         frameborder="0"
@@ -151,8 +154,8 @@
 
     <script>
         AOS.init({
-            duration: 800, // Duración de la animación
-            once: true,    // La animación ocurre solo una vez
+            duration: 800,
+            once: false,
         });
     </script>
     

@@ -65,7 +65,7 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-6 text-center" data-aos="fade-up">
             <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Ortofoto Digital: La Base para Decisiones Informadas</h2>
-            <div class="max-w-4xl mx-auto text-lg text-gray-600 mt-8 space-y-4 text-justify">
+            <div class="max-w-4xl mx-auto text-lg text-gray-600 mt-8 space-y-4 text-justify hyphens-auto">
                 <p>
                     Una <strong>ortofoto</strong> es mucho más que una simple fotografía aérea. Es una imagen del terreno geométricamente corregida, de manera que la escala es uniforme y puede ser utilizada para medir distancias reales. Cada píxel está georreferenciado con precisión.
                 </p>
@@ -76,7 +76,7 @@
         </div>
     </section>
 
-    <section class="py-20 bg-slate-50">
+    <section class="py-8 sm:py-20 bg-slate-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-sky-900 section-title" data-aos="fade-up">
                 Tecnología de Vanguardia para Resultados Superiores
@@ -84,7 +84,7 @@
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="bg-white p-8 rounded-lg text-center tech-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="text-sky-600 mb-5 text-6xl">
-                        <i class="fas fa-drone"></i>
+                        <i class="fas fa-plane"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">Drones (UAVs)</h3>
                     <p class="text-gray-600">
@@ -113,7 +113,7 @@
         </div>
     </section>
 
-    <section id="visor" class="py-20 bg-white [scroll-margin-top:80px]">
+    <section id="visor" class="py-4 sm:py-20 bg-white [scroll-margin-top:80px]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Plataforma de Visualización Cartográfica</h2>
@@ -136,7 +136,7 @@
     <script>
         AOS.init({
             duration: 800,
-            once: true,
+            once: false,
         });
     </script>
     

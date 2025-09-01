@@ -31,7 +31,7 @@
         <div class="relative w-full h-[70vh] md:h-[50vh] overflow-hidden">
             <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0"
                 aria-hidden="true">
-                <source src="/kasayweb/assets/videos/kasaycontacto.mp4" type="video/mp4">
+                <source src="/kasayweb/assets/videos/kasay_nosotros.mp4" type="video/mp4">
                 Tu navegador no soporta video HTML5.
             </video>
 

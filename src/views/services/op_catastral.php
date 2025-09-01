@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operación Catastral Integral y de Precisión - Kasay Ingeniería</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="/kasayweb/assets/images/favicon.ico" type="image/x-icon">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <style>
         html { scroll-behavior: smooth; }
         .font-lora { font-family: 'Lora', serif; }
@@ -29,7 +25,6 @@
         .timeline-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
     </style>
 </head>
-
 <body class="bg-white text-gray-800">
 
     <?php include_once '../../inc/navbar.php'; ?>
@@ -60,22 +55,22 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-sky-900 section-title" data-aos="fade-up">
                 Un Mosaico Completo: Los Tres Componentes del Catastro
             </h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-slate-50 p-8 rounded-lg text-center border-t-4 border-sky-500" data-aos="fade-up" data-aos-delay="100">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-slate-50 p-6 md:p-8 rounded-lg text-center border-t-4 border-sky-500" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-ruler-combined text-sky-600 text-5xl mb-5"></i>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">Componente Físico</h3>
                     <p class="text-gray-600">
                         Identificación, levantamiento y georreferenciación de linderos, áreas, construcciones y características del terreno.
                     </p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-lg text-center border-t-4 border-sky-500" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-slate-50 p-6 md:p-8 rounded-lg text-center border-t-4 border-sky-500" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-gavel text-sky-600 text-5xl mb-5"></i>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">Componente Jurídico</h3>
                     <p class="text-gray-600">
                         Investigación de la relación entre el propietario/poseedor y el inmueble, verificando la tenencia y los registros públicos.
                     </p>
                 </div>
-                <div class="bg-slate-50 p-8 rounded-lg text-center border-t-4 border-sky-500" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-slate-50 p-6 md:p-8 rounded-lg text-center border-t-4 border-sky-500" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-hand-holding-usd text-sky-600 text-5xl mb-5"></i>
                     <h3 class="text-2xl font-bold mb-3 text-gray-800">Componente Económico</h3>
                     <p class="text-gray-600">
@@ -88,7 +83,7 @@
 
     <section class="py-20 bg-slate-50">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                 <div data-aos="fade-right">
                     <img src="/kasayweb/assets/images/paginas_servicios/servicio_opcatastral.jpg" alt="Equipo técnico de Kasay realizando levantamiento catastral en campo" class="rounded-lg shadow-2xl w-full h-auto">
                 </div>
@@ -113,35 +108,39 @@
                 Nuestra Metodología de Trabajo
             </h2>
             <div class="relative max-w-4xl mx-auto">
-                <div class="absolute left-1/2 w-0.5 h-full bg-sky-200 transform -translate-x-1/2"></div>
-                <div class="mb-12 flex justify-between items-center w-full" data-aos="fade-right">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">1</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+                <div class="absolute left-1/2 w-0.5 h-full bg-sky-200 transform -translate-x-1/2 hidden md:block"></div>
+                
+                <div class="mb-12 flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full" data-aos="fade-right">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1 md:order-none">1</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Planificación y Alistamiento</h3>
                         <p class="text-gray-600 text-sm">Análisis de la zona, socialización con la comunidad y despliegue logístico del proyecto.</p>
                     </div>
                 </div>
-                <div class="mb-12 flex justify-between flex-row-reverse items-center w-full" data-aos="fade-left">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">2</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+                
+                <div class="mb-12 flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full md:flex-row-reverse" data-aos="fade-left">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1">2</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Levantamiento Predial</h3>
                         <p class="text-gray-600 text-sm">Nuestros equipos recorren el terreno, capturando datos físicos, jurídicos y económicos de cada predio.</p>
                     </div>
                 </div>
-                <div class="mb-12 flex justify-between items-center w-full" data-aos="fade-right">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">3</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+
+                <div class="mb-12 flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full" data-aos="fade-right">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1 md:order-none">3</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Análisis y Control de Calidad</h3>
                         <p class="text-gray-600 text-sm">La información recolectada es procesada y validada rigurosamente por nuestro equipo de oficina.</p>
                     </div>
                 </div>
-                <div class="flex justify-between flex-row-reverse items-center w-full" data-aos="fade-left">
-                    <div class="w-2/5"></div>
-                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">4</div>
-                    <div class="w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card">
+                
+                <div class="flex flex-wrap justify-center md:flex-nowrap md:justify-between items-center w-full md:flex-row-reverse" data-aos="fade-left">
+                    <div class="w-2/5 hidden md:block"></div>
+                    <div class="z-10 bg-sky-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg order-1">4</div>
+                    <div class="w-full md:w-2/5 bg-white p-6 rounded-lg shadow-md timeline-card mt-4 md:mt-0 order-2">
                         <h3 class="text-xl font-semibold mb-2 text-sky-800">Integración y Entrega Final</h3>
                         <p class="text-gray-600 text-sm">Consolidamos la base de datos catastral actualizada y la integramos según el modelo LADM-COL.</p>
                     </div>
@@ -150,11 +149,10 @@
         </div>
     </section>
 
-
     <script>
         AOS.init({
             duration: 800,
-            once: true,
+            once: false, // <-- Lo dejamos en 'false' como pediste
         });
     </script>
     

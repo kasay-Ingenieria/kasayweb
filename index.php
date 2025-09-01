@@ -33,7 +33,7 @@
 
     <!-- Video de fondo -->
     <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-      <source src="/kasayweb/assets/videos/kasay-solutions.mp4" type="video/mp4">
+      <source src="/kasayweb/assets/videos/kasay-soluciones.mp4" type="video/mp4">
       Tu navegador no soporta video HTML5.
     </video>
 
@@ -639,7 +639,7 @@
                         NOSOTROS</span>
                     <h2 class="text-4xl font-bold text-gray-800 mb-6">Kasay <span
                             class="gradient-text">Ingeniería</span></h2>
-                    <p class="text-lg text-gray-600 mb-12 px-2 text-center leading-relaxed">
+                    <p class="text-lg text-gray-600 mb-12 px-2 text-center sm:text-justify leading-relaxed">
                         Somos especialistas en Consultoría Municipal y Tecnología Geoespacial, trabajando en estrecha
                         colaboración con entidades territoriales y empresas para definir soluciones tecnológicas y
                         realizar análisis geográficos de alta precisión.

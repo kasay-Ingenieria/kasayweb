@@ -141,7 +141,7 @@
     <script>
         AOS.init({
             duration: 800,
-            once: true,
+            once: false,
         });
     </script>
     

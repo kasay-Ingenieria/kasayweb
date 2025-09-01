@@ -67,11 +67,11 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div data-aos="fade-right">
-                    <h2 class="text-3xl md:text-4xl font-bold text-sky-900 mb-6">Más Allá de la Visualización: El Poder del Gemelo Digital</h2>
-                    <p class="text-lg text-gray-600 mb-4">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center sm:text-left text-sky-900 mb-6">Más Allá de la Visualización: El Poder del Gemelo Digital</h2>
+                    <p class="text-lg text-gray-600 mb-4 text-justify hyphens-auto">
                         Un Gemelo Digital es una réplica virtual y dinámica de un objeto o sistema físico. A diferencia de un modelo 3D estático, un Gemelo Digital se mantiene "vivo" a lo largo del tiempo, pudiendo integrar datos en tiempo real (IoT), información de mantenimiento y resultados de simulaciones.
                     </p>
-                    <p class="text-lg text-gray-600">
+                    <p class="text-lg text-gray-600 text-justify hyphens-auto">
                         Esta tecnología permite analizar el rendimiento, predecir fallos, simular escenarios futuros y optimizar operaciones con un nivel de profundidad y precisión imposibles de alcanzar por otros medios.
                     </p>
                 </div>
@@ -107,16 +107,16 @@
         </div>
     </section>
     
-    <section id="visor" class="py-20 bg-white [scroll-margin-top:80px]">
+    <section id="visor" class="py-8 bg-white [scroll-margin-top:80px]">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16" data-aos="fade-up">
+            <div class="text-center mb-8" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-sky-900 section-title">Explore Nuestro Visor de Gemelos Digitales</h2>
                 <p class="text-lg text-gray-600 mt-6 max-w-3xl mx-auto">Interactúe con un modelo 3D de alta densidad. Use los controles del ratón para rotar (clic izquierdo), mover (clic derecho) y hacer zoom (rueda).</p>
             </div>
 
 
-            <section id="modelogeokas" class="py-20 bg-white [scroll-margin-top:80px]">
-        <div class="container mx-auto px-6">
+            <section id="modelogeokas" class="py-8 bg-white [scroll-margin-top:80px]">
+        <div class="container mx-auto px-0">
             <div class="w-full max-w-7xl mx-auto p-4 bg-slate-100 rounded-xl shadow-2xl border border-slate-200" data-aos="zoom-in-up">
                  <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden">
                     <iframe 
@@ -149,7 +149,7 @@
     <script>
         AOS.init({
             duration: 800,
-            once: true,
+            once: false,
         });
     </script>
     

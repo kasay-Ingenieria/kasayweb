@@ -26,14 +26,14 @@
             <section id="inicio" class="text-white pt-3 pb-0 md:pt-16 md:pb-1"> <!-- Sección de inicio con video de fondo -->
                 <div class="relative w-full h-[390px] overflow-hidden"> <!-- Contenedor relativo para el video -->
                     <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0"> <!-- Video de fondo -->
-                    <source src="/kasayweb/assets/videos/kasaycontacto.mp4" type="video/mp4"> <!-- Fuente del video -->
+                    <source src="/kasayweb/assets/videos/kasay-contacto.mp4" type="video/mp4"> <!-- Fuente del video -->
                     Tu navegador no soporta video HTML5. <!-- Mensaje si el navegador no soporta video -->
                     </video>
                     <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div> <!-- Capa oscura encima del video -->
                     <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl"> <!-- Contenido centrado sobre el video -->
                         <div class="container mx-auto px-6 text-center"> <!-- Contenedor centrado -->
-                            <h1 class="text-4xl md:text-6xl font-bold mb-6 pt-16 sm:pt-0 leading-tight">Kasay Ingeniería S.A.S </h1> <!-- Título principal -->
-                            <p class="text-lg md:text-3xl mb-8 max-w-4xl mx-auto">Asesoría en gestión catastral, análisis geoespacial y soporte</p> <!-- Subtítulo -->
+                           <!-- <h1 class="text-4xl md:text-6xl font-bold mb-6 pt-16 sm:pt-0 leading-tight">Kasay Ingeniería S.A.S </h1> <!-- Título principal -->
+                            <p class="text-lg md:text-3xl mb-32 sm:pb-40 max-w-4xl mx-auto">Asesoría en gestión catastral, análisis geoespacial y soporte</p> <!-- Subtítulo -->
                         </div>
                     </div>
                 </div>

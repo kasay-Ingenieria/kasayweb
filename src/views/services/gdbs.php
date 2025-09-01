@@ -66,7 +66,7 @@
                 <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div>
                 <!-- Texto inicial que se superpone al video -->
                 <div class="relative z-20 flex items-center justify-center h-[400px] text-white text-3xl">
-                    <div class="container mx-auto pt-52 text-center" data-aos="fade-down">
+                    <div class="container mx-auto pt-52 text-center " data-aos="fade-down">
                         <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight whitespace-nowrap">  <!-- Título principal grande -->
                         Bases de Datos Geográficas <br class="hidden md:inline"> El corazón de su Información 
                         </h1>
