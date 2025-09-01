@@ -24,10 +24,10 @@
     include_once '../inc/navbar.php';
     ?>
     <!-- Sección de inicio de sesión -->
-    <section class="gradient-bg-hero text-white min-h-screen flex items-center justify-center py-16 px-4">
+    <section class="gradient-bg-hero text-white min-h-screen flex items-center justify-center py-24 px-4">
         <div class="container mx-auto max-w-md">
             <div id="login-card"
-                class="bg-white p-8 md:p-10 rounded-xl shadow-2xl w-full text-gray-800 border-b-4 border-sky-600 animate-fadeInSlideUp">
+                class="bg-white p-8 md:p-10 rounded-xl shadow-2xl w-full  text-gray-800 border-b-4 border-sky-600 animate-fadeInSlideUp">
                 <!-- Encabezado del login -->
                 <div class="text-center mb-8">
                     <img src="/kasayweb/assets/images/logo.jpg" alt="Kasay Ingeniería Logo"

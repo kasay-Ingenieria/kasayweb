@@ -23,7 +23,7 @@
 
         <section id="contacto" class="pb-7 bg-white"> <!-- Sección principal de contacto -->
 
-            <section id="inicio" class="text-white pt-3 pb-16 md:pt-16 md:pb-1"> <!-- Sección de inicio con video de fondo -->
+            <section id="inicio" class="text-white pt-3 pb-0 md:pt-16 md:pb-1"> <!-- Sección de inicio con video de fondo -->
                 <div class="relative w-full h-[390px] overflow-hidden"> <!-- Contenedor relativo para el video -->
                     <video autoplay muted="muted" loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0"> <!-- Video de fondo -->
                     <source src="/kasayweb/assets/videos/kasaycontacto.mp4" type="video/mp4"> <!-- Fuente del video -->
@@ -32,7 +32,7 @@
                     <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"></div> <!-- Capa oscura encima del video -->
                     <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl"> <!-- Contenido centrado sobre el video -->
                         <div class="container mx-auto px-6 text-center"> <!-- Contenedor centrado -->
-                            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Kasay Ingeniería S.A.S </h1> <!-- Título principal -->
+                            <h1 class="text-4xl md:text-6xl font-bold mb-6 pt-16 sm:pt-0 leading-tight">Kasay Ingeniería S.A.S </h1> <!-- Título principal -->
                             <p class="text-lg md:text-3xl mb-8 max-w-4xl mx-auto">Asesoría en gestión catastral, análisis geoespacial y soporte</p> <!-- Subtítulo -->
                         </div>
                     </div>
@@ -45,21 +45,21 @@
                 <div class="container mx-auto px-6 flex flex-col md:flex-row gap-8"> <!-- Contenedor principal con columnas -->
 
                     <!-- Columna izquierda: Información de contacto -->
-                    <div class="w-2/3 bg-white text-cyan-600 pt-20 p-6 rounded-lg"> <!-- Columna de información de contacto -->
+                    <div class="w-5/3 sm:w-2/3 bg-white text-cyan-600 pt-8 sm:pt-16 p-6 rounded-lg"> <!-- Columna de información de contacto -->
                         <h2 class="text-4xl font-bold text-center mb-10 ">Contáctanos</h2> <!-- Título de la sección -->
-                        <h4 class="text-2xl pt-6 text-gray-600 pl-8 font-serif mb-4">
-                            <i class="fa-solid text-cyan-500 fa-location-dot mr-2"></i> Carrera 59 #44a-30, Bogotá, Colombia. <!-- Dirección -->
+                        <h4 class="text-lg sm:text-2xl pt-6 text-gray-600 pl-4 sm:pl-24 font-serif mb-4">
+                            <i class="fa-solid text-cyan-500 fa-location-dot mr-2"></i> Carrera 59 #44a-30, Bogotá. <!-- Dirección -->
                         </h4>
-                        <h4 class="text-2xl pl-8 text-gray-600 font-serif mb-4">
+                        <h4 class="text-lg sm:text-2xl pl-4 sm:pl-24 pt-2 text-gray-600 font-serif mb-4">
                             <i class="fa-regular text-cyan-500 fa-envelope mr-2"></i> contacto@kasay.com.co <!-- Email -->
                         </h4>
-                        <h4 class="text-2xl pl-8 text-gray-600 font-serif mb-10">
+                        <h4 class="text-lg sm:text-2xl pl-4 sm:pl-24 pt-2 text-gray-600 font-serif mb-10">
                             <i class="fa-solid text-cyan-500 fa-phone mr-2"></i> 3013365167 <!-- Teléfono -->
                         </h4>
-                        <h4 class="text-2xl font-bold text-cyan-600 pt-8 text-center mb-4">
+                        <h4 class="text-xl sm:text-2xl font-bold text-cyan-600 pt-8 text-center mb-4">
                             ¡Síguenos en nuestras redes sociales! <!-- Invitación a redes sociales -->
                         </h4>
-                        <div class="flex justify-center pt-2 pb-0 text-cyan-500 space-x-5 text-7xl"> <!-- Iconos de redes sociales -->
+                        <div class="flex justify-center pt-2 pb-0 text-cyan-500 space-x-5 sm:text-7xl text-4xl"> <!-- Iconos de redes sociales -->
                             <a href="https://www.facebook.com" target="_blank">
                                 <i class="fa-brands fa-square-facebook"></i> <!-- Facebook -->
                             </a>
@@ -121,8 +121,8 @@
                             <div class="mb-6">
                                 <label class="block text-cyan-700 text-sm font-medium mb-2" for="mensaje">Mensaje *</label> <!-- Etiqueta mensaje -->
                                 <textarea
-                                class="border border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-300 shadow-sm rounded-lg w-full py-2 px-3 text-gray-700 transition duration-300 ease-in-out placeholder:text-gray-400 focus:outline-none"
-                                id="mensaje" name="mensaje" required rows="4" placeholder="Ingresa tu mensaje"></textarea> <!-- Campo mensaje -->
+                                    class="border border-gray-300 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-300 shadow-sm rounded-lg w-full py-2 px-3 text-gray-700 transition duration-300 ease-in-out placeholder:text-gray-400 focus:outline-none"
+                                    id="mensaje" name="mensaje" required rows="4" placeholder="Ingresa tu mensaje"></textarea> <!-- Campo mensaje -->
                             </div>
                             <!-- Botón -->
                             <div class="flex justify-center text-2xl">

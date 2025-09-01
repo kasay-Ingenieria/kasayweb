@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quienes somos</title>
+    <title>Quienes</title>
     <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -42,14 +42,14 @@
 
 
             <!-- Informacion que se superpone al video -->
-            <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl">
+            <div class="relative z-20 flex items-center justify-center h-full text-white text-3xl text-center">
 
-                <div class="container mx-auto px-6 text-left">
+                <div class="container mx-auto px-6">
 
                     <h1 class="text-4xl md:text-8xl font-bold mt-10 mb-6 leading-tight">
                         Kasay Ingeniería S.A.S
                     </h1>
-                    <p class=" md:text-5xl mb-8 mt-10 max-w-5xl">
+                    <p class="md:text-5xl mb-8 mt-10 max-w-5xl"></p>
                         Especialistas en Inteligencia Territorial y Tecnología Catastral Avanzada
                     </p>
                 </div>
@@ -58,13 +58,13 @@
     </section>
 
     <!-- Sección de quiénes somos -->
-    <section class="text-sky-700 mx-auto pt-20 pb-10 bg-white">
+    <section class="text-sky-700 mx-auto pt-20 sm:mb-10 bg-white">
         <div class="container mx-auto  text-justify pb-10 px-4 sm:px-8 md:px-24 lg:px-48">
-            <h2 class="text-3xl md:text-5xl  font-bold mb-6">
+            <h2 class="text-3xl md:text-5xl sm:text-left sm:pl-4 text-center font-bold mb-6">
                 Quiénes somos
             </h2>
 
-            <p class="text-lg md:text-xl mb-8 max-w-6xl ">
+            <p class="text-ls md:text-xl mb-8 px-6 max-w-6xl text-justify hyphens-auto">
                 Somos una empresa especializada en sistemas de información geográfica (SIG) y servicios de
                 georreferenciación, conformada por un equipo multidisciplinario de expertos en tecnología geodésica,
                 cartografía y sistemas de información.
@@ -89,59 +89,46 @@
                     </p>
                 </div>
                 <!-- Imagen del logo -->
-                <div class="flex justify-center  md:justify-start pt-8 md:pt-2">
+                <div class="flex justify-center  md:justify-start sm:pt-8 pt-0 md:pt-2">
                     <img src="/kasayweb/assets/images/logotrans.png" alt="Logotipo de Kasay Ingeniería"
-                        class="rounded-lg pt-8 w-[200px] sm:w-[300px] md:w-[500px] h-[80px] sm:h-[120px] md:h-[230px] object-cover">
+                        class="rounded-lg sm:pt-8 pt-0 w-[200px] sm:w-[300px] md:w-[500px] h-[120px] sm:h-[120px] md:h-[230px] object-cover">
                 </div>
             </div>
         </div>
     </section>
     <!-- Sección de misión y visión -->
-    <section id="servicios" class="py-24  bg-white ">
-        <div class="container mx-auto grid md:grid-cols-7 gap-12 justify-center items-start px4 ">
-            <!--Contenedor de Mision-->
-            <div
-                class="bg-white h-full border-2 border-sky-50  max-w-7xl col-span-2 p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-8">
-                    <h3 class="text-sky-700 text-3xl font-semibold text-center">
-                        <i class="fa-solid fa-meteor"></i>
-                        Misión
-                    </h3>
-                </div>
-                <p class="text-sky-700 leading-relaxed text-justify">Liderar en el desarrollo de soluciones innovadoras
-                    en sistemas de información geográfica (SIG), ofreciendo servicios avanzados de georreferenciación
-                    predial y aplicaciones basadas en geolocalización. A través del uso de tecnología de última
-                    generación, brindamos asesoría especializada a entidades públicas y privadas en todo el país,
-                    optimizando sus procesos y mejorando la toma de decisiones con calidad, precisión e innovación.</p>
-            </div>
-            <!--Contenedor de Vision-->
-            <div
-                class="bg-white h-full border-2 border-sky-50 p-6 col-span-5 rounded-lg hover:shadow-xl transition-shadow duration-300">
-                <div class="flex items-center justify-center mb-8">
-                    <h3 class="text-sky-700 text-3xl font-semibold text-center">
-                        <i class="fa-solid fa-star"></i>
-                        Visión
-                    </h3>
-                </div>
-                <p class="text-sky-700 leading-relaxed text-justify ">
-                    En Kasay Ingeniería S.A.S, nuestra misión es empoderar a entidades públicas y privadas en Colombia y
-                    más allá, mediante soluciones geoespaciales avanzadas y consultoría experta en gestión catastral.
-                    Nos especializamos en aprovechar tecnologías de última generación en sistemas de información
-                    geográfica (SIG), georreferenciación GPS y análisis de datos espaciales, para ofrecer resultados
-                    precisos, eficientes y sostenibles en la administración del territorio y la planificación urbana. A
-                    través de la innovación, la precisión y un firme compromiso con la excelencia, apoyamos a los
-                    municipios en su habilitación como Gestores Catastrales, optimizamos procesos de toma de decisiones
-                    georreferenciadas y mejoramos la eficiencia operativa mediante herramientas de seguimiento vehicular
-                    en tiempo real y planificación inteligente de rutas. Nuestras plataformas SIG web y soluciones SaaS
-                    ofrecen herramientas escalables y accesibles para una gestión territorial moderna y efectiva.
-                    Colaboramos estrechamente con nuestros clientes, entendiendo sus desafíos geográficos y
-                    administrativos particulares para entregar estrategias a la medida, que generen decisiones
-                    informadas e impactos medibles. Con integridad, excelencia técnica y una visión centrada en el
-                    desarrollo sostenible, estamos comprometidos con liderar el futuro de la inteligencia geoespacial y
-                    contribuir a la transformación digital de los territorios en América Latina y el mundo.</p>
-            </div>
-        </div>
-    </section>
+    <section id="servicios" class="py-24 bg-white">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-7 gap-12 justify-center items-start px-4">
+    <!--Contenedor de Mision-->
+    <div
+      class="bg-white h-full border-2 border-sky-50 max-w-7xl md:col-span-2 p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+      <div class="flex items-center justify-center mb-8">
+        <h3 class="text-sky-700 text-3xl font-semibold text-center">
+          <i class="fa-solid fa-meteor"></i>
+          Misión
+        </h3>
+      </div>
+      <p class="text-sky-700 leading-relaxed text-justify hyphens-auto">
+        Liderar en el desarrollo de soluciones innovadoras en sistemas de información geográfica (SIG), ofreciendo servicios avanzados de georreferenciación predial y aplicaciones basadas en geolocalización. A través del uso de tecnología de última generación, brindamos asesoría especializada a entidades públicas y privadas en todo el país, optimizando sus procesos y mejorando la toma de decisiones con calidad, precisión e innovación.
+      </p>
+    </div>
+
+    <!--Contenedor de Vision-->
+    <div
+      class="bg-white h-full border-2 border-sky-50 md:col-span-5 p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
+      <div class="flex items-center justify-center mb-8">
+        <h3 class="text-sky-700 text-3xl font-semibold text-center">
+          <i class="fa-solid fa-star"></i>
+          Visión
+        </h3>
+      </div>
+      <p class="text-sky-700 leading-relaxed text-justify hyphens-auto">
+        En Kasay Ingeniería S.A.S, nuestra misión es empoderar a entidades públicas y privadas en Colombia y más allá, mediante soluciones geoespaciales avanzadas y consultoría experta en gestión catastral. Nos especializamos en aprovechar tecnologías de última generación en sistemas de información geográfica (SIG), georreferenciación GPS y análisis de datos espaciales, para ofrecer resultados precisos, eficientes y sostenibles en la administración del territorio y la planificación urbana. A través de la innovación, la precisión y un firme compromiso con la excelencia, apoyamos a los municipios en su habilitación como Gestores Catastrales, optimizamos procesos de toma de decisiones georreferenciadas y mejoramos la eficiencia operativa mediante herramientas de seguimiento vehicular en tiempo real y planificación inteligente de rutas. Nuestras plataformas SIG web y soluciones SaaS ofrecen herramientas escalables y accesibles para una gestión territorial moderna y efectiva. Colaboramos estrechamente con nuestros clientes, entendiendo sus desafíos geográficos y administrativos particulares para entregar estrategias a la medida, que generen decisiones informadas e impactos medibles. Con integridad, excelencia técnica y una visión centrada en el desarrollo sostenible, estamos comprometidos con liderar el futuro de la inteligencia geoespacial y contribuir a la transformación digital de los territorios en América Latina y el mundo.
+      </p>
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <?php

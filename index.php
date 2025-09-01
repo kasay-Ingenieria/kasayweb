@@ -108,7 +108,7 @@
                     class="inline-block px-4 py-1 bg-sky-100 text-sky-600 rounded-full text-sm font-semibold mb-4">SOLUCIONES
                     INTEGRALES</span>
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Tecnología Geoespacial Avanzada</h2>
-                <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto">Ofrecemos servicios de Consultoría en Gestión
+                <p class="text-xl text-gray-600 text-center max-w-3xl mx-auto ">Ofrecemos servicios de Consultoría en Gestión
                     Catastral, comprometidos en proporcionar las capacidades técnicas, tecnológicas y administrativas
                     necesarias.</p>
             </div>
